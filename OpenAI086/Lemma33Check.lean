@@ -1,0 +1,7 @@
+import OpenAI086.Lemma33Reviewed
+
+#check OpenAI086.Lemma33.prefixRowBound_pow_two
+#check OpenAI086.Lemma33.nestedProjectionProduct_prefix_rows_sq
+#check OpenAI086.Lemma33.nestedProjectionProduct_successive_jumps
+#print axioms OpenAI086.Lemma33.nestedProjectionProduct_prefix_rows_sq
+#print axioms OpenAI086.Lemma33.nestedProjectionProduct_successive_jumps
