@@ -1,0 +1,42 @@
+Independent non-kernel checks (cannot certify Lean theorem proofs)
+
+$ python3 tools/check_project_integrity.py
+exit=0
+{
+  "status": "static_packaging_audit_not_a_kernel_proof",
+  "file_count": 22,
+  "whole_project_reaches_all_lean_files": true,
+  "unreachable": [],
+  "errors": []
+}
+
+
+$ python3 tools/static_audit.py
+exit=0
+{
+  "status": "static_lint_only_not_kernel_verified",
+  "lean_file_count": 22,
+  "theorem_declaration_count": 88,
+  "theorem_1_1_kernel_proved": false,
+  "issues": []
+}
+
+
+$ python3 tools/sympy_check.py
+exit=0
+SYMPY PASS: algebraic checks only (not a Lean build or analytic proof).
+
+
+$ python3 tools/test_noncommuting_numeric.py
+exit=0
+PASS: self-adjoint idempotent/noncommuting projections and 800 ordered-product algebra/norm checks
+STATUS: NUMERICAL_SANITY_ONLY. No Lean kernel compilation performed.
+
+
+$ python3 tools/test_lemma33_numeric.py
+exit=0
+160 PASS numeric cases; maximum commutator norm 0.9578; row ratio 0.2069; jump ratio 1
+WARNING: numerical evidence is NOT a formal proof, and not a Lean build.
+
+
+Lean kernel build = NOT RUN (no local toolchain and network DNS unavailable).

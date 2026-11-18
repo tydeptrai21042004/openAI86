@@ -1,0 +1,12 @@
+Lean kernel compilation was NOT performed in this environment.
+`lean`, `lake`, and `elan` are not installed. Downloading Lean is blocked by DNS
+(no access to github.com). No PASS claim for the new Lean files is made.
+
+Local checks performed:
+- Python static import/source audit PASS
+- SymPy polynomial algebra PASS
+- NumPy noncommutative-matrix sanity PASS (800 generated cases)
+- Read-only review of user-supplied reference ZIP PASS (structural inspection)
+
+Reproduce kernel checks on Ubuntu/WSL using `bash verify.sh`.
+The main theorem is still OPEN regardless of sublemma build status.

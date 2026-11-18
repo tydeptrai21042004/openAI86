@@ -1,0 +1,18 @@
+{
+  "reference_path": "TrilinearHT/Auto/Prerequisites/RademacherMenshov.lean",
+  "reference_sha256": "77ae6d6d4678f68e3568fcc64eafbc30ac3214b5f4b394e5a9b5c7e9f30a7676",
+  "imported_reference_modules": 0,
+  "copied_into_bundle_reference_repository": false,
+  "reference_license": "Apache-2.0",
+  "reference_authors": "Joris Roos; proof code authors listed as Codex",
+  "provenance_classification": "adapted reference code, NOT an original independent derivation",
+  "main_lemma": {
+    "part_1": "nestedProjectionProduct_prefix_rows_sq",
+    "part_2": "nestedProjectionProduct_successive_jumps"
+  },
+  "build_status": "not run: no Lean/lake in execution environment",
+  "codomain_scope": "common normed output space F for all row operators; paper allows varying Y_nu",
+  "merged_to_main": false,
+  "local_numerical_tests": "160 random 1-4 layer cases passed; NOT a Lean proof",
+  "lean_build": "not run: binary unavailable"
+}

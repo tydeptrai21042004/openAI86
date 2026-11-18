@@ -1,0 +1,5 @@
+x=0.0: truncated minus=+0.000000000000, plus=+0.000000000000
+x=0.2: truncated minus=+1.043578958186, plus=-1.043578958186
+x=0.5: truncated minus=+1.694874171664, plus=-1.694874171664
+x=1.0: truncated minus=+0.921154524830, plus=-0.921154524830
+PASS: numerical sign inversion. This does not verify the L3 estimate.

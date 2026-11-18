@@ -1,0 +1,2 @@
+PASS: self-adjoint idempotent/noncommuting projections and 800 ordered-product algebra/norm checks
+STATUS: NUMERICAL_SANITY_ONLY. No Lean kernel compilation performed.

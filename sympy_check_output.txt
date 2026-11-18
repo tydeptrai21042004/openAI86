@@ -1,0 +1,1 @@
+SYMPY PASS: algebraic checks only (not a Lean build or analytic proof).

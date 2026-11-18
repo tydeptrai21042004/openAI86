@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Core only, excluding the reviewed Lemma 3.3 candidate.
+set -euo pipefail
+cd "$(dirname "$0")"
+python3 tools/check_project_integrity.py
+python3 tools/static_audit.py
+if ! command -v lake >/dev/null 2>&1; then
+  echo 'UNVERIFIED: lake not installed.' >&2
+  exit 2
+fi
+lake exe cache get
+lake env lean OpenAI086.lean
+echo 'Core entrypoint elaborated. Lemma 3.3 candidate NOT included in this check.'

@@ -1,0 +1,14 @@
+name = "openai086-whole-project"
+version = "0.3.0"
+defaultTargets = ["OpenAI086Whole"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "fbc1661a327737928fe9d69b74f7deaa09eecfbc"
+
+[[lean_lib]]
+name = "OpenAI086"
+
+[[lean_lib]]
+name = "OpenAI086Whole"
