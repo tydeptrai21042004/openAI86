@@ -1,13 +1,7 @@
-# Independent code provenance
+# Independence guarantee (source provenance, NOT theorem certification)
 
-All Lean source files under `OpenAI086/` in this ZIP are local original
-proof-development artifacts, not copied modules from `lean-trilinearht`.
-Only `Mathlib` and `OpenAI086.*` imports are allowed. This is audited by
-`tools/static_audit.py`. `tools/review_reference.py` reads the user's
-reference ZIP without materializing code into this project.
+`OpenAI086` imports only Mathlib and its own modules. All newer seven modules are original source written for this project. `OpenAI086Whole.lean` imports only `OpenAI086`. The older Apache-2.0 adaptation of the published Rademacher–Menshov code and the dependent Theorem 1.1 bridge were intentionally omitted from this ZIP.
 
-The baseline already contained partial claims created in earlier work.
-This revision adds source files with explicit references to mathematical
-ideas; using an idea is not the same as transplanting proof source.
+The named source paper supplies the mathematical ideas and target results. Those are not third-party Lean proof dependencies.
 
-No claim of independent reproof of the 93-page analytic result is made.
+`tools/check_project_integrity.py` and `tools/lean_source_safety.py` check source-level evidence of import independence and placeholder absence; neither constitutes verification by the Lean kernel. The full theorem remains open.

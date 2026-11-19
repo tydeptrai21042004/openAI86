@@ -1,7 +1,7 @@
 {
   "status": "static_lint_only_not_kernel_verified",
-  "lean_file_count": 19,
-  "theorem_declaration_count": 55,
+  "lean_file_count": 28,
+  "theorem_declaration_count": 101,
   "theorem_1_1_kernel_proved": false,
   "issues": []
 }

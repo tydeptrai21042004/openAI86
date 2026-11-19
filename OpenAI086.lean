@@ -1,3 +1,21 @@
+import OpenAI086.ColoredPathUniqueness
+import OpenAI086.ComponentIntersections
+import OpenAI086.SparsePairBudget
+import OpenAI086.EntryRankConcrete
+import OpenAI086.SparseBlockAccounting
+import OpenAI086.ArbitraryDepthTelescoping
+import OpenAI086.FiniteStoppingSets
+import OpenAI086.FiniteMarginalCancellation
+import OpenAI086.OrderedProductTelescoping
+import OpenAI086.QuadraticChartsElementary
+import OpenAI086.PathLabelEnergy
+import OpenAI086.EntryRankSummation
+import OpenAI086.LocalForms
+import OpenAI086.PrincipalValueGoals
+import OpenAI086.PrivateEnergyExact
+import OpenAI086.FiniteCompression
+import OpenAI086.DyadicTails
+import OpenAI086.OuterStopping
 import OpenAI086.Resonance
 import OpenAI086.ProgressionGeometry
 import OpenAI086.PrivateCoordinates
@@ -51,3 +69,35 @@ Every `theorem` above contains a proof term to be checked by Lean.
 
 #print axioms OpenAI086.ordered_difference_correct
 #print axioms OpenAI086.orthogonal_projections_need_not_commute
+
+-- New formalized intermediate consequences from §§2–3.
+#check OpenAI086.four_stopping_families_bound
+#check OpenAI086.good_root_retains_three_quarters
+#check OpenAI086.dyadic_tail_multiple_bins
+#check OpenAI086.fixed_anchor_row_contraction
+#check OpenAI086.private_column_coercivity
+
+#print axioms OpenAI086.four_stopping_families_bound
+#print axioms OpenAI086.private_column_coercivity
+
+#check OpenAI086.fourLinearLocalForm
+#check OpenAI086.HasZeroProgressionMarginals
+#check OpenAI086.TruncationSignBridge_Goal
+#check OpenAI086.PlusShiftSchwartzBound_Goal
+
+-- Independently authored additional proof components (NOT full paper proofs).
+#check OpenAI086.four_finite_stop_union_bound
+#check OpenAI086.discreteProgressionMarginal_zero
+#check OpenAI086.ordered_telescoping_three
+#check OpenAI086.ordered_telescoping_four
+#check OpenAI086.ordinaryQuadratic_affine
+#check OpenAI086.ordinaryQuadratic_exp_mul
+#check OpenAI086.finite_path_label_energy
+#check OpenAI086.entry_rank_double_count
+
+#print axioms OpenAI086.ordered_telescoping_four
+#print axioms OpenAI086.finite_path_label_energy
+#print axioms OpenAI086.entry_rank_double_count
+
+#check OpenAI086.arbitrary_depth_ordered_telescoping
+#print axioms OpenAI086.arbitrary_depth_ordered_telescoping

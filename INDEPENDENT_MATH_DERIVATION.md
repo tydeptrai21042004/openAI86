@@ -97,6 +97,6 @@ code uses a common output space `F`. This is a real scope difference,
 though a formal construction of a common Hilbert direct sum can in
 principle bridge it. That construction still needs its own proof.
 
-The script implementing this argument was adapted under Apache-2.0 from
-the credited reference; therefore it is **not independent proof authorship**.
-A real `lake build` and checking `#print axioms` remain required.
+The earlier source adaptation has been excluded from this edition. The new
+`ArbitraryDepthTelescoping.lean` independently proves only the ordered
+algebraic identity for arbitrary depth, not the complete row bound.

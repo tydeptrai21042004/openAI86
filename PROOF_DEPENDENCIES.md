@@ -1,4 +1,4 @@
-> **Whole-project packaging update:** The new `OpenAI086Whole.lean` entrypoint imports the Lemma 3.3 candidate and core together. Theorem 1.1 remains unproved, and kernel compilation has not been confirmed in this environment.
+> **Independent update:** The earlier adapted Lemma 3.3 source was excluded. `OpenAI086Whole.lean` imports only the independently authored core. Theorem 1.1 remains unproved and uncompiled here.
 
 # Proof dependency map: OpenAI #086, October 5, 2026
 
@@ -55,3 +55,27 @@ is necessary background for phase analysis; it is not sufficient to deduce globa
 6. Complete §§6–9 and a proof of Proposition 2.3 with all stopping parameters explicit.
 7. Prove Lemma 2.4 including reconstruction of `1/t` and principal-value limits.
 8. Only then add `theorem theorem_1_1 : Theorem1_1_Goal := by ...` and verify its axioms.
+
+## 2026-11-19 incremental Lean files
+
+- `LocalForms.lean`: analytic local-form and zero-marginal *definitions*.
+- `PrincipalValueGoals.lean`: external plus-shift convention and sign-bridge *goals*.
+- `OuterStopping.lean`: §2 scalar four-family stopping accounting.
+- `PrivateEnergyExact.lean`: §3.2 finite model of coercivity.
+- `FiniteCompression.lean`: §3.4 **fixed-anchor** special-case row estimate.
+- `DyadicTails.lean`: §3.5 geometric tails, not rational-height lemma.
+- `.github/workflows/lean-proof-audit.yml`: Lean kernel build after upload to GitHub.
+- `tools/lean_source_safety.py`: reject unfinished proof placeholders in independent sources.
+
+**Remaining independent core:** Lemmas 2.1, 3.4, 3.5 and §§4–10, including
+Theorem 1.1, are NOT resolved by these new files. The upstream theorem
+is not definitionally identical to `Theorem1_1_Goal`.
+
+
+## §8 and §9 continuation (2026-11-19)
+
+- Entry-rank: `EntryRankSummation` + `EntryRankConcrete` prove a rank-summed harmonic bound given an explicit rank assignment and occurrence budget; construction of ranks from arbitrary nested sets is still missing.
+- Hereditary representatives: `ComponentIntersections` proves the required overlap cardinality (>1/10 of the ambient set); graph-persistence and representative assignment are still missing.
+- Sparse-count: `SparsePairBudget` proves the `L M²` incidence budget; `ColoredPathUniqueness` proves proper-color path determination; `SparseBlockAccounting` proves only the arithmetic upper bound for greedy blocks. The graph-density estimate, annular transfer, frequency separation, density power saving and applications are all missing.
+
+These dependencies do not close Lemma 8.5, Lemma 8.10, Lemma 9.1, Proposition 2.3 or Theorem 1.1. No kernel verification is available in this runtime.

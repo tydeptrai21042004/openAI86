@@ -1,12 +1,14 @@
-# Kernel and build validation
+# Kernel verification log (19 November 2026)
 
-- Source ZIP constructed from current user project, including EVERY `.lean` file.
-- Entire project entrypoint: `OpenAI086Whole.lean` (imports core and Lemma 3.3 candidate).
-- Structural import graph/static lint/symbolic/numerical tests: run and log in `AUDIT_RESULTS.txt`.
-- Lean/Lake installed in creation environment: **NO**.
-- Attempt to download Lean: blocked by DNS.
-- Actual Lean kernel build: **NOT RUN**.
-- Main theorem #086 Theorem 1.1: **NOT PROVED**.
+- Standalone independent project root: `OpenAI086Whole.lean`, importing `OpenAI086` only.
+- Lean/Lake available in this environment: **NO**.
+- Lean/Mathlib network download: blocked by DNS and network restrictions.
+- Whole project structural import audit: **PASS** (33 Lean files reachable).
+- Lean placeholder/unsafe/import scanner: **PASS**.
+- Symbolic checks: **PASS**; numerical checks: **PASS** (sanity only).
+- `bash verify_all.sh`: **exit 2** (Lean/Lake missing; not an assertion of mathematical falsehood).
+- `python3 tools/paper_obligation_report.py --require-complete`: **exit 3** (59 named results are not independently certified).
+- Successful `lake build`: **NOT RUN**.
+- Theorem 1.1 independently proved: **NO**.
 
-On Ubuntu/WSL with Lean run `bash verify_all.sh`. The full script exits nonzero
-if any Lean source fails; do not describe this as verified until it passes.
+See `verification/FINAL_VERIFY_ALL.log` and `verification/FINAL_STRICT_GATE.log`.

@@ -3,7 +3,8 @@
 from pathlib import Path
 import re, sys, json
 root=Path(__file__).resolve().parents[1]
-files=sorted(root.rglob('*.lean'))
+# The external-proof integration is a separate project with its own audit.
+files=sorted((root/'OpenAI086').rglob('*.lean')) + [root/'OpenAI086.lean', root/'OpenAI086Whole.lean']
 fail=[]
 theorems=[]
 for p in files:

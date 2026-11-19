@@ -1,0 +1,25 @@
+{
+  "audit_kind": "STATIC_ONLY_NOT_KERNEL_VERIFICATION",
+  "lean_files": 38,
+  "theorem_declarations_in_sources": 95,
+  "numbered_paper_results": 59,
+  "numbered_results_with_partial_components": 17,
+  "numbered_full_results_kernel_verified": 0,
+  "main_theorem_kernel_verified": false,
+  "external_published_lean_code_imported": false,
+  "lean_kernel_build_executed_by_this_script": false,
+  "additional_independent_modules": [
+    "ArbitraryDepthTelescoping",
+    "OrderedProductTelescoping",
+    "FiniteStoppingSets",
+    "FiniteMarginalCancellation",
+    "PathLabelEnergy",
+    "QuadraticChartsElementary",
+    "EntryRankSummation",
+    "ComponentIntersections",
+    "EntryRankConcrete",
+    "SparsePairBudget",
+    "SparseBlockAccounting",
+    "ColoredPathUniqueness"
+  ]
+}

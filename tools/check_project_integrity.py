@@ -3,7 +3,9 @@
 from pathlib import Path
 import re,sys,json
 root=Path(__file__).resolve().parents[1]
-lean_files=sorted(root.rglob('*.lean'))
+# Audit only the independent root package; full-theorem has its own Lake package
+# and is checked separately by audit_theorem_integration.py + Lean.
+lean_files=sorted((root/'OpenAI086').rglob('*.lean')) + [root/'OpenAI086.lean', root/'OpenAI086Whole.lean']
 imports={}; errors=[]
 for path in lean_files:
     mod='.'.join(path.relative_to(root).with_suffix('').parts)
@@ -22,12 +24,10 @@ if 'OpenAI086Whole' not in imports:
     errors.append('Missing whole-project entrypoint')
 if 'OpenAI086' not in imports:
     errors.append('Missing core entrypoint')
-if 'OpenAI086.Lemma33Reviewed' not in imports:
-    errors.append('Missing Lemma 3.3 reviewed candidate')
-if 'OpenAI086.Lemma33Check' not in imports:
-    errors.append('Missing candidate check module')
-if imports.get('OpenAI086Whole',[]) != ['OpenAI086','OpenAI086.Lemma33Check']:
-    errors.append('Whole-project entrypoint must import core and Lemma33Check')
+if imports.get('OpenAI086Whole',[]) != ['OpenAI086']:
+    errors.append('Independent entrypoint must import only OpenAI086')
+if any('TrilinearHT' in d for ds in imports.values() for d in ds):
+    errors.append('Non-independent TrilinearHT dependency detected')
 seen=set()
 def reach(mod):
     if mod in seen:return

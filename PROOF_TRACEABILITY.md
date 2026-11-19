@@ -1,54 +1,27 @@
-> **Whole-project packaging update:** The new `OpenAI086Whole.lean` entrypoint imports the Lemma 3.3 candidate and core together. Theorem 1.1 remains unproved, and kernel compilation has not been confirmed in this environment.
+# Exact traceability register
 
-# Exact proof status for OpenAI #086 (5 October 2026 PDF)
+The canonical result-by-result index is `verification/PAPER_RESULTS_INDEX.md` and `.json`. All 59 numbered results of the October 5, 2026 PDF are indexed by exact physical page number and corresponding local partial components, when available.
 
-This is a **research artifact, not a complete independent formalization**.
+The main target is **only declared** in `OpenAI086/PaperStatement.lean` and is not proved.
 
-| PDF | Key target | Independent Lean status |
-|---|---|---|
-| Introduction | quadratically resonant four-term phases | Source proof (algebra) |
-| 2.1 | local absolute-form estimate using two-coordinate Jacobian and interpolation | Geometry only; analytic estimate MISSING |
-| 2.2 | uniform local estimate independent of number of depths | MISSING |
-| 2.3 | normalized absorption estimate for the full local forms | MISSING; scalar absorption only |
-| 2.4 | reconstruct singular kernel from local estimates | MISSING; pointwise sign reversal only |
-| 3.1 | packing of attempts | Scalar generation inequality only |
-| 3.2 | coefficient uniqueness and projection bounds | Private-coordinate finite model only |
-| 3.3 | products of nested Hilbert-space projections | NEW: coordinate-mask special case; noncommuting product MISSING |
-| 3.4 | quantitative projection compression, depth-independent | MISSING |
-| 4 | quantitative Weyl alternative, quadratic charts and detection | Phase algebra only; quantitative inverse theory MISSING |
-| 5 | two-accuracy predictor and delayed projections | Scalar predictor correction only |
-| 6 | localization by quadratic curvature | MISSING |
-| 7 | short depth blocks and side terms | MISSING |
-| 8 | coherent modes, energy, projection rows | Last-endpoint set inclusion correction only |
-| 9 | sparse count and successful-height lemma | First-failing-role logic only |
-| 10 | choose parameters, sum scales, pass to principal value | MISSING |
-| Theorem 1.1 | L³ × L³ × L³ to L¹ bound of trilinear Hilbert transform | PROPOSITION DECLARED; **NO LEAN PROOF** |
+Seven independently authored proof-component files are imported into `OpenAI086.lean`:
 
-**Note:** The underlying paper states the main theorem for Schwartz inputs and deduces a unique bounded extension. The present definition `Theorem1_1_Goal` requires pointwise principal-value convergence and an L¹ estimate. It is **not** a theorem proved by this project. In particular, a successful `lake build` would NOT establish it.
+- `ArbitraryDepthTelescoping.lean` — arbitrary-depth ordered algebra (noncommuting)
+- `OrderedProductTelescoping.lean` — explicit 3/4 layer expansions
+- `FiniteStoppingSets.lean` — four-family finite stopping cardinality
+- `FiniteMarginalCancellation.lean` — discrete marginal telescoping
+- `PathLabelEnergy.lean` — finite label energy bound
+- `QuadraticChartsElementary.lean` — ordinary quadratic chart calculus
+- `EntryRankSummation.lean` — harmonic entry-rank budget summation
 
-The entire repo consists of newly written toy/sublemma formalizations. It does not import or embed a previously published Lean formalization of the trilinear Hilbert transform. It does import ordinary Mathlib.
+These are **not** replacements for full Lemma 2.4, Lemma 3.3, Lemma 3.4, Lemma 4.2, Lemma 8.5, or the full analytic arguments in the paper. The project has not been compiled with Lean in the authoring runtime.
 
-## Additional reviewed independent modules (this revision)
+## Additional sections 8--9 coverage (continuation)
 
-- `NoncommutingProducts.lean`: Exact ordered-product telescoping for arbitrary
-  noncommutative rings and a coarse norm bound for normed rings. These are
-  useful building blocks for the telescoping in Lemma 3.3, **not** Lemma 3.3.
-- `NoncommutingProjectionExample.lean`: Two genuine, noncommuting orthogonal
-  projections on `ℝ²` with squared-norm contractions.
-- `PrefixCombinatorics.lean`: Exact splitting of consecutive finite prefixes,
-  which precedes dyadic block decompositions.
-- `PRE_MERGE_REVIEW.md`: Before-integration assessment of the reference Lean
-  sources and explicit accept/reject decisions for each remaining claim.
+- `ComponentIntersections.lean` — quantitative predecessor overlap in Lemma 8.10.
+- `EntryRankConcrete.lean` — entry-rank denominator control and harmonic incidence in Lemma 8.5.
+- `SparsePairBudget.lean` — incidence mass `≤ L M²` in Lemma 9.1.
+- `SparseBlockAccounting.lean` — conditional greedy block-count arithmetic in Lemma 9.1.
+- `ColoredPathUniqueness.lean` — proper edge colors uniquely determine a four-step path.
 
-
-### Lemma 3.3 logarithmic candidate, reviewed integration
-
-`OpenAI086.Lemma33.nestedProjectionProduct_prefix_rows_sq` and
-`OpenAI086.Lemma33.nestedProjectionProduct_successive_jumps` provide
-actual Lean proof scripts for the main bounds in a common-codomain
-setting. The module is an adapted, credited code proof, not an independently
-developed proof; kernel compilation pending. Varying row codomains
-and exact final PDF-level generality remain unproved in this project.
-
-The candidate is not imported by the normal aggregate target pending
-`lake env lean OpenAI086/Lemma33Check.lean` success.
+All source statements are uncompiled candidates until the pinned Lean toolchain is run.

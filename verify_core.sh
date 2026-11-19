@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Core only, excluding the reviewed Lemma 3.3 candidate.
+# Build only the independent core library.
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 tools/check_project_integrity.py
@@ -10,4 +10,4 @@ if ! command -v lake >/dev/null 2>&1; then
 fi
 lake exe cache get
 lake env lean OpenAI086.lean
-echo 'Core entrypoint elaborated. Lemma 3.3 candidate NOT included in this check.'
+echo 'Independent core entrypoint elaborated. Main theorem remains unproved.'

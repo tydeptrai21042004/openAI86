@@ -1,84 +1,77 @@
-# OpenAI #086 — Whole Lean 4 project (core + Lemma 3.3)
+# OpenAI #086 — independent Lean 4 proof development
 
-**Full SOURCE project, but PARTIAL formalization of the mathematics.**
+**Status as of 2026-11-19: INCOMPLETE, and not kernel-verified in the authoring runtime.**
 
-This is a single download containing **all Lean source files** from our prior
-independent project together with the reviewed Lemma 3.3 candidate, Lake
-configuration, checks, documentation, and GitHub Actions workflows. It deals
-**only** with *An L³ Bound for the Trilinear Hilbert Transform* (OpenAI #086,
-5 October 2026), fixed slopes `(1,2,3)`. No Hartley extension is included.
+This project studies the user's 93-page PDF, *An L³ Bound for the Trilinear Hilbert Transform* (5 October 2026), using the original minus-shift operator with slopes `1,2,3`. Its complete theorem is encoded in `OpenAI086/PaperStatement.lean` as `Theorem1_1_Goal : Prop`, **without a proof term**.
 
-## What is included
+No `TrilinearHT` dependency, external proof bridge, or copied Rademacher–Menshov Lean implementation is bundled in this independent edition. The older adapted `Lemma33Reviewed.lean` and the dependent `full-theorem/` package have intentionally been excluded. The repository depends on ordinary Mathlib.
 
-- `OpenAI086.lean`: all previously developed core proof components.
-- `OpenAI086/Lemma33Reviewed.lean`: candidate dyadic logarithmic estimate for
-  noncommuting nested projections (adapted, see `PROVENANCE.md`).
-- `OpenAI086/Lemma33Check.lean`: extra `#check` and `#print axioms` commands.
-- **`OpenAI086Whole.lean`**: single **FULL** entrypoint importing core AND
-  candidate, ensuring the candidate cannot be omitted from a full build.
-- `OpenAI086/PaperStatement.lean`: mathematical target Theorem 1.1, currently
-  a `def ... : Prop`, with **no proof**. This is deliberately honest.
-- `tools/`: structural, symbolic and numerical sanity checks (NOT Lean proofs).
-- `.github/workflows/`: CI for the Lean project.
-- `PROOF_TRACEABILITY.md`, `LEMMA33_STATUS.md`: proof-coverage reports.
+## Exact scope
 
-## Setup and test on Ubuntu / WSL
+The paper contains **59 individually numbered results** (45 lemmas, 9 propositions, 3 theorems, 1 corollary, 1 definition). `verification/PAPER_RESULTS_INDEX.md` and `.json` provide a page-resolved register of every named result. A status of PARTIAL means that *some particular implication, simplified model, or intermediate lemma* has source code. **Zero of the 59 full paper results is certified by this repository at present.**
 
-Prerequisite: install `elan` (Lean version manager), Git, Python 3,
-and the Python packages `sympy` and `numpy`. Internet is needed for Lean
-and Mathlib on the first setup. `lean-toolchain` pins the compiler and
-`lakefile.toml` pins the Mathlib revision.
+### Independent Lean components added in this edition
+
+| Module | Paper relation | Precise coverage |
+|---|---|---|
+| `ArbitraryDepthTelescoping.lean` | Lemma 3.3 | Exact ordered telescoping with an arbitrary number of noncommuting layers; no logarithmic estimate |
+| `OrderedProductTelescoping.lean` | Lemma 3.3 | Explicit three- and four-layer ordered identities |
+| `FiniteStoppingSets.lean` | Lemma 2.4 | Four-family finite-set union cardinality bound; not the measure-theoretic stopping construction |
+| `FiniteMarginalCancellation.lean` | Lemma 2.4 | Discrete finite-difference endpoint cancellation; not the smooth Gevrey kernel |
+| `PathLabelEnergy.lean` | Lemma 3.4 | Exact finite path-label energy bound `D³`; not the cell-dependent compression theorem |
+| `QuadraticChartsElementary.lean` | Lemma 4.2 | Quadratic translations, affine rescaling, products for the `d=0` chart |
+| `EntryRankSummation.lean` | Lemma 8.5 | Harmonic rank-summation step assuming per-rank incidence bounds; not the full nested-set lemma |
+
+This is a substantive extension of the previously provided algebraic, combinatorial and finite projection components. It does NOT establish the paper's central analytic estimates in Sections 2–10.
+
+## Dependencies and exact target
+
+- `lean-toolchain` pins the intended Lean version.
+- `lakefile.toml` pins a Mathlib commit.
+- `OpenAI086.lean` imports all independently authored modules.
+- `OpenAI086Whole.lean` imports that entrypoint and prints selected axiom dependencies.
+- `OpenAI086/PaperStatement.lean` defines the principal-value truncation and unproved `Theorem1_1_Goal`.
+
+The root library deliberately has **no** `MainProof.lean`. To close the theorem, it must be added with a proof of the exact local target, rather than importing the published result from the external project. The paper's full bounded extension to `L³` also requires an explicit formalization beyond the present Schwartz proposition.
+
+## Run on Ubuntu/WSL
+
+Install Git, elan/Lean, and Python with NumPy and SymPy. An initial internet connection is required to obtain the pinned Lean and Mathlib versions.
 
 ```bash
-unzip OpenAI086_Whole_Project.zip
-cd OpenAI086_Whole_Project
 python3 -m pip install sympy numpy
+lake exe cache get
 bash verify_all.sh
 ```
 
-Or only the standard Lean build:
+`verify_all.sh` runs import checks, source placeholder safety, the 59-item gap report, symbolic/numerical sanity checks, then `lake build OpenAI086Whole` and a direct Lean entrypoint check. The numerical tests are **not** proofs. A successful build checks only existing **intermediate** theorem declarations.
+
+The strict certification command is intentionally separate:
 
 ```bash
-lake exe cache get
-lake build OpenAI086Whole
-lake env lean OpenAI086Whole.lean
+bash verify_paper_complete.sh
 ```
 
-The `verify.sh` script is an alias of `verify_all.sh` (full project).
-The `verify_core.sh` script checks just the independently developed core
-if you need to isolate compiler errors in the candidate.
+It **must fail** until independent kernel-checked proofs of all required obligations and the exact main theorem have been supplied. See `tools/certify_complete.py` and `tools/paper_obligation_report.py --require-complete`.
 
-## Honest status
+## Verification and limitations
 
-| Target | Status before running on your machine |
-|---|---|
-| Core algebraic and finite-combinatorial Lean declarations | Written; kernel compilation not verified here |
-| Lemma 3.3 noncommuting logarithmic bounds | Complete candidate script; kernel compilation not verified here; common row codomain only |
-| Lemma 3.4 compression | Not formalized |
-| Quantitative Sections 4–9 | Not formalized completely |
-| Proposition 2.3 / Theorem 2.2 | Not formalized |
-| Theorem 1.1 (Schwartz and L³ extension) | **Not proved** |
+A successful source audit is not a Lean elaboration, and a Lean elaboration of a `def ... : Prop` is not a proof. No `sorry`, `admit`, `axiom`, `opaque`, `constant`, `unsafe`, or `native_decide` is permitted in authored Lean source; `tools/lean_source_safety.py` checks for such keywords after stripping comments and strings.
 
-Even if `lake build OpenAI086Whole` succeeds, it does NOT certify
-Theorem 1.1, because `Theorem1_1_Goal` has no proof. It establishes only
-that **the included theorem declarations** are accepted by Lean.
+This authoring runtime did not have `lean` or `lake` and could not download them. Compilation and theorem axiom reports therefore remain unverified. GitHub Actions `.github/workflows/lean-proof-audit.yml` runs the build when uploaded to GitHub.
 
-There are no imports from the third-party Lean proof repository, no
-project-specific `axiom`, and no `sorry` or `admit` in Lean source.
-The `Lemma33Reviewed.lean` code adapts a published Apache-2.0 source and
-is **attributed**. It should not be called independently authored.
+See `PROOF_STATUS.md`, `PROOF_DEPENDENCIES.md`, `verification/PAPER_RESULTS_INDEX.md`, and `PROVENANCE.md` for audit details.
 
-## Reproducibility and limitations
+## Continued independent work: 2026-11-19, Sections 8--9
 
-The container producing this ZIP has neither `lean` nor `lake`, and internet
-DNS resolution failed, so **no kernel-build PASS claim** is made here.
-See `KERNEL_BUILD_STATUS.md` and the GitHub Actions workflow to obtain
-an actual kernel check on your machine / GitHub.
+Five new Lean modules have been added and imported into the entrypoint:
 
-To see a nonzero proof-completeness gate run:
+- `OpenAI086/ComponentIntersections.lean`: actual finite-set inclusion/exclusion, strict majority intersection, and the quantitative `> |F|/10` overlap under the exact 1.1 / 1.1² size conditions in the proof of Lemma 8.10.
+- `OpenAI086/EntryRankConcrete.lean`: derives the harmonic entry-rank bound from incidence counts and denominator monotonicity; the ranking construction for an arbitrary chain of finite sets is still open.
+- `OpenAI086/SparsePairBudget.lean`: global `sum_s N_s ≤ L*M²` pair-incidence count and restriction to retained scales (the first counting step in Lemma 9.1).
+- `OpenAI086/SparseBlockAccounting.lean`: conditional numerical count of greedy scale blocks. Construction of the blocks and their mass bounds remains open.
+- `OpenAI086/ColoredPathUniqueness.lean`: distinct proper-edge-colored four-step paths from a fixed start have distinct ordered color sequences, allowing repeated vertices.
 
-```bash
-python3 tools/certify_complete.py
-```
+`tools/test_continuation_finite.py` checks exhaustive small finite sets, exact rational rank/graph budgets and four-edge path uniqueness. Neither these tests nor the static audit substitute for `lake build`.
 
-That gate intentionally **fails**, because the main theorem is not yet proved.
+**Still open:** kernel compilation; Lemma 3.3 logarithmic inequality, Lemma 3.4 full projection compression, the quantitative analytic estimates of Sections 4--9, the complete counting lemma's power saving, Proposition 2.3, Theorem 2.2 and Theorem 1.1. This repository does NOT yet formalize the full paper.
