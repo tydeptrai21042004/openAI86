@@ -43,3 +43,15 @@ It explicitly does NOT assert that Theorem 1.1 is proved.
 
 #check OpenAI086.four_edge_colors_determine_path
 #print axioms OpenAI086.four_edge_colors_determine_path
+
+-- Additional finite corrections to the October 2026 manuscript.
+#check OpenAI086.interleaved_gap_telescope
+#check OpenAI086.interleaved_gap_nonnegative
+#check OpenAI086.interleaved_gap_budget
+#check OpenAI086.first_failure_four_three_iff
+#check OpenAI086.first_failure_four_none_iff
+#check OpenAI086.predictor_increment_exact
+#print axioms OpenAI086.interleaved_gap_budget
+#print axioms OpenAI086.first_failure_four_three_iff
+
+#check OpenAI086.Theorem1_1_from_plus_shift

@@ -1,5 +1,5 @@
 {
-  "paper_file": "paper(1).pdf",
+  "paper_file": "paper(2).pdf (same SHA-256 as original paper(1).pdf)",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
   "notes": "Indexed named results are not proof certificates. Partial means only a component or model is provided.",

@@ -26,6 +26,8 @@ if 'OpenAI086' not in imports:
     errors.append('Missing core entrypoint')
 if imports.get('OpenAI086Whole',[]) != ['OpenAI086']:
     errors.append('Independent entrypoint must import only OpenAI086')
+if 'OpenAI086.MainProof' in imports and 'OpenAI086.MainProof' not in imports.get('OpenAI086', []):
+    errors.append('MainProof exists but is not imported by OpenAI086.lean')
 if any('TrilinearHT' in d for ds in imports.values() for d in ds):
     errors.append('Non-independent TrilinearHT dependency detected')
 seen=set()

@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(dirname "$0")"
-if ! command -v lake >/dev/null 2>&1; then
-  echo "ERROR: Lean/lake not installed; this candidate is NOT certified" >&2
-  exit 2
-fi
-lake exe cache get
-lake build
-lake env lean OpenAI086/Lemma33Reviewed.lean
-lake env lean OpenAI086/Lemma33Check.lean
-printf '%s\n' 'Candidate compiled and checked. Inspect printed axiom dependencies.'
+echo 'OPEN: the full noncommuting Lemma 3.3 is not proved in the independent project.' >&2
+echo 'Historical third-party-adapted candidates were deliberately omitted.' >&2
+exit 3

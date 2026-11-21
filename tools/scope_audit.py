@@ -24,6 +24,12 @@ report={'audit_kind':'STATIC_ONLY_NOT_KERNEL_VERIFICATION',
           'FiniteStoppingSets','FiniteMarginalCancellation',
           'PathLabelEnergy','QuadraticChartsElementary','EntryRankSummation',
           'ComponentIntersections','EntryRankConcrete','SparsePairBudget',
-          'SparseBlockAccounting','ColoredPathUniqueness']}
+          'SparseBlockAccounting','ColoredPathUniqueness',
+          'InterleavedGapBudget','FirstFailureFour',
+          'BadDensityIncidence','PredictorEnergy',
+          'BadDensityBudgetAssembly','NestedCoordinateProducts',
+          'CommonGoodHeight','SparsePairObstruction','HeightBinsOneDim',
+          'ConditionalMainTransfer', 'PairedKernelBound',
+          'GlobalLipschitzCancellation', 'SchwartzSizeBridge']}
 (root/'verification/SCOPE_AUDIT.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

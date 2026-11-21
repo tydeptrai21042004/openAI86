@@ -1,13 +1,13 @@
 {
-  "source_paper": "paper(1).pdf, 93 pages, 2026-10-05",
+  "source_paper": "paper(2).pdf, identical SHA-256 to the original 93-page 2026-10-05 manuscript",
   "formalization_model": "independent_mathlib_only",
   "trilinearht_external_import": false,
   "adapted_Lemma33Reviewed_excluded": true,
   "named_paper_results": 59,
   "numbered_results_with_partial_components": 17,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 38,
-  "theorem_declarations_in_source": 95,
+  "root_lean_file_count": 54,
+  "theorem_declarations_in_source": 139,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -19,11 +19,25 @@
   "linux_lake_executable_available_here": false,
   "completeness_gate_exit_code": 3,
   "new_modules_this_continuation": [
-    "ComponentIntersections",
-    "EntryRankConcrete",
-    "SparsePairBudget",
-    "SparseBlockAccounting",
-    "ColoredPathUniqueness"
+    "PairedKernelBound",
+    "GlobalLipschitzCancellation",
+    "SchwartzSizeBridge"
   ],
-  "notes": "Uncompiled Lean proof candidates; finite numeric tests and static checks cannot verify universal theorems. No axiom/sorry/TrilinearHT import in independent root."
+  "notes": "Formalized pointwise boundedness of the symmetrized quotient under explicit Lipschitz estimates, and an exact Schwartz seminorm -> size bound. Candidate local integrability remains uncompiled; Theorem 1.1 remains open.",
+  "latest_correction_date": "2026-11-21",
+  "new_exact_arithmetic_cases": 6865,
+  "external_published_verification_script_available": false,
+  "external_published_formalization_included": false,
+  "new_deterministic_regression_cases_in_this_continuation": 6000,
+  "strict_axiom_report_parser_available": true,
+  "kernel_build_verified_here": false,
+  "new_conditional_theorem_bridge": "OpenAI086.Theorem1_1_from_plus_shift (requires explicit analytic hypotheses)",
+  "new_analytic_proof_candidates": [
+    "verification/candidates/IntegralSignBridge.lean",
+    "verification/candidates/PrincipalValueSignTransfer.lean"
+  ],
+  "candidate_kernel_verification": "NOT RUN: lake absent; not imported",
+  "external_published_verifier": "omitted from idea-only release; no upstream clone workflow",
+  "idea_only_upstream_no_code_copied": true,
+  "target_statement_sha256_lock": "77d2c9742d84e1a831f439fb0814d29ec074fc270760b7ff8f290da4f465939b"
 }

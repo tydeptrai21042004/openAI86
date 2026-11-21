@@ -1,0 +1,6 @@
+{
+  "file": "OpenAI086/PaperStatement.lean",
+  "sha256": "77d2c9742d84e1a831f439fb0814d29ec074fc270760b7ff8f290da4f465939b",
+  "status": "theorem_statement_source_lock_not_kernel_verification",
+  "notes": "This prevents accidental weakening of the local theorem by edits in this repository; human mathematical fidelity review is still required."
+}
