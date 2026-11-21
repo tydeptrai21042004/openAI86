@@ -11,11 +11,13 @@ It does NOT supply the entire analytic delayed-predictor estimate (7).
 
 namespace OpenAI086
 
-/-- The exact change in residual moments, allowing the private input to vary. -/
+/-- The corrected increment formula is obtained by subtracting the two
+augmented predictor moments, not by dropping the private input. -/
 theorem predictor_increment_exact
-    (ε δa δp : ℝ) :
-    (ε * δa - Real.sqrt ε * δp) =
-    ε * δa - Real.sqrt ε * δp := by ring
+    (ε a₀ a₁ p₀ p₁ : ℝ) :
+    (ε*a₁ - Real.sqrt ε*p₁) -
+      (ε*a₀ - Real.sqrt ε*p₀) =
+      ε*(a₁-a₀) - Real.sqrt ε*(p₁-p₀) := by ring
 
 /-- The advertised increment formula is valid when the private
 input is unchanged across the two partitions. -/
