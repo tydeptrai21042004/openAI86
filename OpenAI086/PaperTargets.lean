@@ -1,0 +1,93 @@
+import OpenAI086.PaperTargets.Catalog
+
+import OpenAI086.PaperTargets.Result_4_3
+import OpenAI086.PaperTargets.Result_4_4
+import OpenAI086.PaperTargets.Result_4_5
+import OpenAI086.PaperTargets.Result_4_6
+import OpenAI086.PaperTargets.Result_4_7
+import OpenAI086.PaperTargets.Result_4_8
+import OpenAI086.PaperTargets.Result_4_9
+import OpenAI086.PaperTargets.Result_4_10
+import OpenAI086.PaperTargets.Result_4_11
+import OpenAI086.PaperTargets.Result_4_12
+import OpenAI086.PaperTargets.Result_5_1
+import OpenAI086.PaperTargets.Result_5_2
+import OpenAI086.PaperTargets.Result_5_4
+import OpenAI086.PaperTargets.Result_5_5
+import OpenAI086.PaperTargets.Result_5_6
+import OpenAI086.PaperTargets.Result_5_7
+import OpenAI086.PaperTargets.Result_5_8
+import OpenAI086.PaperTargets.Result_6_1
+import OpenAI086.PaperTargets.Result_6_2
+import OpenAI086.PaperTargets.Result_6_3
+import OpenAI086.PaperTargets.Result_6_4
+import OpenAI086.PaperTargets.Result_6_5
+import OpenAI086.PaperTargets.Result_6_6
+import OpenAI086.PaperTargets.Result_6_7
+import OpenAI086.PaperTargets.Result_6_8
+import OpenAI086.PaperTargets.Result_6_9
+import OpenAI086.PaperTargets.Result_7_1
+import OpenAI086.PaperTargets.Result_7_2
+import OpenAI086.PaperTargets.Result_7_3
+import OpenAI086.PaperTargets.Result_7_4
+import OpenAI086.PaperTargets.Result_7_5
+import OpenAI086.PaperTargets.Result_8_1
+import OpenAI086.PaperTargets.Result_8_2
+import OpenAI086.PaperTargets.Result_8_3
+import OpenAI086.PaperTargets.Result_8_4
+import OpenAI086.PaperTargets.Result_8_7
+import OpenAI086.PaperTargets.Result_8_8
+import OpenAI086.PaperTargets.Result_8_9
+import OpenAI086.PaperTargets.Result_8_11
+import OpenAI086.PaperTargets.Result_8_12
+import OpenAI086.PaperTargets.Result_9_2
+import OpenAI086.PaperTargets.Result_9_3
+
+/-!
+All 42 previously unmodeled numbered results have a typed finite *model goal*.
+Each model is explicitly weaker/different from the analytic manuscript theorem.
+These declarations are not completed formalizations.
+-/
+
+#check OpenAI086.PaperTargets.result_4_3_model_goal
+#check OpenAI086.PaperTargets.result_4_4_model_goal
+#check OpenAI086.PaperTargets.result_4_5_model_goal
+#check OpenAI086.PaperTargets.result_4_6_model_goal
+#check OpenAI086.PaperTargets.result_4_7_model_goal
+#check OpenAI086.PaperTargets.result_4_8_model_goal
+#check OpenAI086.PaperTargets.result_4_9_model_goal
+#check OpenAI086.PaperTargets.result_4_10_model_goal
+#check OpenAI086.PaperTargets.result_4_11_model_goal
+#check OpenAI086.PaperTargets.result_4_12_model_goal
+#check OpenAI086.PaperTargets.result_5_1_model_goal
+#check OpenAI086.PaperTargets.result_5_2_model_goal
+#check OpenAI086.PaperTargets.result_5_4_model_goal
+#check OpenAI086.PaperTargets.result_5_5_model_goal
+#check OpenAI086.PaperTargets.result_5_6_model_goal
+#check OpenAI086.PaperTargets.result_5_7_model_goal
+#check OpenAI086.PaperTargets.result_5_8_model_goal
+#check OpenAI086.PaperTargets.result_6_1_model_goal
+#check OpenAI086.PaperTargets.result_6_2_model_goal
+#check OpenAI086.PaperTargets.result_6_3_model_goal
+#check OpenAI086.PaperTargets.result_6_4_model_goal
+#check OpenAI086.PaperTargets.result_6_5_model_goal
+#check OpenAI086.PaperTargets.result_6_6_model_goal
+#check OpenAI086.PaperTargets.result_6_7_model_goal
+#check OpenAI086.PaperTargets.result_6_8_model_goal
+#check OpenAI086.PaperTargets.result_6_9_model_goal
+#check OpenAI086.PaperTargets.result_7_1_model_goal
+#check OpenAI086.PaperTargets.result_7_2_model_goal
+#check OpenAI086.PaperTargets.result_7_3_model_goal
+#check OpenAI086.PaperTargets.result_7_4_model_goal
+#check OpenAI086.PaperTargets.result_7_5_model_goal
+#check OpenAI086.PaperTargets.result_8_1_model_goal
+#check OpenAI086.PaperTargets.result_8_2_model_goal
+#check OpenAI086.PaperTargets.result_8_3_model_goal
+#check OpenAI086.PaperTargets.result_8_4_model_goal
+#check OpenAI086.PaperTargets.result_8_7_model_goal
+#check OpenAI086.PaperTargets.result_8_8_model_goal
+#check OpenAI086.PaperTargets.result_8_9_model_goal
+#check OpenAI086.PaperTargets.result_8_11_model_goal
+#check OpenAI086.PaperTargets.result_8_12_model_goal
+#check OpenAI086.PaperTargets.result_9_2_model_goal
+#check OpenAI086.PaperTargets.result_9_3_model_goal
