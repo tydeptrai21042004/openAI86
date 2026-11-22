@@ -1,3 +1,25 @@
+import OpenAI086.FiniteLemma33Coarse
+import OpenAI086.NormedAdaptiveBessel
+import OpenAI086.FiniteLemma33Endpoints
+import OpenAI086.FiniteDyadicNoncommutingBridge
+import OpenAI086.FiniteLinearDyadicExpansion
+import OpenAI086.FiniteOrderedProductExpansion
+import OpenAI086.FiniteCatalogQuantitative
+import OpenAI086.FiniteFourSlotIncrementExpansion
+import OpenAI086.FiniteLemma33Target
+import OpenAI086.FiniteGowersCubePhase
+import OpenAI086.FiniteFourLinearCauchy
+import OpenAI086.FinitePathTelescoping
+import OpenAI086.FiniteClippingBudget
+import OpenAI086.FiniteCatalogClosure
+import OpenAI086.PaperTargets
+import OpenAI086.FiniteDyadicOperatorBridge
+import OpenAI086.FiniteDyadicPrefixBlocks
+import OpenAI086.FiniteProjectionLengthTuples
+import OpenAI086.AdaptiveNoncommutingRows
+import OpenAI086.FiniteVariableProjectionBlocks
+import OpenAI086.FiniteAlignedProjectionBlocks
+import OpenAI086.FiniteBadPartnerPruning
 import OpenAI086.SchwartzSizeBridge
 import OpenAI086.GlobalLipschitzCancellation
 import OpenAI086.PairedKernelBound
@@ -48,9 +70,29 @@ import OpenAI086.CoordinateProjections
 import OpenAI086.SymmetricKernel
 import OpenAI086.UniformBootstrap
 
+import OpenAI086.FiniteTonelliBudget
+import OpenAI086.FiniteMultifamilyStops
+import OpenAI086.ArbitraryColoredPaths
+import OpenAI086.CompressionRowError
+import OpenAI086.FirstFailureAnyRole
+import OpenAI086.FiniteFirstSuccessWeights
+
 import OpenAI086.NoncommutingProducts
 import OpenAI086.NoncommutingProjectionExample
 import OpenAI086.PrefixCombinatorics
+
+import OpenAI086.GeneralNestedProjectionEnergy
+import OpenAI086.NoncommutingContractionPerturbation
+import OpenAI086.FiniteRowCauchySchwarz
+import OpenAI086.VariableFirstSuccess
+import OpenAI086.RowPrefixCounterexample
+
+import OpenAI086.FinitePrivateGramUpper
+import OpenAI086.FiniteAdaptiveRowBessel
+import OpenAI086.NestedProjectionLongRange
+import OpenAI086.FiniteCommonNeighborEnergy
+import OpenAI086.FiniteFourStepWalkEnergy
+import OpenAI086.NoncommutingLayerBessel
 
 /-!
 Independent OpenAI #086 audit and partial formalization.
@@ -175,3 +217,113 @@ Every `theorem` above contains a proof term to be checked by Lean.
 #print axioms OpenAI086.tripleSchwartzSize_bound
 #check OpenAI086.paired_kernel_bound_for_schwartz_of_lipschitz
 #print axioms OpenAI086.paired_kernel_bound_for_schwartz_of_lipschitz
+
+-- New independently authored finite lemmas used in the paper's proof structure.
+#check OpenAI086.finite_weighted_path_budget
+#check OpenAI086.finite_single_cell_from_path_budget
+#check OpenAI086.finite_biUnion_card_le_sum
+#check OpenAI086.finite_multifamily_stopping_budget
+#check OpenAI086.alternating_paths_determined_by_colors
+
+#print axioms OpenAI086.finite_weighted_path_budget
+#print axioms OpenAI086.finite_multifamily_stopping_budget
+#print axioms OpenAI086.alternating_paths_determined_by_colors
+#check OpenAI086.compression_coefficient_error_budget
+#print axioms OpenAI086.compression_coefficient_error_budget
+#check OpenAI086.firstFailureIndex_none_iff_all_true
+#check OpenAI086.firstFailureIndex_true_prefix
+#print axioms OpenAI086.firstFailureIndex_true_prefix
+#check OpenAI086.finite_first_success_weight_identity
+#check OpenAI086.finite_first_success_weight_le_one
+#check OpenAI086.finite_failure_history_geometric_budget
+#print axioms OpenAI086.finite_first_success_weight_identity
+
+-- Continuation v2: quantitative independent extensions (kernel certification pending).
+#check OpenAI086.nested_projection_pair_identity
+#check OpenAI086.nested_projection_increment_identity
+#check OpenAI086.nested_projection_square_variation_exact
+#check OpenAI086.nested_projection_square_variation_bound
+#print axioms OpenAI086.nested_projection_square_variation_bound
+
+#check OpenAI086.ordered_contraction_perturbation
+#print axioms OpenAI086.ordered_contraction_perturbation
+
+#check OpenAI086.finite_row_cauchy_schwarz
+#check OpenAI086.compression_row_error_from_bessel
+#print axioms OpenAI086.compression_row_error_from_bessel
+
+#check OpenAI086.variable_first_success_identity
+#check OpenAI086.variable_survival_le_geometric
+#check OpenAI086.variable_first_success_ge_one_sub_geometric
+#print axioms OpenAI086.variable_first_success_identity
+
+-- The row bound at varying prefixes is genuinely different from m=1 variation.
+#check OpenAI086.rational_rows_parseval
+#check OpenAI086.varying_prefix_rows_need_more_than_constant_one
+#print axioms OpenAI086.varying_prefix_rows_need_more_than_constant_one
+
+-- V3: finite real quantitative candidates (kernel build still required).
+#check OpenAI086.finite_private_column_two_sided
+#check OpenAI086.nested_projection_disjoint_increments
+#check OpenAI086.finite_prefix_row_bound_from_block_decomposition
+#check OpenAI086.finite_common_neighbor_second_moment
+#check OpenAI086.finite_four_step_walk_second_moment
+
+#check OpenAI086.finite_four_step_walk_density_lower_bound
+#check OpenAI086.noncommuting_layered_bessel
+
+-- V4: actual aligned projection blocks and finite bad-partner pruning.
+#check OpenAI086.nested_projection_distant_increment_identity
+#check OpenAI086.nested_projection_disjoint_blocks_orthogonal
+#check OpenAI086.aligned_projection_block_energy_exact
+#check OpenAI086.aligned_projection_block_energy_bound
+#check OpenAI086.finite_heavy_row_indicator_bound
+#check OpenAI086.finite_bad_partner_pruning
+#print axioms OpenAI086.aligned_projection_block_energy_bound
+#print axioms OpenAI086.finite_bad_partner_pruning
+
+-- V4: variable-length disjoint blocks, including potential dyadic cuts.
+#check OpenAI086.variable_projection_block_energy_exact
+#check OpenAI086.variable_projection_block_energy_bound
+#print axioms OpenAI086.variable_projection_block_energy_bound
+
+-- V5: row-adaptive Bessel for actual noncommuting projection blocks.
+#check OpenAI086.adaptive_noncommuting_row_bessel
+#check OpenAI086.adaptive_nested_projection_row_bessel
+#print axioms OpenAI086.adaptive_nested_projection_row_bessel
+
+#check OpenAI086.multilevel_adaptive_noncommuting_row_bessel
+#check OpenAI086.prefix_from_noncommuting_block_expansion
+
+#check OpenAI086.finite_projection_length_tuple_rows
+#check OpenAI086.finite_projection_prefix_from_length_tuple_expansion
+#print axioms OpenAI086.finite_projection_length_tuple_rows
+
+-- V5: constructive binary-prefix partition and logarithmic block count.
+#check OpenAI086.finite_dyadic_prefix_sum_exact
+#check OpenAI086.finite_dyadic_prefix_length_le
+#print axioms OpenAI086.finite_dyadic_prefix_sum_exact
+
+-- V7: exact multi-family ordered algebra, not the full analytic estimate.
+#check OpenAI086.finite_linear_operator_dyadic_prefix
+#check OpenAI086.finite_ordered_product_expansion
+#check OpenAI086.finite_catalog_iterate_card_growth
+#check OpenAI086.finite_four_slot_first_change_expansion
+
+#check OpenAI086.finite_ordered_dyadic_prefix_replacement
+#check OpenAI086.finite_ordered_dyadic_level_expansion
+
+-- V8 stronger arbitrary-normed-space Bessel assembly.
+#check OpenAI086.normed_adaptive_row_bessel
+#check OpenAI086.normed_adaptive_noncommuting_row_bessel
+#check OpenAI086.normed_noncommuting_layered_bessel
+#check OpenAI086.finite_lemma33_row_prefix_zero
+#check OpenAI086.finite_lemma33_variation_zero
+#check OpenAI086.finite_lemma33_variation_one
+#check OpenAI086.finite_common_prefix_noncommuting_row_bessel
+#print axioms OpenAI086.normed_adaptive_noncommuting_row_bessel
+#print axioms OpenAI086.finite_lemma33_variation_one
+
+#check OpenAI086.finite_noncommuting_row_prefix_coarse
+#check OpenAI086.finite_noncommuting_variation_coarse
+#print axioms OpenAI086.finite_noncommuting_row_prefix_coarse

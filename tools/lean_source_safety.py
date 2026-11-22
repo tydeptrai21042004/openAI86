@@ -9,7 +9,7 @@ still requires `#print axioms` after a successful Lake build.
 from pathlib import Path
 import re, sys, json
 ROOT=Path(__file__).resolve().parents[1]
-FILES=sorted((ROOT/'OpenAI086').glob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
+FILES=sorted((ROOT/'OpenAI086').rglob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
 
 # A lexer sufficient for nested Lean block comments, `--` line comments,
 # and escaped double-quoted strings. Newlines are retained for diagnostics.

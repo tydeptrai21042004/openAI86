@@ -1,28 +1,78 @@
-# Independent proof status — OpenAI #086
+# OpenAI #086 — Independent formalization status (22 November 2026)
 
-**Requested target:** Theorem 1.1 of the 93-page manuscript, including the principal-value trilinear Hilbert transform and its unique bounded `L³ × L³ × L³ → L¹` extension.
+**Main result is still unproved in this repository.** The Lean expression
+`OpenAI086.Theorem1_1_Goal : Prop` is the target statement, not an accepted proof.
+No complete paper theorem has been certified by the Lean kernel here.
 
-**Status: UNPROVED IN THIS REPOSITORY.** There is no independent `theorem ... : Theorem1_1_Goal := by ...` proof, and no entire-paper Lean kernel certificate.
-
-| Checkpoint | Status |
+| Checkpoint | Current status |
 |---|---|
-| Named results indexed from the PDF | 59/59 |
-| Results with some related Lean components | 17/59 (partial only) |
-| Complete paper results certified in independent Lean | 0/59 |
-| Original target statement `Theorem1_1_Goal : Prop` | Present, unproved |
-| Imported published trilinear Hilbert proof | NO |
-| Adapted published Lemma 3.3 proof code | EXCLUDED |
-| Independent ordered-telescoping proof | Source present, kernel check pending |
-| Full Lemma 3.3, projection compression, quantitative Weyl, §§5–10 | OPEN |
-| Static source/import checks | PASS at package creation |
-| Lean kernel | UNVERIFIED — no Lean/Lake toolchain in runtime |
+| Original 93-page PDF source hash | Same SHA-256 as `paper(3).pdf` |
+| Numbered paper assertions/definitions | 59 |
+| Assertions with one or more associated Lean components | 17/59 (partial only) |
+| Complete numbered paper results with certificates | 0/59 |
+| Independently authored imported modules | 69 in `OpenAI086/` |
+| Total Lean files including entrypoints | 71 |
+| `theorem` declarations in module source | 193 (NOT equal to 59 paper results) |
+| Whole-project module reachability | PASS in static audit |
+| Import/placeholder source safety | PASS in static audit |
+| Symbolic and numerical regressions | PASS |
+| Lean toolchain available in this environment | NO |
+| `lake build OpenAI086Whole` | NOT RUN; no kernel verification |
+| Theorem 1.1 and L³ extension | OPEN |
 
-The 95 `theorem` declarations counted by source inventory are **smaller intermediate or model results**; they must not be confused with 84 independently proved assertions of the paper. Some have not been compiled by Lean yet.
+## New independent Lean components
 
-For a statement-by-statement audit, consult `verification/PAPER_RESULTS_INDEX.md`.
+1. `FiniteTonelliBudget.lean` proves a finite weighted Fubini/pathwise
+   budget inequality uniform in the number of cells (§3.1). It is not a
+   measurable dyadic tree theorem.
+2. `FiniteMultifamilyStops.lean` proves cardinality bounds for any finite
+   number of overlapping stopping families (§§2–3).
+3. `ArbitraryColoredPaths.lean` extends proper-color path reconstruction
+   from length four to every even length (§9.1). It proves no lower bound
+   for the number of such paths.
+4. `CompressionRowError.lean` proves the finite double-sum coefficient
+   error bound with Cauchy–Schwarz/Bessel stated as explicit hypotheses
+   (§3.4). The required analytic operator estimates remain open.
+5. `FirstFailureAnyRole.lean` gives the correct first-failed-role rule at
+   arbitrary finite arity (§9.1).
+6. `FiniteFirstSuccessWeights.lean` proves the finite first-success mass
+   identity and bounded geometric failure-history sum (§9.1).
 
-## Continuation: additional independent components
+These are *proof candidates* pending kernel compilation. They do not prove
+Lemmas 3.3 or 3.4 in full, and the numerical tests cannot establish that.
 
-Five new files cover specific, exact intermediate combinatorial implications in Lemmas 8.5, 8.10, and 9.1; they are not complete proofs of those lemmas. The number of named paper results with **some** Lean component increased from 16 to 17. None of the 59 results is fully kernel-verified. The additional Lean declarations have not been compiled in this environment.
+## Next mathematical targets
 
-The `TrilinearHT`-dependent integration remains excluded. The standalone Theorem 1.1 proposition continues to be a proof obligation without an independent proof term. The strict certificate must fail.
+- Prove the noncommuting nested-prefix Bessel/logarithmic inequality of
+  Lemma 3.3. An ordered telescoping identity is insufficient.
+- Derive the full depth-uniform inherited projection compression
+  bound of Lemma 3.4, including local Gram inverses and stopping partitions.
+- Develop the quantitative Weyl/inverse theorem of §4, localization and
+  side estimates §§5–8, and the δ^(1/2080) sparse saving of Lemma 9.1.
+- Close Proposition 2.3, Theorem 2.2, and the original principal-value
+  Theorem 1.1, then prove unique bounded extension on L³.
+
+The GitHub Actions workflow `.github/workflows/kernel-check.yml` provides
+an environment capable of attempting the pinned Lean/Mathlib build. Only
+an actual successful kernel build and theorem/axiom audit can upgrade status.
+
+## Further continuation v2 (same date)
+
+See `CONTINUATION_V2_2026_11_22.md` for five additional partial
+proof components: generalized real finite-dimensional nested orthogonal
+projection square-energy (m=1), noncommutative contraction product
+perturbation, the finite CS proof needed for row error, and nonstationary
+first-success identities. These modules are **uncompiled candidates**.
+Their 6151 deterministic exact/numeric tests passed but are not Lean
+kernel evidence. No numbered paper theorem has been completed.
+
+## V3 status update
+
+The current V3 release has **71 Lean source files (including entrypoints)**
+and **193 `theorem` declarations**. Six new candidate modules target the finite
+real pointwise two-sided Gram estimate, nested projection increments,
+adaptive row-Bessel grouping, noncommuting multi-layer Bessel summation,
+and two-/four-step weighted graph counting. The deterministic V3 test suite
+passes **82,352 subcases**, but kernel compilation is still unavailable here.
+The numbered-result status remains **17/59 partial and 0/59 full**.
+Read `CONTINUATION_V3_2026_11_22.md` for theorem names and limitations.

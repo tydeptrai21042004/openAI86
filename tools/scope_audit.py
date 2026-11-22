@@ -3,7 +3,7 @@
 import json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-files=sorted((root/'OpenAI086').glob('*.lean'))+[root/'OpenAI086.lean',root/'OpenAI086Whole.lean']
+files=sorted((root/'OpenAI086').rglob('*.lean'))+[root/'OpenAI086.lean',root/'OpenAI086Whole.lean']
 lemmas=[]
 for f in files:
  for n,line in enumerate(f.read_text('utf8').splitlines(),1):
@@ -30,6 +30,8 @@ report={'audit_kind':'STATIC_ONLY_NOT_KERNEL_VERIFICATION',
           'BadDensityBudgetAssembly','NestedCoordinateProducts',
           'CommonGoodHeight','SparsePairObstruction','HeightBinsOneDim',
           'ConditionalMainTransfer', 'PairedKernelBound',
-          'GlobalLipschitzCancellation', 'SchwartzSizeBridge']}
+          'GlobalLipschitzCancellation', 'SchwartzSizeBridge',
+          'FiniteAlignedProjectionBlocks','FiniteVariableProjectionBlocks',
+          'FiniteBadPartnerPruning']}
 (root/'verification/SCOPE_AUDIT.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

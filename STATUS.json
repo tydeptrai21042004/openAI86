@@ -1,13 +1,13 @@
 {
-  "source_paper": "paper(2).pdf, identical SHA-256 to the original 93-page 2026-10-05 manuscript",
+  "source_paper": "paper(3).pdf (same manuscript content as earlier PDF by SHA-256)",
   "formalization_model": "independent_mathlib_only",
   "trilinearht_external_import": false,
   "adapted_Lemma33Reviewed_excluded": true,
   "named_paper_results": 59,
-  "numbered_results_with_partial_components": 17,
+  "numbered_results_with_partial_components": 21,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 54,
-  "theorem_declarations_in_source": 139,
+  "root_lean_file_count": 137,
+  "theorem_declarations_in_source": 254,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -19,16 +19,19 @@
   "linux_lake_executable_available_here": false,
   "completeness_gate_exit_code": 3,
   "new_modules_this_continuation": [
-    "PairedKernelBound",
-    "GlobalLipschitzCancellation",
-    "SchwartzSizeBridge"
+    "FiniteTonelliBudget",
+    "FiniteMultifamilyStops",
+    "ArbitraryColoredPaths",
+    "CompressionRowError",
+    "FirstFailureAnyRole",
+    "FiniteFirstSuccessWeights"
   ],
-  "notes": "Formalized pointwise boundedness of the symmetrized quotient under explicit Lipschitz estimates, and an exact Schwartz seminorm -> size bound. Candidate local integrability remains uncompiled; Theorem 1.1 remains open.",
-  "latest_correction_date": "2026-11-21",
-  "new_exact_arithmetic_cases": 6865,
+  "notes": "V8: three new modules establish arbitrary-normed-space Bessel assembly and the exact finite model endpoint/coarse statements of Lemma 3.3. Source code remains a kernel-unverified proof candidate; 21/59 source-related partial entries and 38 proxy-only. Neither the logarithmic estimate nor Theorem 1.1 has been proved.",
+  "latest_correction_date": "2026-11-22",
+  "new_exact_arithmetic_cases": 9100,
   "external_published_verification_script_available": false,
   "external_published_formalization_included": false,
-  "new_deterministic_regression_cases_in_this_continuation": 6000,
+  "new_deterministic_regression_cases_in_this_continuation": 9100,
   "strict_axiom_report_parser_available": true,
   "kernel_build_verified_here": false,
   "new_conditional_theorem_bridge": "OpenAI086.Theorem1_1_from_plus_shift (requires explicit analytic hypotheses)",
@@ -39,5 +42,88 @@
   "candidate_kernel_verification": "NOT RUN: lake absent; not imported",
   "external_published_verifier": "omitted from idea-only release; no upstream clone workflow",
   "idea_only_upstream_no_code_copied": true,
-  "target_statement_sha256_lock": "77d2c9742d84e1a831f439fb0814d29ec074fc270760b7ff8f290da4f465939b"
+  "target_statement_sha256_lock": "77d2c9742d84e1a831f439fb0814d29ec074fc270760b7ff8f290da4f465939b",
+  "new_modules_this_continuation_v2": [
+    "GeneralNestedProjectionEnergy",
+    "NoncommutingContractionPerturbation",
+    "FiniteRowCauchySchwarz",
+    "VariableFirstSuccess",
+    "RowPrefixCounterexample"
+  ],
+  "numeric_regressions_v2": {
+    "nested_projection": 1000,
+    "nonstationary_first_success": 1000,
+    "finite_cauchy_schwarz": 2500,
+    "compression_row": 750,
+    "noncommuting_contractions": 900,
+    "varying_prefix_counterexample": 1
+  },
+  "new_partial_results_v2": [
+    "Lemma 3.3 m=1 finite-dimensional real nested orthogonal-projection square variation, exact constant 1",
+    "Lemma 3.3 noncommutative contraction perturbation in any normed ring",
+    "Lemma 3.4 finite coefficient-error bound from Bessel without assumed Cauchy-Schwarz",
+    "Section 9.1 exact first-success identity for nonstationary conditional failure probabilities"
+  ],
+  "numeric_regressions_v3": {
+    "total": 82352,
+    "description": "deterministic floating-point and exact Fraction models, not Lean"
+  },
+  "new_modules_this_continuation_v3": [
+    "FinitePrivateGramUpper",
+    "FiniteAdaptiveRowBessel",
+    "NestedProjectionLongRange",
+    "FiniteCommonNeighborEnergy",
+    "FiniteFourStepWalkEnergy",
+    "NoncommutingLayerBessel"
+  ],
+  "new_partial_results_v3": [
+    "Lemma 3.2: finite real two-sided private Gram energy D^-2 to D^3",
+    "Lemma 3.3: arbitrary-row adaptive Bessel grouping; K-level squared-energy K^2 under explicit block hypotheses",
+    "Lemma 3.3: non-adjacent nested projection increments orthogonal; window energy identity",
+    "Lemma 9.1: exact common-neighbor double-count and twofold four-step walk energy",
+    "Lemma 3.3: arbitrary noncommuting layered Bessel lemma; all block words summed without depth-dependent loss",
+    "Lemma 9.1: weighted four-step walk density lower bound (unseparated), by two Cauchy–Schwarz steps"
+  ],
+  "new_modules_this_continuation_v4": [
+    "FiniteAlignedProjectionBlocks",
+    "FiniteBadPartnerPruning",
+    "FiniteVariableProjectionBlocks"
+  ],
+  "new_deterministic_regression_cases_in_this_continuation_v4": 19261,
+  "exact_rational_tests_v4_passed": true,
+  "new_modules_this_continuation_v5": [
+    "AdaptiveNoncommutingRows",
+    "FiniteProjectionLengthTuples",
+    "FiniteDyadicPrefixBlocks"
+  ],
+  "new_exact_rational_checks_v5": 20328,
+  "numbered_results_with_typed_target_index": 59,
+  "new_typed_finite_proxy_targets": 38,
+  "new_modules_this_continuation_v7": [
+    "FiniteLinearDyadicExpansion",
+    "FiniteOrderedProductExpansion",
+    "FiniteCatalogQuantitative",
+    "FiniteFourSlotIncrementExpansion",
+    "FiniteDyadicNoncommutingBridge"
+  ],
+  "new_source_related_partial_entries_v7": [
+    "Lemma 5.5",
+    "Lemma 6.2",
+    "Lemma 6.4",
+    "Lemma 6.7"
+  ],
+  "new_deterministic_regression_cases_in_this_continuation_v7": 33475,
+  "new_modules_this_continuation_v8": [
+    "NormedAdaptiveBessel",
+    "FiniteLemma33Endpoints",
+    "FiniteLemma33Coarse"
+  ],
+  "new_exact_fraction_checks_v8": 4690,
+  "new_partial_results_v8": [
+    "Arbitrary normed-space, possibly complex, adaptive noncommuting row-Bessel under explicit layer/row Bessel assumptions",
+    "Exact finite-real Lemma 3.3 typed goal at m=0 row-prefix and m=0 or 1 square variation",
+    "Finite-dimensional real sharp Bessel bound at one common prefix for any number of noncommuting projection layers",
+    "Finite-dimensional real variable-row prefix bound (T+1)*energy for arbitrary layers (NOT logarithmic)",
+    "Finite-dimensional real variation bound 4*T*energy for arbitrary layers (NOT logarithmic)"
+  ]
 }

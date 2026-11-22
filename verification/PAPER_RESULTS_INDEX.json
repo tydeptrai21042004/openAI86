@@ -2,7 +2,7 @@
   "paper_file": "paper(2).pdf (same SHA-256 as original paper(1).pdf)",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
-  "notes": "Indexed named results are not proof certificates. Partial means only a component or model is provided.",
+  "notes": "Partial means at least one genuinely source-related Lean proof component, not the manuscript theorem; proxy-only means typed finite goal without a source-specific proof. No Lean kernel certification has been run in this environment.",
   "results": [
     {
       "kind": "Theorem",
@@ -15,7 +15,9 @@
         "OpenAI086/PrincipalValueGoals.lean",
         "OpenAI086/SignConvention.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_1_1",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -27,7 +29,9 @@
         "OpenAI086/LocalForms.lean",
         "OpenAI086/ProgressionGeometry.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_1",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Theorem",
@@ -38,7 +42,9 @@
       "relevant_modules": [
         "OpenAI086/UniformBootstrap.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_2",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Proposition",
@@ -50,7 +56,9 @@
         "OpenAI086/OuterStopping.lean",
         "OpenAI086/UniformBootstrap.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_3",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -61,9 +69,12 @@
       "relevant_modules": [
         "OpenAI086/OuterStopping.lean",
         "OpenAI086/FiniteStoppingSets.lean",
-        "OpenAI086/FiniteMarginalCancellation.lean"
+        "OpenAI086/FiniteMarginalCancellation.lean",
+        "OpenAI086/FiniteMultifamilyStops.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_4",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -73,9 +84,13 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/Packing.lean",
-        "OpenAI086/FiniteStoppingSets.lean"
+        "OpenAI086/FiniteStoppingSets.lean",
+        "OpenAI086/FiniteTonelliBudget.lean",
+        "OpenAI086/FiniteMultifamilyStops.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_1",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -86,9 +101,12 @@
       "relevant_modules": [
         "OpenAI086/PrivateCoordinates.lean",
         "OpenAI086/PrivateEnergyExact.lean",
-        "OpenAI086/PathLabelEnergy.lean"
+        "OpenAI086/PathLabelEnergy.lean",
+        "OpenAI086/FinitePrivateGramUpper.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_2",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -99,9 +117,23 @@
       "relevant_modules": [
         "OpenAI086/OrderedProductTelescoping.lean",
         "OpenAI086/NoncommutingProducts.lean",
-        "OpenAI086/ArbitraryDepthTelescoping.lean"
+        "OpenAI086/ArbitraryDepthTelescoping.lean",
+        "OpenAI086/GeneralNestedProjectionEnergy.lean",
+        "OpenAI086/NoncommutingContractionPerturbation.lean",
+        "OpenAI086/RowPrefixCounterexample.lean",
+        "OpenAI086/NestedProjectionLongRange.lean",
+        "OpenAI086/FiniteAdaptiveRowBessel.lean",
+        "OpenAI086/NoncommutingLayerBessel.lean",
+        "OpenAI086/FiniteAlignedProjectionBlocks.lean",
+        "OpenAI086/FiniteVariableProjectionBlocks.lean",
+        "OpenAI086/AdaptiveNoncommutingRows.lean",
+        "OpenAI086/FiniteProjectionLengthTuples.lean",
+        "OpenAI086/FiniteDyadicPrefixBlocks.lean",
+        "OpenAI086/FiniteDyadicOperatorBridge.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_3",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -112,9 +144,13 @@
       "relevant_modules": [
         "OpenAI086/FiniteCompression.lean",
         "OpenAI086/PathLabelEnergy.lean",
-        "OpenAI086/OrderedProductTelescoping.lean"
+        "OpenAI086/OrderedProductTelescoping.lean",
+        "OpenAI086/CompressionRowError.lean",
+        "OpenAI086/FiniteRowCauchySchwarz.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_4",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -125,7 +161,9 @@
       "relevant_modules": [
         "OpenAI086/DyadicTails.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_5",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Definition",
@@ -136,7 +174,9 @@
       "relevant_modules": [
         "OpenAI086/QuadraticChartsElementary.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_1",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -148,7 +188,9 @@
         "OpenAI086/QuadraticChartsElementary.lean",
         "OpenAI086/QuadraticPhase.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_2",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -156,8 +198,14 @@
       "pdf_page": 16,
       "paper_statement_opening": "Lemma 4.3 (Scale-wise Weyl alternative). Let ϑ be supported in a fixed box in Rk, with supremum norm and Lipschitz norm at most H. Suppose 0 < δ < 1/2 and",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_3.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_3",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_3_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -165,8 +213,14 @@
       "pdf_page": 18,
       "paper_statement_opening": "Lemma 4.4 (Chart expansion and uniform tails). Suppose a rational orthogonal splitting satisfies (2), with heights and the indicated sizes at most B. On a fixed box in Rk there is an exact absolutely",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_4.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_4",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_4_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -174,8 +228,14 @@
       "pdf_page": 20,
       "paper_statement_opening": "Lemma 4.5 (Progression separation). Let φi, φk be bounded atoms of complexity at most H in two distinct slots i, k, and let a, b denote the remaining slots. Their product has an exact absolutely",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_5.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_5",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_5_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -183,8 +243,14 @@
       "pdf_page": 21,
       "paper_statement_opening": "Lemma 4.6 (Single-scale separation). Fix a term in (4), without its coefficient, of complexity at most H. Let ζ be a fixed nonnegative smooth function, equal to one on the range of t/r allowed by",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_6.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_6",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_6_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Theorem",
@@ -192,8 +258,14 @@
       "pdf_page": 22,
       "paper_statement_opening": "Theorem 4.7 (Leng–Sah–Sawhney). For a 1-bounded function f : [L] →C with ∥f∥U3[L] ≥δ, there are a degree-two filtered nilmanifold G/Γ, a polynomial sequence g : Z →G adapted to its",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_7.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_7",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_7_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -201,8 +273,14 @@
       "pdf_page": 22,
       "paper_statement_opening": "Lemma 4.8 (Elementary cube bounds). The quantity ∥· ∥U is a seminorm. The mixed cube form with possibly different functions gω at its eight vertices satisfies",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_8.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_8",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_8_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -210,8 +288,14 @@
       "pdf_page": 23,
       "paper_statement_opening": "Lemma 4.9 (Continuous bounded inverse). For 0 < δ < 1/2, let g be supported on an interval I, with ∥g∥∞≤1 and ∥g∥U(I) ≥δ. There is a bounded atom φ of complexity at most",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_9.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_9",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_9_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -219,8 +303,14 @@
       "pdf_page": 26,
       "paper_statement_opening": "Lemma 4.10 (Structured, uniform, and L1 decomposition). For 0 < τ < 1/2 and a function f on I with ∥f∥∞≤1, there is a finite decomposition",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_10.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_10",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_10_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -228,8 +318,14 @@
       "pdf_page": 27,
       "paper_statement_opening": "Lemma 4.11 (A generalized von Neumann bound with one L2 input). For four distinct slots occupied by R, g, b, c, one has",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_11.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_11",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_11_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -237,8 +333,14 @@
       "pdf_page": 27,
       "paper_statement_opening": "Lemma 4.12 (Local detection). Fix q > 2 and C1 ≥1. Suppose that R, h, u, v occupy the four slots in any order and satisfy",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_4_12.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_12",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_4_12_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -246,8 +348,14 @@
       "pdf_page": 30,
       "paper_statement_opening": "Lemma 5.1 (A scale sum for one separated term). Suppose the inputs in positions a, b are admissible sequences associated with Fa, Fb, with parameters Dh, L. For m ≥0, let Im consist of",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_1.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_1",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_1_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Corollary",
@@ -255,8 +363,14 @@
       "pdf_page": 31,
       "paper_statement_opening": "Corollary 5.2 (A finite predictor list). Fix the two low atoms on J, with complexity at most Hlow. For every B ≥1, their product in the form can be replaced, with absolute length-weighted scale-sum",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_2.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_2",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_2_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -268,7 +382,9 @@
         "OpenAI086/ErrataChecks.lean",
         "OpenAI086/PredictorMoments.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_3",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -276,17 +392,31 @@
       "pdf_page": 33,
       "paper_statement_opening": "Lemma 5.4 (Inherited adaptive approximation). Suppose ∥fj∥q,I ≤1 throughout a finite normalized subtree. For every sufficiently large k, one can construct, on segments whose roots have bounded",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_4.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_4",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_4_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
       "number": "5.5",
       "pdf_page": 34,
       "paper_statement_opening": "Lemma 5.5 (The two-earliest-increments expansion). Take the two earliest increment levels u < t in distinct positions i, j, and let a, b be the complementary positions. Define",
-      "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "formalization": "partial",
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_5.lean",
+        "OpenAI086/FiniteFourSlotIncrementExpansion.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_5",
+      "lean_target_level": "partial_component_exists",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_5_model_goal",
+      "lean_target_is_paper_statement": false,
+      "v7_scope_note": "A finite algebraic/combinatorial component; not the full analytic assertion or a kernel certificate."
     },
     {
       "kind": "Proposition",
@@ -294,8 +424,14 @@
       "pdf_page": 35,
       "paper_statement_opening": "Proposition 5.6 (Truncating the two high positions). For the tuple above, put k = kt. There are an integer K0 ≤kO(1), further bounded-packing segments, and nested projection families P new",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_6.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_6",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_6_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -303,8 +439,14 @@
       "pdf_page": 37,
       "paper_statement_opening": "Lemma 5.7 (Few active scales for a fixed triple). Fix three bounded basic scalar columns, in three distinct positions, on their common birth subtree. For a dyadic interval I let AI be the norm of",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_7.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_7",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_7_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Proposition",
@@ -312,8 +454,14 @@
       "pdf_page": 38,
       "paper_statement_opening": "Proposition 5.8 (Reduction to the active cell minimum). The remaining patterns, with at least three B arguments and optionally one U argument, can be restricted, with total absolute error at",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_5_8.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_8",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_5_8_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -321,17 +469,31 @@
       "pdf_page": 40,
       "paper_statement_opening": "Lemma 6.1 (Separation of different tags). Fix an upper bound exp(kO(1)) for the complexities of the single columns under consideration. Given τ2 > 0 with log(1/τ2) ≤kO(1), one can choose",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_1.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_1",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_1_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
       "number": "6.2",
       "pdf_page": 41,
       "paper_statement_opening": "Lemma 6.2 (Endpoint bounds along a short path). Suppose two tags can be joined, at one scale, by a path of length L ≤poly(P, k). Their difference data satisfy (2) in their own endpoint coordinates,",
-      "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "formalization": "partial",
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_2.lean",
+        "OpenAI086/FinitePathTelescoping.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_2",
+      "lean_target_level": "partial_component_exists",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_2_model_goal",
+      "lean_target_is_paper_statement": false,
+      "v7_scope_note": "A finite algebraic/combinatorial component; not the full analytic assertion or a kernel certificate."
     },
     {
       "kind": "Lemma",
@@ -339,17 +501,31 @@
       "pdf_page": 42,
       "paper_statement_opening": "Lemma 6.3 (Color budget and exceptional roots). For sufficiently large starting k, the preceding construction uses at most L colors, with at most d8",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_3.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_3",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_3_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
       "number": "6.4",
       "pdf_page": 43,
       "paper_statement_opening": "Lemma 6.4 (Mask inclusion, closure, and separation). The following assertions hold for every allowed pad.",
-      "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "formalization": "partial",
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_4.lean",
+        "OpenAI086/FiniteCatalogClosure.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_4",
+      "lean_target_level": "partial_component_exists",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_4_model_goal",
+      "lean_target_is_paper_statement": false,
+      "v7_scope_note": "A finite algebraic/combinatorial component; not the full analytic assertion or a kernel certificate."
     },
     {
       "kind": "Lemma",
@@ -357,8 +533,14 @@
       "pdf_page": 45,
       "paper_statement_opening": "Lemma 6.5 (Bessel separation of usable endpoint spaces). Fix a slot and a color. For each of finitely many groups G let ZG be a finite sum of available main pure columns, with constant",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_5.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_5",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_5_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -366,17 +548,31 @@
       "pdf_page": 46,
       "paper_statement_opening": "Lemma 6.6 (A uniform same-tag test). For each original vertex v there is a fixed template family in every slot, consisting of bounded pure columns of normalized tag v and unrestricted linear",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_6.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_6",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_6_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
       "number": "6.7",
       "pdf_page": 48,
       "paper_statement_opening": "Lemma 6.7 (Catalog closure and its budget). The main closure and then the helper closure can be performed at every active cell with path counts satisfying log nmax ≤kO(1). The exponent is fixed",
-      "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "formalization": "partial",
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_7.lean",
+        "OpenAI086/FiniteCatalogQuantitative.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_7",
+      "lean_target_level": "partial_component_exists",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_7_model_goal",
+      "lean_target_is_paper_statement": false,
+      "v7_scope_note": "A finite algebraic/combinatorial component; not the full analytic assertion or a kernel certificate."
     },
     {
       "kind": "Proposition",
@@ -384,8 +580,14 @@
       "pdf_page": 49,
       "paper_statement_opening": "Proposition 6.8 (Localization into current groups). For an active pattern in (11), there are poly(k) fixed search leaves such that, up to total absolute length-weighted error at most Ce−k|R|,",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_8.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_8",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_8_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -393,8 +595,14 @@
       "pdf_page": 50,
       "paper_statement_opening": "Lemma 6.9 (Outgoing filters and near-band defects). At a use of (14), suppose slots a, b are fixed side states Sa, Sb, chosen independently of the helper catalog. Suppose the other two slots have",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_6_9.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_6_9",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_6_9_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -402,8 +610,14 @@
       "pdf_page": 52,
       "paper_statement_opening": "Lemma 7.1. Let (X, µ) and (W, ν) be finite measure spaces. If 1 < r, s, t < ∞and v ∈Ar(R), then",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_7_1.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_1",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_7_1_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -411,8 +625,14 @@
       "pdf_page": 53,
       "paper_statement_opening": "Lemma 7.2 (Short-block comparison). Let 2 < q < 3. Let T be a finite dyadic tree piece with root R, whose internal summation intervals belong to at most K consecutive depths and to the original",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_7_2.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_2",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_7_2_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -420,8 +640,14 @@
       "pdf_page": 58,
       "paper_statement_opening": "Lemma 7.3 (Variation on certified endpoint cells). Let ZG,s be a basic coarse output in Equa- tion (14). Consider a common collection of disjoint, or boundedly overlapping, depth intervals [r, t].",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_7_3.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_3",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_7_3_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -429,8 +655,14 @@
       "pdf_page": 60,
       "paper_statement_opening": "Lemma 7.4 (Side stacks). Fix a near offset q −p in Equation (15), a transfer step, and a search path. The two time-dependent side inputs can be written, at their uses, as a sum of at most",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_7_4.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_4",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_7_4_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Proposition",
@@ -438,8 +670,14 @@
       "pdf_page": 62,
       "paper_statement_opening": "Proposition 7.5 (Side estimate). Assume the base and localization hypotheses above, the helper conclusions of Lemma 6.9, and the linear-side square bound (17). Fix p ∈(2/3, 1). After common",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_7_5.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_5",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_7_5_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -447,8 +685,14 @@
       "pdf_page": 65,
       "paper_statement_opening": "Lemma 8.1 (First-match expansion and bounded lift). At each first match I0, there is a finite, permanently labeled expansion",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_1.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_1",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_1_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -456,8 +700,14 @@
       "pdf_page": 67,
       "paper_statement_opening": "Lemma 8.2 (Exceptional blocks and the tiny rational space). Each primary is exceptional in at most Cdmax blocks on a path. At a nonexceptional block, let Krat be the rational span of all",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_2.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_2",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_2_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -465,8 +715,14 @@
       "pdf_page": 68,
       "paper_statement_opening": "Lemma 8.3 (Height stabilization). For a nonexceptional primary, all but CdmaxRht ∗heights have",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_3.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_3",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_3_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -474,8 +730,14 @@
       "pdf_page": 69,
       "paper_statement_opening": "Lemma 8.4 (Coherence of good predicates). Good modes in one CURRENT component at height h have the same PRE component at height h −∆. The core/side decision is constant on each",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_4.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_4",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_4_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -487,7 +749,9 @@
         "OpenAI086/EntryRankSummation.lean",
         "OpenAI086/EntryRankConcrete.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_5",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -499,7 +763,9 @@
         "OpenAI086/BadDensityChain.lean",
         "OpenAI086/ErrataChecks.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_6",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -507,8 +773,14 @@
       "pdf_page": 70,
       "paper_statement_opening": "Lemma 8.7 (Separated mode rows). Fix a role and group. Consider a family of dyadic cells Je, with a nonempty set Me of available mode labels on each cell. Suppose that along every path:",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_7.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_7",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_7_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -516,8 +788,14 @@
       "pdf_page": 71,
       "paper_statement_opening": "Lemma 8.8 (Composition with the lift and main histories). Fix a role. For each group, suppose a family of mode projection rows Pe, supported on cells Je, has squared Bessel bound at most G0.",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_8.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_8",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_8_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Proposition",
@@ -525,8 +803,14 @@
       "pdf_page": 72,
       "paper_statement_opening": "Proposition 8.9 (Square energy of the linear side). For each basic-B role, on every retained vb-cell let Vl,G,b be the exact subtotal of the linear-side modes in eZl,G,b, including their private",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_9.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_9",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_9_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -537,7 +821,9 @@
       "relevant_modules": [
         "OpenAI086/ComponentIntersections.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_10",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Lemma",
@@ -545,8 +831,14 @@
       "pdf_page": 75,
       "paper_statement_opening": "Lemma 8.11 (Component-size comparison). At every actual cell, σ2",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_11.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_11",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_11_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Proposition",
@@ -554,8 +846,14 @@
       "pdf_page": 76,
       "paper_statement_opening": "Proposition 8.12 (Top count). After removing summands on first stopping cells of arbitrarily small fixed total relative length, the following holds on every retained path. Fix a core role j, a height",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_8_12.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_12",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_8_12_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Lemma",
@@ -567,9 +865,18 @@
         "OpenAI086/FirstFailure.lean",
         "OpenAI086/SparsePairBudget.lean",
         "OpenAI086/SparseBlockAccounting.lean",
-        "OpenAI086/ColoredPathUniqueness.lean"
+        "OpenAI086/ColoredPathUniqueness.lean",
+        "OpenAI086/ArbitraryColoredPaths.lean",
+        "OpenAI086/FirstFailureAnyRole.lean",
+        "OpenAI086/FiniteFirstSuccessWeights.lean",
+        "OpenAI086/VariableFirstSuccess.lean",
+        "OpenAI086/FiniteCommonNeighborEnergy.lean",
+        "OpenAI086/FiniteFourStepWalkEnergy.lean",
+        "OpenAI086/FiniteBadPartnerPruning.lean"
       ],
-      "kernel_verified": false
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_9_1",
+      "lean_target_level": "partial_component_exists"
     },
     {
       "kind": "Proposition",
@@ -577,8 +884,14 @@
       "pdf_page": 87,
       "paper_statement_opening": "Proposition 9.2 (Counts for the tested core tuples). There is an absolute p0 ∈(0, 1) such that, for the preceding data and some L0 ≤P C(1 + log(ν/µ))C, one has",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_9_2.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_9_2",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_9_2_model_goal",
+      "lean_target_is_paper_statement": false
     },
     {
       "kind": "Proposition",
@@ -586,8 +899,14 @@
       "pdf_page": 89,
       "paper_statement_opening": "Proposition 9.3 (Powered estimate for the core terms). There are absolute ε > 0 and C4 < ∞, with 1 −ε > 2/3, such that the terms containing at least three core roles in the localized expansion",
       "formalization": "open",
-      "relevant_modules": [],
-      "kernel_verified": false
+      "relevant_modules": [
+        "OpenAI086/PaperTargets/Result_9_3.lean"
+      ],
+      "kernel_verified": false,
+      "lean_catalog_entry": "OpenAI086.PaperTargets.result_9_3",
+      "lean_target_level": "typed_finite_proxy_only",
+      "lean_goal_decl": "OpenAI086.PaperTargets.result_9_3_model_goal",
+      "lean_target_is_paper_statement": false
     }
   ]
 }

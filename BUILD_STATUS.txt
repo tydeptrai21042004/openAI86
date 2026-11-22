@@ -1,12 +1,12 @@
-Lean kernel compilation was NOT performed in this environment.
-`lean`, `lake`, and `elan` are not installed. Downloading Lean is blocked by DNS
-(no access to github.com). No PASS claim for the new Lean files is made.
+OpenAI086 independent Lean 4 continuation V5 — 22 November 2026
 
-Local checks performed:
-- Python static import/source audit PASS
-- SymPy polynomial algebra PASS
-- NumPy noncommutative-matrix sanity PASS (800 generated cases)
-- Read-only review of user-supplied reference ZIP PASS (structural inspection)
-
-Reproduce kernel checks on Ubuntu/WSL using `bash verify.sh`.
-The main theorem is still OPEN regardless of sublemma build status.
+NO LEAN KERNEL VERIFICATION IN THIS AUTHORING RUNTIME.
+- 77 Lean files reachable; 210 module theorem declarations in source.
+- 59 indexed paper results; 17 partial, 0 complete.
+- New 3,900 exact rational adaptive row-Bessel tests PASS.
+- New 16,428 exact rational binary-prefix tests PASS.
+- Source/reachability/registry/safety checks PASS.
+- Full legacy regression rerun INCOMPLETE due to execution-window limit.
+- Lean and Lake unavailable; none of the new Lean proofs have kernel certificates.
+- Lemmas 3.3, 3.4, 9.1 and Theorem 1.1 remain OPEN.
+See CONTINUATION_V5_2026_11_22.md and verification/V5_RELEASE_AUDIT.json.

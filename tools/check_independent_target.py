@@ -17,7 +17,7 @@ for s in ('def Theorem1_1_Goal : Prop :=',
           '∏ i : Fin 3, eLpNorm (f i) 3'):
     assert s in text, f'Required semantic marker missing: {s}'
 # Avoid bringing in any upstream proof file or transparent theorem import.
-lean=list((ROOT/'OpenAI086').glob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
+lean=list((ROOT/'OpenAI086').rglob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
 for source in lean:
     code=source.read_text()
     assert not re.search(r'(?m)^\s*import\s+TrilinearHT\b',code), source.name

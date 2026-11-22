@@ -12,7 +12,7 @@ root = Path(__file__).resolve().parents[1]
 source = json.loads((root/'verification/PAPER_RESULTS_INDEX.json').read_text(encoding='utf-8'))
 items = source['results']
 status = json.loads((root/'STATUS.json').read_text(encoding='utf-8'))
-files = sorted((root/'OpenAI086').glob('*.lean'))
+files = sorted((root/'OpenAI086').rglob('*.lean'))
 theorems = sum(bool(re.match(r'^\s*theorem\s+', line)) for path in files for line in path.read_text(encoding='utf-8').splitlines())
 errors=[]
 

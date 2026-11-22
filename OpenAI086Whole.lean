@@ -55,3 +55,22 @@ It explicitly does NOT assert that Theorem 1.1 is proved.
 #print axioms OpenAI086.first_failure_four_three_iff
 
 #check OpenAI086.Theorem1_1_from_plus_shift
+
+#check OpenAI086.finite_weighted_path_budget
+#check OpenAI086.finite_multifamily_stopping_budget
+#check OpenAI086.alternating_paths_determined_by_colors
+#check OpenAI086.compression_coefficient_error_budget
+
+#check OpenAI086.firstFailureIndex_true_prefix
+
+#check OpenAI086.finite_first_success_weight_identity
+
+-- Continuation v2 proof components.  The named paper results are still open.
+#check OpenAI086.nested_projection_square_variation_bound
+#check OpenAI086.ordered_contraction_perturbation
+#check OpenAI086.compression_row_error_from_bessel
+#check OpenAI086.variable_first_success_identity
+#print axioms OpenAI086.nested_projection_square_variation_bound
+#print axioms OpenAI086.compression_row_error_from_bessel
+
+#check OpenAI086.varying_prefix_rows_need_more_than_constant_one

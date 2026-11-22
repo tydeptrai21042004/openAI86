@@ -8,11 +8,11 @@ Manuscript: `paper(1).pdf`, 93 pages, 5 October 2026. This is an **obligation re
 | Lemma 2.1 | 4 | `LocalForms`, `ProgressionGeometry` | PARTIAL COMPONENT / MODEL |
 | Theorem 2.2 | 4 | `UniformBootstrap` | PARTIAL COMPONENT / MODEL |
 | Proposition 2.3 | 4 | `OuterStopping`, `UniformBootstrap` | PARTIAL COMPONENT / MODEL |
-| Lemma 2.4 | 5 | `OuterStopping`, `FiniteStoppingSets`, `FiniteMarginalCancellation` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.1 | 7 | `Packing`, `FiniteStoppingSets` | PARTIAL COMPONENT / MODEL |
+| Lemma 2.4 | 5 | `OuterStopping`, `FiniteStoppingSets`, `FiniteMarginalCancellation`, `FiniteMultifamilyStops` | PARTIAL COMPONENT / MODEL |
+| Lemma 3.1 | 7 | `Packing`, `FiniteStoppingSets`, `FiniteTonelliBudget`, `FiniteMultifamilyStops` | PARTIAL COMPONENT / MODEL |
 | Lemma 3.2 | 8 | `PrivateCoordinates`, `PrivateEnergyExact`, `PathLabelEnergy` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.3 | 8 | `OrderedProductTelescoping`, `NoncommutingProducts`, `ArbitraryDepthTelescoping` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.4 | 9 | `FiniteCompression`, `PathLabelEnergy`, `OrderedProductTelescoping` | PARTIAL COMPONENT / MODEL |
+| Lemma 3.3 | 8 | `OrderedProductTelescoping`, `NoncommutingProducts`, `ArbitraryDepthTelescoping`, `GeneralNestedProjectionEnergy`, `NoncommutingContractionPerturbation`, `RowPrefixCounterexample` | PARTIAL COMPONENT / MODEL |
+| Lemma 3.4 | 9 | `FiniteCompression`, `PathLabelEnergy`, `OrderedProductTelescoping`, `CompressionRowError`, `FiniteRowCauchySchwarz` | PARTIAL COMPONENT / MODEL |
 | Lemma 3.5 | 13 | `DyadicTails` | PARTIAL COMPONENT / MODEL |
 | Definition 4.1 | 15 | `QuadraticChartsElementary` | PARTIAL COMPONENT / MODEL |
 | Lemma 4.2 | 15 | `QuadraticChartsElementary`, `QuadraticPhase` | PARTIAL COMPONENT / MODEL |
@@ -60,7 +60,7 @@ Manuscript: `paper(1).pdf`, 93 pages, 5 October 2026. This is an **obligation re
 | Lemma 8.10 | 74 | `ComponentIntersections` | PARTIAL COMPONENT / MODEL |
 | Lemma 8.11 | 75 | — | OPEN |
 | Proposition 8.12 | 76 | — | OPEN |
-| Lemma 9.1 | 81 | `FirstFailure`, `SparsePairBudget`, `SparseBlockAccounting`, `ColoredPathUniqueness` | PARTIAL COMPONENT / MODEL |
+| Lemma 9.1 | 81 | `FirstFailure`, `SparsePairBudget`, `SparseBlockAccounting`, `ColoredPathUniqueness`, `ArbitraryColoredPaths`, `FirstFailureAnyRole`, `FiniteFirstSuccessWeights`, `VariableFirstSuccess` | PARTIAL COMPONENT / MODEL |
 | Proposition 9.2 | 87 | — | OPEN |
 | Proposition 9.3 | 89 | — | OPEN |
 
