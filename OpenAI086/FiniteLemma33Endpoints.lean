@@ -21,7 +21,7 @@ namespace OpenAI086
 theorem finite_lemma33_row_prefix_zero
     {d : ℕ} (T rows : ℕ)
     (P : ℕ → ℕ → (Fin d → ℝ) → (Fin d → ℝ))
-    (B : Fin rows → (Fin d → ℝ) → ℝ)
+    (B : Fin rows → (Fin d → ℝ) →ₗ[ℝ] ℝ)
     (choice : Fin rows → Fin (T + 1)) :
     finiteLemma33RowPrefixGoal 0 T rows P B choice := by
   unfold finiteLemma33RowPrefixGoal

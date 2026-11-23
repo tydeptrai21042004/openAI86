@@ -72,15 +72,16 @@ for number,(module,theorem) in v7.items():
         problems.append('V7 target lacks proof-component crosscheck: '+number)
 
 # Optional paper byte-for-byte check when the current PDF is present.
-paper=Path('/mnt/data/paper(3).pdf')
-if paper.is_file():
+paper=next((q for q in (Path('/mnt/data/paper(4).pdf'),
+    Path('/mnt/data/paper(3).pdf')) if q.is_file()), None)
+if paper is not None:
     h=hashlib.sha256(paper.read_bytes()).hexdigest()
     if h!=index['paper_sha256']:
         problems.append('current paper PDF SHA256 does not match indexed paper')
 
 result={'audit':'59_lean_target_entrypoints_not_paper_proofs',
         'total':len(items),'partial_components':partial,'finite_proxy_goals_only':target_only,
-        'complete_kernel_verified':0,'current_paper_sha_match':paper.is_file() and not any('SHA256' in p for p in problems),
+        'complete_kernel_verified':0,'current_paper_sha_match':paper is not None and not any('SHA256' in p for p in problems),
         'errors':problems}
 print(json.dumps(result,ensure_ascii=False,indent=2))
 sys.exit(bool(problems))

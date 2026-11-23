@@ -36,6 +36,7 @@ python3 tools/test_v7_operator_product_expansion.py
 python3 tools/test_v7_catalog_and_increments.py
 python3 tools/test_v8_normed_row_bessel.py
 python3 tools/test_v8_coarse_prefix_variation.py
+python3 tools/test_v9_height_lag.py
 if ! command -v lake >/dev/null 2>&1; then
   echo 'UNVERIFIED: lake not installed. Lean kernel build was not run.' >&2
   echo 'Install elan/Lean on Ubuntu or use the included GitHub Actions workflow.' >&2

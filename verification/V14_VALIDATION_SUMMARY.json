@@ -1,0 +1,29 @@
+{
+  "version": "V14",
+  "date": "2026-11-23",
+  "source_archive": "openAI86_V13_Independent_Continuation_FULL.zip",
+  "new_lean_modules": 6,
+  "lean_files_including_entrypoints": 166,
+  "lean_theorem_declarations": 326,
+  "paper_results_indexed": 59,
+  "complete_kernel_verified_manuscript_theorems": 0,
+  "new_exact_regression_cases": 471877,
+  "project_import_and_inventory_audits": "PASS",
+  "source_safety_scan": "PASS",
+  "lean_kernel_compilation": "NOT RUN; lean/lake not available",
+  "smoke_script_exit_code": 2,
+  "smoke_exit_code_2_meaning": "Source/numeric PASS but Lean kernel certification unavailable; NOT a proof success",
+  "claims": [
+    "Full-window finite bad-height counting source candidates",
+    "Strict and nonstrict chain bounds at exact original height indices",
+    "Dyadic distinct widths, aligned starts and same-grid separation candidates",
+    "Linear-row finite-level energy assembly candidate"
+  ],
+  "still_open": [
+    "Elaborate all V9–V14 Lean proof terms in pinned Mathlib",
+    "Full arbitrary-Hilbert Lemma 3.3",
+    "Lemma 3.4 compression",
+    "Continuous sections 4–10",
+    "Theorem 1.1"
+  ]
+}

@@ -8,7 +8,9 @@ Unlike the generic target catalog, these are typed formulas with the
 actual nested orthogonal projection hypotheses, row-Bessel condition,
 noncommutative ordered products, and a logarithmic factor.
 
-They are **definitions of open propositions**, NOT proofs.  The
+They are **definitions of open propositions**, NOT proofs.
+The row operators below are now explicitly REAL LINEAR; the previous
+function-valued target lacked this indispensable hypothesis in Lemma 3.3.  The
 logarithmic factor is a slightly relaxed dyadic envelope: 2+Nat.log2(T+1).
 The actual paper is for arbitrary complex Hilbert spaces, and also
 requires an exact constant as specified in the source.
@@ -44,7 +46,7 @@ it is an unproved `Prop` used to state exactly what remains. -/
 def finiteLemma33RowPrefixGoal {d : ℕ}
     (m T rows : ℕ)
     (P : ℕ → ℕ → (Fin d → ℝ) → (Fin d → ℝ))
-    (B : Fin rows → (Fin d → ℝ) → ℝ)
+    (B : Fin rows → (Fin d → ℝ) →ₗ[ℝ] ℝ)
     (choice : Fin rows → Fin (T + 1)) : Prop :=
   finiteNestedProjectionSystem P m →
   (∀ y : Fin d → ℝ,

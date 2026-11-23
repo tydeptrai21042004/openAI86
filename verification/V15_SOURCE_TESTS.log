@@ -1,0 +1,34 @@
+{
+  "status": "static_packaging_audit_not_a_kernel_proof",
+  "file_count": 170,
+  "whole_project_reaches_all_lean_files": true,
+  "unreachable": [],
+  "errors": []
+}
+{
+  "kind": "source_inventory_not_kernel_certificate",
+  "lean_files": 170,
+  "theorem_declarations": 341,
+  "paper_results": 59,
+  "errors": []
+}
+{
+  "audit": "59_lean_target_entrypoints_not_paper_proofs",
+  "total": 59,
+  "partial_components": 21,
+  "finite_proxy_goals_only": 38,
+  "complete_kernel_verified": 0,
+  "current_paper_sha_match": true,
+  "errors": []
+}
+{
+  "status": "source_scan_not_kernel_check",
+  "files": 170,
+  "violations": [],
+  "safe": true
+}
+V15 exact rational projection-block checks PASSED: 27,079
+Tested P0 inclusion, all projection axioms, dyadic identities,
+fixed-width Bessel, m=1 log bounds, and noncommuting products.
+V14 exact full-window counting tests PASS {'full_height_split': 31680, 'chronological_vertical': 31680, 'chronological_horizontal': 63360, 'pointwise_bound': 190080, 'aggregate_bound': 10560, 'absorbed': 487, 'feasible': 4, 'strict_numeric': 459, 'level_energy': 45000, 'level_energy_sharp': 14, 'split_edge': 225, 'dyadic_unique_widths': 12321, 'dyadic_partition': 12321, 'dyadic_alignment': 61479, 'dyadic_same_width_separation': 12207} total= 471877 (NOT Lean kernel verification)
+V13 exact chronological-rank/initial-height regressions PASS {'first_entry': 56000, 'rank_injective': 14000, 'rank_le_size': 161654, 'harmonic_reindex': 14000, 'density': 14000, 'initial_heights': 8100, 'adversarial_fixed_order': 1, 'absent_labels': 1100, 'exhaustive_small_chains': 3837} total= 272692 ; not Lean kernel proof

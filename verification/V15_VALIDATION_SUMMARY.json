@@ -1,0 +1,17 @@
+{
+  "build_status": "NO_LEAN_KERNEL_CHECK_PERFORMED",
+  "source_audits": "PASS",
+  "all_59_targets_indexed": true,
+  "fully_kernel_verified_paper_results": 0,
+  "v15_fraction_matrix_tests": 27079,
+  "v15_fraction_matrix_tests_status": "PASS",
+  "v14_fraction_integer_tests": 471877,
+  "v14_status": "PASS",
+  "v13_fraction_integer_tests": 272692,
+  "v13_status": "PASS",
+  "older_v12_v9_and_errata_individual_tests": "PASS",
+  "v15_combined_smoke": "INTERRUPTED after V13 by execution timeout; remaining tests independently run and passed",
+  "current_environment_has_lean": false,
+  "current_environment_has_lake": false,
+  "warning": "Theorem source candidates have not been elaborated; static tests and numeric simulations are not proof certificates"
+}

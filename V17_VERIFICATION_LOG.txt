@@ -1,0 +1,32 @@
+{
+  "status": "static_packaging_audit_not_a_kernel_proof",
+  "file_count": 179,
+  "whole_project_reaches_all_lean_files": true,
+  "unreachable": [],
+  "errors": []
+}
+{
+  "kind": "source_inventory_not_kernel_certificate",
+  "lean_files": 179,
+  "theorem_declarations": 374,
+  "paper_results": 59,
+  "errors": []
+}
+{
+  "audit": "59_lean_target_entrypoints_not_paper_proofs",
+  "total": 59,
+  "partial_components": 21,
+  "finite_proxy_goals_only": 38,
+  "complete_kernel_verified": 0,
+  "current_paper_sha_match": true,
+  "errors": []
+}
+{
+  "status": "source_scan_not_kernel_check",
+  "files": 179,
+  "violations": [],
+  "safe": true
+}
+V17 bounded selection / one-layer bound: 82,750 exact rational checks PASSED
+Checks are only mathematical models; Lean kernel compilation is not available.
+V17 SOURCE/MODEL AUDITS PASSED. LEAN KERNEL COMPILATION UNAVAILABLE.

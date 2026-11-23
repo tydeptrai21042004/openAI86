@@ -1,5 +1,5 @@
 {
-  "paper_file": "paper(2).pdf (same SHA-256 as original paper(1).pdf)",
+  "paper_file": "paper(4).pdf (same indexed SHA-256 as original)",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
   "notes": "Partial means at least one genuinely source-related Lean proof component, not the manuscript theorem; proxy-only means typed finite goal without a source-specific proof. No Lean kernel certification has been run in this environment.",
@@ -129,7 +129,17 @@
         "OpenAI086/AdaptiveNoncommutingRows.lean",
         "OpenAI086/FiniteProjectionLengthTuples.lean",
         "OpenAI086/FiniteDyadicPrefixBlocks.lean",
-        "OpenAI086/FiniteDyadicOperatorBridge.lean"
+        "OpenAI086/FiniteDyadicOperatorBridge.lean",
+        "OpenAI086/FiniteLemma33Target.lean",
+        "OpenAI086/FiniteDyadicWidthGrouping.lean",
+        "OpenAI086/FiniteDyadicOrderedWidthExpansion.lean",
+        "OpenAI086/ActualDyadicMaskedLevelSum.lean",
+        "OpenAI086/FiniteDyadicRowBlockSelection.lean",
+        "OpenAI086/FiniteDyadicBlockIndexBounds.lean",
+        "OpenAI086/FiniteDyadicBoundedRowSelection.lean",
+        "OpenAI086/ActualDyadicSelectedWidthBessel.lean",
+        "OpenAI086/ActualDyadicOneLayerPrefix.lean",
+        "OpenAI086/FiniteDyadicWidthTupleEnumeration.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_3",
@@ -380,7 +390,8 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/ErrataChecks.lean",
-        "OpenAI086/PredictorMoments.lean"
+        "OpenAI086/PredictorMoments.lean",
+        "OpenAI086/FinitePredictorOrthogonality.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_3",
@@ -747,7 +758,8 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/EntryRankSummation.lean",
-        "OpenAI086/EntryRankConcrete.lean"
+        "OpenAI086/EntryRankConcrete.lean",
+        "OpenAI086/ConcreteRankedIncidences.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_5",
@@ -761,7 +773,14 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/BadDensityChain.lean",
-        "OpenAI086/ErrataChecks.lean"
+        "OpenAI086/ErrataChecks.lean",
+        "OpenAI086/HeightLagTelescoping.lean",
+        "OpenAI086/HeightLagChainBridge.lean",
+        "OpenAI086/InterleavedGapBudget.lean",
+        "OpenAI086/BadDensityBudgetAssembly.lean",
+        "OpenAI086/IntegerLogExact.lean",
+        "OpenAI086/ConcreteIntegerLogBadDensity.lean",
+        "OpenAI086/ConcreteRankedLogChain.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_6",

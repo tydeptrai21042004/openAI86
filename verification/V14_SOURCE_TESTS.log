@@ -1,0 +1,66 @@
+{
+  "status": "static_packaging_audit_not_a_kernel_proof",
+  "file_count": 166,
+  "whole_project_reaches_all_lean_files": true,
+  "unreachable": [],
+  "errors": []
+}
+{
+  "kind": "source_inventory_not_kernel_certificate",
+  "lean_files": 166,
+  "theorem_declarations": 326,
+  "paper_results": 59,
+  "errors": []
+}
+{
+  "audit": "59_lean_target_entrypoints_not_paper_proofs",
+  "total": 59,
+  "partial_components": 21,
+  "finite_proxy_goals_only": 38,
+  "complete_kernel_verified": 0,
+  "current_paper_sha_match": true,
+  "errors": []
+}
+{
+  "status": "source_scan_not_kernel_check",
+  "files": 166,
+  "violations": [],
+  "safe": true
+}
+V14 exact full-window counting tests PASS {'full_height_split': 31680, 'chronological_vertical': 31680, 'chronological_horizontal': 63360, 'pointwise_bound': 190080, 'aggregate_bound': 10560, 'absorbed': 487, 'feasible': 4, 'strict_numeric': 459, 'level_energy': 45000, 'level_energy_sharp': 14, 'split_edge': 225, 'dyadic_unique_widths': 12321, 'dyadic_partition': 12321, 'dyadic_alignment': 61479, 'dyadic_same_width_separation': 12207} total= 471877 (NOT Lean kernel verification)
+V13 exact chronological-rank/initial-height regressions PASS {'first_entry': 56000, 'rank_injective': 14000, 'rank_le_size': 161654, 'harmonic_reindex': 14000, 'density': 14000, 'initial_heights': 8100, 'adversarial_fixed_order': 1, 'absent_labels': 1100, 'exhaustive_small_chains': 3837} total= 272692 ; not Lean kernel proof
+V12 exact integer/rational regressions: 57,490 passed; no Lean kernel build
+V11 exact manuscript-bridge regressions PASS {'union_card': 16000, 'rank_pointwise': 16000, 'nested_grid': 3000, 'density_chain': 3000, 'true_premises': 17, 'layer_cs_exact': 3000, 'counterexample_endpoint': 1, 'integer_log_bins': 200} total= 41218
+PASS integer_badness_indicator: 1,875 tests
+PASS nested_finite_set_floor_rank: 1,700 tests
+PASS height_lag_exact: 1,700 tests
+PASS interleaved_position_gap: 2,501 tests
+PASS ranked_exceptional_fraction: 1,500 tests
+PASS combined_height_and_position: 1,200 tests
+PASS noncommuting_sparse_choice_rows: 1,500 tests
+TOTAL: 11,976 independent finite tests PASS
+LIMIT: no Lean kernel proof; complete manuscript goals remain open
+{
+  "kind": "exact_arithmetic_regression_not_kernel_proof",
+  "checks": {
+    "height_lag_identities": 3150,
+    "height_lag_budgets": 3150,
+    "row_nonlinearity_counterexample": 1
+  },
+  "nonlinear_counterexample": {
+    "T": 512,
+    "lhs": 131328,
+    "rhs": 61952,
+    "conclusion": "linear map type is required for valid Lemma 3.3"
+  }
+}
+{
+  "status": "finite_regression_only_not_kernel_verification",
+  "checks": {
+    "endpoint_counterexamples": 1,
+    "interleaved_chains": 570,
+    "predictor_identities": 243,
+    "first_failure_role_masks": 88
+  }
+}
+V14 SOURCE/FINITE TESTS PASSED; Lean/Lake not present: NO KERNEL CERTIFICATE

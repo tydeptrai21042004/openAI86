@@ -1,0 +1,22 @@
+{
+  "audit": "STATIC_ONLY_NOT_KERNEL_CHECK",
+  "all_checks_pass": true,
+  "checks": {
+    "original_exact_PDF_goal_remains_defined": true,
+    "pointwise_limit_not_erased": true,
+    "minus_shifts_unchanged": true,
+    "original_goal_has_eLpNorm_L1": true,
+    "original_goal_has_three_L3_inputs": true,
+    "conditional_bridge_targets_exact_goal": true,
+    "conditional_bridge_explicit_plus_convergence": true,
+    "conditional_bridge_explicit_integral_sign": true,
+    "conditional_bridge_explicit_L1_negation": true,
+    "conditional_bridge_imported": true,
+    "candidate_integral_change_of_variable": true,
+    "candidate_principal_value_transfer": true,
+    "no_unconditional_main_proof_claimed": true
+  },
+  "main_goal_proved": false,
+  "kernel_checked_here": false,
+  "candidate_stage": "not imported into core; requires lake build and independent axiom review"
+}

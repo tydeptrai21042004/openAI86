@@ -1,13 +1,13 @@
 {
-  "source_paper": "paper(3).pdf (same manuscript content as earlier PDF by SHA-256)",
+  "source_paper": "paper(4).pdf, uploaded 2026-11-22; checks compare to this 93-page PDF",
   "formalization_model": "independent_mathlib_only",
   "trilinearht_external_import": false,
   "adapted_Lemma33Reviewed_excluded": true,
   "named_paper_results": 59,
   "numbered_results_with_partial_components": 21,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 137,
-  "theorem_declarations_in_source": 254,
+  "root_lean_file_count": 179,
+  "theorem_declarations_in_source": 374,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -26,8 +26,8 @@
     "FirstFailureAnyRole",
     "FiniteFirstSuccessWeights"
   ],
-  "notes": "V8: three new modules establish arbitrary-normed-space Bessel assembly and the exact finite model endpoint/coarse statements of Lemma 3.3. Source code remains a kernel-unverified proof candidate; 21/59 source-related partial entries and 38 proxy-only. Neither the logarithmic estimate nor Theorem 1.1 has been proved.",
-  "latest_correction_date": "2026-11-22",
+  "notes": "V17: bounded Fin(2^k) dyadic block selectors; explicit single-width row Bessel; one-layer variable-prefix logarithmic estimate and width-tuple enumeration are Lean SOURCE CANDIDATES, not kernel compiled. Full Lemma 3.3 (m>1/complex Hilbert), Lemma 3.4, Theorem 1.1 open.",
+  "latest_correction_date": "2026-11-23",
   "new_exact_arithmetic_cases": 9100,
   "external_published_verification_script_available": false,
   "external_published_formalization_included": false,
@@ -125,5 +125,120 @@
     "Finite-dimensional real sharp Bessel bound at one common prefix for any number of noncommuting projection layers",
     "Finite-dimensional real variable-row prefix bound (T+1)*energy for arbitrary layers (NOT logarithmic)",
     "Finite-dimensional real variation bound 4*T*energy for arbitrary layers (NOT logarithmic)"
-  ]
+  ],
+  "source_paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
+  "new_modules_this_continuation_v9": [
+    "HeightLagTelescoping",
+    "HeightLagChainBridge",
+    "FinitePredictorOrthogonality"
+  ],
+  "new_partial_results_v9": [
+    "Lemma 8.6: exact finite height-lag boundary telescoping identity and Δ·L bound",
+    "Lemma 8.6: chain-length bridge deriving per-position incidence budget from telescoping (height and cross-position exceptional terms still conditional)",
+    "Lemma 5.3: finite weighted-cell augmented predictor orthogonality with private-input average retained",
+    "Lemma 3.3: typed finite-real row goal now requires B linear, closing an invalid old target definition"
+  ],
+  "new_exact_arithmetic_regressions_v9": 6301,
+  "reference_only_modules_not_imported": [
+    "verification/reference_only/Lemma33Reviewed.lean",
+    "verification/reference_only/Lemma33Check.lean"
+  ],
+  "full_legacy_regression_status_v9": "PARTIAL PASS: extensive source/numerical tests succeeded through V4; run hit execution timeout before V5 onward; focused V9 script passes static/exact checks then returns exit code 2 due missing Lake.",
+  "new_modules_this_continuation_v10": [
+    "BadDensityThreshold",
+    "FiniteBadHeightSet",
+    "HeightPositionChainBridge",
+    "RankedTwoAxisChain",
+    "FiniteSparseChoiceRows"
+  ],
+  "new_partial_results_v10": [
+    "Lemma 8.6: exact REAL interleaved position-gap budget along with V9 height-lag bound",
+    "Lemma 8.6: both axes combined in a scalar bad-density chain estimate with independently specified exception counts",
+    "Lemma 8.6: exact rank-counting bridges replace both aggregate exceptional incidence assumptions by per-label frequency/rank hypotheses",
+    "Lemma 8.6: pointwise bad-height domination derived from actual nested Finset labels and arbitrary monotone integer count bins",
+    "Lemma 3.3: finite-dimensional real sparse-choice variable row-Bessel estimate with loss K (# distinct available choices), not T (# numerical depths)"
+  ],
+  "new_finite_regression_cases_v10": 11976,
+  "new_float_projection_regressions_v10": 1500,
+  "new_exact_integer_rational_regressions_v10": 10476,
+  "v10_build_disposition": "SOURCE ONLY; all 5 new Lean modules are candidates pending Lean/Lake kernel compilation",
+  "full_manuscript_lemma_8_6_proved": false,
+  "full_manuscript_lemma_3_3_proved": false,
+  "full_manuscript_theorem_1_1_proved": false,
+  "new_modules_v11": [
+    "PaperBadHeightPredicate",
+    "ConcreteBadDensityChain",
+    "PrefixEntryRank",
+    "FiniteVariationCS",
+    "IntegerLogBins"
+  ],
+  "numeric_regressions_v11": {
+    "total": 41218,
+    "status": "pass",
+    "kernel_certificate": false
+  },
+  "new_modules_v12": [
+    "IntegerLogExact",
+    "ConcreteIntegerLogBadDensity",
+    "ConcreteRankedIncidences",
+    "ConcreteRankedLogChain"
+  ],
+  "numeric_regressions_v12": {
+    "total": 57490,
+    "status": "pass_exact_arithmetic",
+    "kernel_certificate": false
+  },
+  "v12_build_disposition": "SOURCE ONLY; Lean/Lake not installed here. New theorem declarations are uncompiled proof candidates.",
+  "version": "V17",
+  "last_source_work": "Unconditional width-grouped dyadic-prefix decomposition, row-indexed zero-or-aligned-block selections, masked actual-projection Bessel energy for finite width-tuples; final tuple reindexing and Fin count integration remain open.",
+  "new_modules_v13": [
+    "ChronologicalFirstEntry",
+    "ChronologicalIncidence",
+    "ChronologicalHarmonic",
+    "FiniteChronologicalChain",
+    "ConcreteChronologicalLogChain",
+    "InitialBadHeightCount"
+  ],
+  "new_exact_regressions_v13": 272692,
+  "v13_kernel_certification": "NOT_RUN_toolchain_unavailable",
+  "v13_scope": "finite Lemma 8.5 candidate with actual first-entry ordering; Lemma 8.6 shifted-window bridge candidate; full theorems 0/59",
+  "new_modules_v14": [
+    "InitialHeightAbsorption",
+    "FullChronologicalBadDensity",
+    "FullChronologicalBadDensityStrict",
+    "FullBadHeightReindex",
+    "FiniteLevelEnergyAssembly",
+    "FiniteDyadicDistinctLengths"
+  ],
+  "new_exact_regressions_v14": 471877,
+  "v14_kernel_certification": "NOT_RUN_toolchain_unavailable",
+  "v14_scope": "finite full-height Lemma 8.6 count with first-entry chronological ranks and strict variant, dyadic-level energy assembly; not full manuscript lemma or Theorem 1.1",
+  "new_modules_this_continuation_v15": [
+    "AugmentedNestedProjectionBlocks",
+    "FiniteLinearProjectionBlockBridge",
+    "ActualDyadicTupleBessel",
+    "ActualDyadicLevelSum"
+  ],
+  "v15_verified_status": "Static source audit and exact rational tests only; Lean/Lake absent",
+  "new_modules_v16": [
+    "FiniteDyadicWidthGrouping",
+    "FiniteDyadicOrderedWidthExpansion",
+    "ActualDyadicMaskedLevelSum",
+    "FiniteDyadicRowBlockSelection"
+  ],
+  "new_exact_regressions_v16": 16868,
+  "v16_kernel_certification": "NOT_RUN_toolchain_unavailable",
+  "v16_scope": "Finite-dimensional real algebraic Lemma 3.3 representation and masked Bessel candidates; not full Lemma 3.3 or Theorem 1.1.",
+  "kernel_compilation": null,
+  "new_modules_this_continuation_v17": [
+    "FiniteDyadicBlockIndexBounds",
+    "FiniteDyadicBoundedRowSelection",
+    "ActualDyadicSelectedWidthBessel",
+    "ActualDyadicOneLayerPrefix",
+    "FiniteDyadicWidthTupleEnumeration"
+  ],
+  "new_exact_rational_checks_v17": 442192,
+  "v17_fast_regression_count": 82750,
+  "v17_full_regression_count": 442192,
+  "v17_smoke_exit_code": 2
 }

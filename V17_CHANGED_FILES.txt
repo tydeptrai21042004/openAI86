@@ -1,0 +1,22 @@
+V17 difference versus supplied V16 full archive
+
+Modified/new files:
+.github/workflows/lean-kernel.yml
+OpenAI086.lean
+OpenAI086/ActualDyadicOneLayerPrefix.lean
+OpenAI086/ActualDyadicSelectedWidthBessel.lean
+OpenAI086/FiniteDyadicBlockIndexBounds.lean
+OpenAI086/FiniteDyadicBoundedRowSelection.lean
+OpenAI086/FiniteDyadicWidthTupleEnumeration.lean
+OpenAI086Whole.lean
+README.md
+README_VI.md
+STATUS.json
+V17_PROGRESS.md
+V17_VERIFICATION_LOG.txt
+tools/test_v17_actual_selected_width.py
+verification/PAPER_RESULTS_INDEX.json
+verify_smoke_v17.sh
+
+Removed files:
+

@@ -57,6 +57,9 @@ import OpenAI086.BadDensityChain
 import OpenAI086.FirstFailure
 import OpenAI086.FirstFailureFour
 import OpenAI086.InterleavedGapBudget
+import OpenAI086.HeightLagTelescoping
+import OpenAI086.HeightLagChainBridge
+import OpenAI086.FinitePredictorOrthogonality
 import OpenAI086.BadDensityIncidence
 import OpenAI086.PredictorEnergy
 import OpenAI086.BadDensityBudgetAssembly
@@ -93,6 +96,27 @@ import OpenAI086.NestedProjectionLongRange
 import OpenAI086.FiniteCommonNeighborEnergy
 import OpenAI086.FiniteFourStepWalkEnergy
 import OpenAI086.NoncommutingLayerBessel
+import OpenAI086.BadDensityThreshold
+import OpenAI086.FiniteBadHeightSet
+import OpenAI086.HeightPositionChainBridge
+import OpenAI086.RankedTwoAxisChain
+import OpenAI086.FiniteSparseChoiceRows
+import OpenAI086.PaperBadHeightPredicate
+import OpenAI086.PrefixEntryRank
+import OpenAI086.ConcreteBadDensityChain
+import OpenAI086.FiniteVariationCS
+import OpenAI086.IntegerLogBins
+
+import OpenAI086.IntegerLogExact
+import OpenAI086.ConcreteIntegerLogBadDensity
+import OpenAI086.ConcreteRankedIncidences
+import OpenAI086.ConcreteRankedLogChain
+import OpenAI086.ChronologicalFirstEntry
+import OpenAI086.ChronologicalIncidence
+import OpenAI086.ChronologicalHarmonic
+import OpenAI086.FiniteChronologicalChain
+import OpenAI086.ConcreteChronologicalLogChain
+import OpenAI086.InitialBadHeightCount
 
 /-!
 Independent OpenAI #086 audit and partial formalization.
@@ -100,6 +124,15 @@ Independent OpenAI #086 audit and partial formalization.
 Every `theorem` above contains a proof term to be checked by Lean.
 `Theorem1_1_Goal` is a DEFINITION of an unproved proposition.
 -/
+
+-- V14: exact initial-height absorption, complete full-window finite chain,
+-- and a level-by-level squared-energy assembly for Lemma 3.3.
+import OpenAI086.InitialHeightAbsorption
+import OpenAI086.FullChronologicalBadDensity
+import OpenAI086.FullChronologicalBadDensityStrict
+import OpenAI086.FullBadHeightReindex
+import OpenAI086.FiniteLevelEnergyAssembly
+import OpenAI086.FiniteDyadicDistinctLengths
 
 #check OpenAI086.quadratic_resonance
 #check OpenAI086.matched_quadratic_phase
@@ -327,3 +360,87 @@ Every `theorem` above contains a proof term to be checked by Lean.
 #check OpenAI086.finite_noncommuting_row_prefix_coarse
 #check OpenAI086.finite_noncommuting_variation_coarse
 #print axioms OpenAI086.finite_noncommuting_row_prefix_coarse
+
+-- Independent V9 exact height-lag identity (PDF Lemma 8.6).
+#check OpenAI086.finite_height_lag_telescoping
+#check OpenAI086.finite_height_lag_budget
+#print axioms OpenAI086.finite_height_lag_budget
+
+#check OpenAI086.bad_density_chain_with_proved_height_lag
+#print axioms OpenAI086.bad_density_chain_with_proved_height_lag
+
+#check OpenAI086.finite_predictor_weighted_orthogonality
+#print axioms OpenAI086.finite_predictor_weighted_orthogonality
+
+-- V11: actual finite-set union predicate, concrete two-axis counting,
+-- first-entry-rank cardinality and finite m-layer variation Cauchy.
+-- These remain uncompiled proof candidates until the Lean kernel runs.
+#check OpenAI086.finite_exceptional_union_card_le
+#check OpenAI086.finite_exceptional_union_fraction_le
+#check OpenAI086.paper_union_bad_height_pointwise
+#check OpenAI086.finite_prefix_members_force_cardinality
+#check OpenAI086.prefix_entry_exceptional_density_le
+#check OpenAI086.concrete_union_bad_density_chain
+#check OpenAI086.finite_layer_variation_cauchy_schwarz
+#check OpenAI086.integer_log_bin_11_10_monotone
+#print axioms OpenAI086.concrete_union_bad_density_chain
+#print axioms OpenAI086.finite_layer_variation_cauchy_schwarz
+#print axioms OpenAI086.integer_log_bin_11_10_monotone
+
+-- V12: exact integer log window and concrete two-axis rank bridge.
+#check OpenAI086.eleven_tenths_bernoulli
+#check OpenAI086.eleven_tenths_threshold_in_window
+#check OpenAI086.integer_log_11_10_window_stable
+#check OpenAI086.eleven_tenths_threshold_antitone
+#check OpenAI086.finite_label_card_fraction_as_sum
+#check OpenAI086.concrete_exceptional_fraction_from_rank
+#check OpenAI086.concrete_integer_log_bad_density_chain
+#check OpenAI086.concrete_ranked_integer_log_chain
+
+-- V13: constructed first-entry times, chronological ranks and initial heights.
+#check OpenAI086.first_entry_mem
+#check OpenAI086.first_entry_le_of_mem
+#check OpenAI086.chronological_rank_le_card_at_time
+#check OpenAI086.chronological_rank_injective
+#check OpenAI086.chronological_rank_index_injective
+#check OpenAI086.chronological_exception_fraction_bound
+#check OpenAI086.initial_bad_height_exact
+#check OpenAI086.initial_bad_height_lower_bound
+#print axioms OpenAI086.chronological_exception_fraction_bound
+
+-- V13 candidate: finite first-entry harmonic Lemma 8.5, independent.
+#check OpenAI086.chronologicalRankEquiv
+#check OpenAI086.chronological_rank_harmonic
+#check OpenAI086.chronological_exception_fraction_harmonic
+#print axioms OpenAI086.chronological_exception_fraction_harmonic
+
+-- V13: arbitrary finite monotone chains, with no artificial coverage.
+#check OpenAI086.extend_finite_chain_at
+#check OpenAI086.extend_finite_chain_mono
+#check OpenAI086.finite_chronological_harmonic_density
+#print axioms OpenAI086.finite_chronological_harmonic_density
+
+-- V13: two independently constructed rank orders, no assumed size ranks.
+#check OpenAI086.interleaved_C_position_mono
+#check OpenAI086.concrete_chronological_integer_log_chain
+#print axioms OpenAI086.concrete_chronological_integer_log_chain
+
+-- V15: exact initial-projection convention in dyadic Bessel blocks.
+import OpenAI086.AugmentedNestedProjectionBlocks
+import OpenAI086.FiniteLinearProjectionBlockBridge
+import OpenAI086.ActualDyadicTupleBessel
+import OpenAI086.ActualDyadicLevelSum
+
+-- V16: unconditional common-width grouping of row-dependent prefixes.
+-- Kernel status must be established by `lake build`, not by this source file.
+import OpenAI086.FiniteDyadicWidthGrouping
+import OpenAI086.FiniteDyadicOrderedWidthExpansion
+import OpenAI086.ActualDyadicMaskedLevelSum
+import OpenAI086.FiniteDyadicRowBlockSelection
+
+-- V17: bounded prefix block indices and exact one-layer Bessel assembly.
+import OpenAI086.FiniteDyadicBlockIndexBounds
+import OpenAI086.FiniteDyadicBoundedRowSelection
+import OpenAI086.ActualDyadicSelectedWidthBessel
+import OpenAI086.ActualDyadicOneLayerPrefix
+import OpenAI086.FiniteDyadicWidthTupleEnumeration

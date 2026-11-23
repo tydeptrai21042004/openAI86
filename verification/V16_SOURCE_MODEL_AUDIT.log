@@ -1,0 +1,34 @@
+{
+  "status": "static_packaging_audit_not_a_kernel_proof",
+  "file_count": 174,
+  "whole_project_reaches_all_lean_files": true,
+  "unreachable": [],
+  "errors": []
+}
+{
+  "kind": "source_inventory_not_kernel_certificate",
+  "lean_files": 174,
+  "theorem_declarations": 362,
+  "paper_results": 59,
+  "errors": []
+}
+{
+  "audit": "59_lean_target_entrypoints_not_paper_proofs",
+  "total": 59,
+  "partial_components": 21,
+  "finite_proxy_goals_only": 38,
+  "complete_kernel_verified": 0,
+  "current_paper_sha_match": true,
+  "errors": []
+}
+{
+  "status": "source_scan_not_kernel_check",
+  "files": 174,
+  "violations": [],
+  "safe": true
+}
+V16 common-width grouping: 16,868 exact rational checks PASSED
+Scope: width support, uniqueness, alignment, P0 inclusion,
+       row/layer-dependent depths, ordered m-layer distribution,
+       finite-model log inequality (NOT a Lean certificate).
+V16 SOURCE/MODEL CHECKS PASSED. NO LEAN KERNEL CERTIFICATE (lean/lake unavailable).
