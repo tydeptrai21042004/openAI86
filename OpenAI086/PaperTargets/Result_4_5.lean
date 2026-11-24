@@ -1,3 +1,4 @@
+import OpenAI086.PaperProgressionSeparationAlgebra
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -20,3 +21,6 @@ def result_4_5_model_goal
   finiteFourLinearTarget kernel arguments budget
 
 end OpenAI086.PaperTargets
+
+-- V18: source-related proof component, not a full paper proof.
+#check OpenAI086.v18_progression_pure_quadratic

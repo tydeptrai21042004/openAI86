@@ -1,3 +1,5 @@
+import OpenAI086.PaperInverseDerivative
+import OpenAI086.PaperInverseExtremal
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -22,3 +24,8 @@ def result_4_7_model_goal
       delta ≤ |∑ i : Fin n, f i * g i|
 
 end OpenAI086.PaperTargets
+
+-- Real restricted inverse components, kept separate from the old proxy.
+#check OpenAI086.v30_interval_inverse_first_step
+#check OpenAI086.v30_extremal_interval_quadratic
+#check OpenAI086.v30_extremal_interval_correlation

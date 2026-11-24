@@ -1,3 +1,4 @@
+import OpenAI086.PaperBoundedLift
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -20,3 +21,5 @@ def result_8_1_model_goal
     finiteThreeWayDecomposition f structured uniform err tolerance
 
 end OpenAI086.PaperTargets
+
+#check OpenAI086.v22_lift_physical_correction

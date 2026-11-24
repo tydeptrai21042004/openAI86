@@ -1,3 +1,4 @@
+import OpenAI086.PaperComponentSizeComparison
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -19,3 +20,6 @@ def result_8_11_model_goal
   finiteSquareBudget outputs budget
 
 end OpenAI086.PaperTargets
+
+-- V19: source-derived partial proof candidate, not the full lemma.
+#check OpenAI086.v19_component_size_bound

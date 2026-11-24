@@ -1,3 +1,4 @@
+import OpenAI086.PaperCoreAmplitudePowers
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -20,3 +21,6 @@ def result_9_3_model_goal
   finiteSparseMassTarget counts M delta C
 
 end OpenAI086.PaperTargets
+
+-- Source-related proof candidate, separate from the finite proxy.
+#check OpenAI086.v23_amplitude_exponents

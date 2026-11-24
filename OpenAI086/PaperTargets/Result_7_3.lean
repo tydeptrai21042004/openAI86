@@ -1,3 +1,4 @@
+import OpenAI086.PaperCertifiedVariation
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -19,3 +20,6 @@ def result_7_3_model_goal
   finiteSquareBudget outputs budget
 
 end OpenAI086.PaperTargets
+
+-- Source-related proof candidate, separate from the finite proxy.
+#check OpenAI086.v23_certified_variation_split

@@ -1,3 +1,4 @@
+import OpenAI086.PaperCubeChangesOfVariables
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -19,3 +20,6 @@ def result_4_8_model_goal
   |∏ i : Fin 8, vertices i| ≤ M ^ 8
 
 end OpenAI086.PaperTargets
+
+-- V18: source-related proof component, not a full paper proof.
+#check OpenAI086.v18_cube_high_left_inverse

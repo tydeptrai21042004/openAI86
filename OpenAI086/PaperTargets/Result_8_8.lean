@@ -1,3 +1,4 @@
+import OpenAI086.PaperGroupHistoryBessel
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -20,3 +21,6 @@ def result_8_8_model_goal
   finiteRowBesselTarget B
 
 end OpenAI086.PaperTargets
+
+-- V21 independent source component; the proxy remains a proxy.
+#check OpenAI086.v21_group_history_bessel

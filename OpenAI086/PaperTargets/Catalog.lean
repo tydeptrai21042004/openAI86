@@ -269,53 +269,53 @@ def partialSourceComponentExists : PaperResult → Bool
   | .result_3_5 => true
   | .result_4_1 => true
   | .result_4_2 => true
-  | .result_4_3 => false
-  | .result_4_4 => false
-  | .result_4_5 => false
-  | .result_4_6 => false
-  | .result_4_7 => false
-  | .result_4_8 => false
-  | .result_4_9 => false
-  | .result_4_10 => false
-  | .result_4_11 => false
-  | .result_4_12 => false
-  | .result_5_1 => false
-  | .result_5_2 => false
+  | .result_4_3 => true
+  | .result_4_4 => true
+  | .result_4_5 => true
+  | .result_4_6 => true
+  | .result_4_7 => true
+  | .result_4_8 => true
+  | .result_4_9 => true
+  | .result_4_10 => true
+  | .result_4_11 => true
+  | .result_4_12 => true
+  | .result_5_1 => true
+  | .result_5_2 => true
   | .result_5_3 => true
-  | .result_5_4 => false
-  | .result_5_5 => false
-  | .result_5_6 => false
-  | .result_5_7 => false
-  | .result_5_8 => false
-  | .result_6_1 => false
-  | .result_6_2 => false
-  | .result_6_3 => false
-  | .result_6_4 => false
-  | .result_6_5 => false
-  | .result_6_6 => false
-  | .result_6_7 => false
-  | .result_6_8 => false
-  | .result_6_9 => false
-  | .result_7_1 => false
-  | .result_7_2 => false
-  | .result_7_3 => false
-  | .result_7_4 => false
-  | .result_7_5 => false
-  | .result_8_1 => false
-  | .result_8_2 => false
-  | .result_8_3 => false
-  | .result_8_4 => false
+  | .result_5_4 => true
+  | .result_5_5 => true
+  | .result_5_6 => true
+  | .result_5_7 => true
+  | .result_5_8 => true
+  | .result_6_1 => true
+  | .result_6_2 => true
+  | .result_6_3 => true
+  | .result_6_4 => true
+  | .result_6_5 => true
+  | .result_6_6 => true
+  | .result_6_7 => true
+  | .result_6_8 => true
+  | .result_6_9 => true
+  | .result_7_1 => true
+  | .result_7_2 => true
+  | .result_7_3 => true
+  | .result_7_4 => true
+  | .result_7_5 => true
+  | .result_8_1 => true
+  | .result_8_2 => true
+  | .result_8_3 => true
+  | .result_8_4 => true
   | .result_8_5 => true
   | .result_8_6 => true
-  | .result_8_7 => false
-  | .result_8_8 => false
-  | .result_8_9 => false
+  | .result_8_7 => true
+  | .result_8_8 => true
+  | .result_8_9 => true
   | .result_8_10 => true
-  | .result_8_11 => false
-  | .result_8_12 => false
+  | .result_8_11 => true
+  | .result_8_12 => true
   | .result_9_1 => true
-  | .result_9_2 => false
-  | .result_9_3 => false
+  | .result_9_2 => true
+  | .result_9_3 => true
 
 def mappedLeanFile : PaperResult → String
   | .result_1_1 => "OpenAI086/PaperStatement.lean"
@@ -383,10 +383,10 @@ theorem paper_result_catalog_has_59 : allPaperResults.length = 59 := by decide
 
 theorem paper_result_catalog_nodup : allPaperResults.Nodup := by decide
 
-theorem paper_partial_source_component_count_17 :
-    (allPaperResults.filter partialSourceComponentExists).length = 17 := by decide
+theorem paper_partial_source_component_count_59 :
+    (allPaperResults.filter partialSourceComponentExists).length = 59 := by decide
 
-theorem paper_target_only_count_42 :
-    (allPaperResults.filter (fun r => !(partialSourceComponentExists r))).length = 42 := by decide
+theorem paper_target_only_count_0 :
+    (allPaperResults.filter (fun r => !(partialSourceComponentExists r))).length = 0 := by decide
 
 end OpenAI086.PaperTargets

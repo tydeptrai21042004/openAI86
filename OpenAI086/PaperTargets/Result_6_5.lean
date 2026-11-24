@@ -1,3 +1,4 @@
+import OpenAI086.PaperEndpointSeparation
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -20,3 +21,5 @@ def result_6_5_model_goal
   finiteRowBesselTarget B
 
 end OpenAI086.PaperTargets
+
+#check OpenAI086.v22_endpoint_synthesis

@@ -1,3 +1,4 @@
+import OpenAI086.PaperGoodPredicateCoherence
 import OpenAI086.PaperTargets.Models
 
 /-!
@@ -19,3 +20,6 @@ def result_8_4_model_goal
   finiteLabelBudget groups budget
 
 end OpenAI086.PaperTargets
+
+-- V18: source-related proof component, not a full paper proof.
+#check OpenAI086.v18_good_predecessor_coherence
