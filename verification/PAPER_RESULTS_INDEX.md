@@ -1,69 +1,65 @@
-# Source-based result-by-result formalization inventory
+# Coverage crosswalk — V31 (59 numbered results)
 
-Manuscript: `paper(1).pdf`, 93 pages, 5 October 2026. This is an **obligation register, not a proof certificate**.
+59 partial source entries; 0 full paper results kernel-certified. Lemma 3.5(2) is false as printed; a repaired ordinary proof and new uncompiled Lean components are documented in V31. Theorem 4.7 has a uniform denominator estimate and restricted inverse candidates, but the general inverse remains open.
 
 | Result | PDF page | Independent Lean components | Status |
 |---|---:|---|---|
-| Theorem 1.1 | 2 | `PaperStatement`, `PrincipalValueGoals`, `SignConvention` | PARTIAL COMPONENT / MODEL |
-| Lemma 2.1 | 4 | `LocalForms`, `ProgressionGeometry` | PARTIAL COMPONENT / MODEL |
-| Theorem 2.2 | 4 | `UniformBootstrap` | PARTIAL COMPONENT / MODEL |
-| Proposition 2.3 | 4 | `OuterStopping`, `UniformBootstrap` | PARTIAL COMPONENT / MODEL |
-| Lemma 2.4 | 5 | `OuterStopping`, `FiniteStoppingSets`, `FiniteMarginalCancellation`, `FiniteMultifamilyStops` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.1 | 7 | `Packing`, `FiniteStoppingSets`, `FiniteTonelliBudget`, `FiniteMultifamilyStops` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.2 | 8 | `PrivateCoordinates`, `PrivateEnergyExact`, `PathLabelEnergy` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.3 | 8 | `OrderedProductTelescoping`, `NoncommutingProducts`, `ArbitraryDepthTelescoping`, `GeneralNestedProjectionEnergy`, `NoncommutingContractionPerturbation`, `RowPrefixCounterexample` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.4 | 9 | `FiniteCompression`, `PathLabelEnergy`, `OrderedProductTelescoping`, `CompressionRowError`, `FiniteRowCauchySchwarz` | PARTIAL COMPONENT / MODEL |
-| Lemma 3.5 | 13 | `DyadicTails` | PARTIAL COMPONENT / MODEL |
-| Definition 4.1 | 15 | `QuadraticChartsElementary` | PARTIAL COMPONENT / MODEL |
-| Lemma 4.2 | 15 | `QuadraticChartsElementary`, `QuadraticPhase` | PARTIAL COMPONENT / MODEL |
-| Lemma 4.3 | 16 | — | OPEN |
-| Lemma 4.4 | 18 | — | OPEN |
-| Lemma 4.5 | 20 | — | OPEN |
-| Lemma 4.6 | 21 | — | OPEN |
-| Theorem 4.7 | 22 | — | OPEN |
-| Lemma 4.8 | 22 | — | OPEN |
-| Lemma 4.9 | 23 | — | OPEN |
-| Lemma 4.10 | 26 | — | OPEN |
-| Lemma 4.11 | 27 | — | OPEN |
-| Lemma 4.12 | 27 | — | OPEN |
-| Lemma 5.1 | 30 | — | OPEN |
-| Corollary 5.2 | 31 | — | OPEN |
-| Lemma 5.3 | 32 | `ErrataChecks`, `PredictorMoments` | PARTIAL COMPONENT / MODEL |
-| Lemma 5.4 | 33 | — | OPEN |
-| Lemma 5.5 | 34 | — | OPEN |
-| Proposition 5.6 | 35 | — | OPEN |
-| Lemma 5.7 | 37 | — | OPEN |
-| Proposition 5.8 | 38 | — | OPEN |
-| Lemma 6.1 | 40 | — | OPEN |
-| Lemma 6.2 | 41 | — | OPEN |
-| Lemma 6.3 | 42 | — | OPEN |
-| Lemma 6.4 | 43 | — | OPEN |
-| Lemma 6.5 | 45 | — | OPEN |
-| Lemma 6.6 | 46 | — | OPEN |
-| Lemma 6.7 | 48 | — | OPEN |
-| Proposition 6.8 | 49 | — | OPEN |
-| Lemma 6.9 | 50 | — | OPEN |
-| Lemma 7.1 | 52 | — | OPEN |
-| Lemma 7.2 | 53 | — | OPEN |
-| Lemma 7.3 | 58 | — | OPEN |
-| Lemma 7.4 | 60 | — | OPEN |
-| Proposition 7.5 | 62 | — | OPEN |
-| Lemma 8.1 | 65 | — | OPEN |
-| Lemma 8.2 | 67 | — | OPEN |
-| Lemma 8.3 | 68 | — | OPEN |
-| Lemma 8.4 | 69 | — | OPEN |
-| Lemma 8.5 | 69 | `EntryRankSummation`, `EntryRankConcrete` | PARTIAL COMPONENT / MODEL |
-| Lemma 8.6 | 70 | `BadDensityChain`, `ErrataChecks` | PARTIAL COMPONENT / MODEL |
-| Lemma 8.7 | 70 | — | OPEN |
-| Lemma 8.8 | 71 | — | OPEN |
-| Proposition 8.9 | 72 | — | OPEN |
-| Lemma 8.10 | 74 | `ComponentIntersections` | PARTIAL COMPONENT / MODEL |
-| Lemma 8.11 | 75 | — | OPEN |
-| Proposition 8.12 | 76 | — | OPEN |
-| Lemma 9.1 | 81 | `FirstFailure`, `SparsePairBudget`, `SparseBlockAccounting`, `ColoredPathUniqueness`, `ArbitraryColoredPaths`, `FirstFailureAnyRole`, `FiniteFirstSuccessWeights`, `VariableFirstSuccess` | PARTIAL COMPONENT / MODEL |
-| Proposition 9.2 | 87 | — | OPEN |
-| Proposition 9.3 | 89 | — | OPEN |
-
-**Zero numbered results are certified complete by this artifact.**
-`tools/paper_obligation_report.py --require-complete` intentionally fails until full kernel proofs and the main theorem exist.
-Added modules in this continuation are proof candidates, not yet compiled.
+| Theorem 1.1 | 2 | `OpenAI086/PaperStatement.lean`, `OpenAI086/PrincipalValueGoals.lean`, `OpenAI086/SignConvention.lean`, `OpenAI086/PaperBoundedTrilinearExtension.lean`, `OpenAI086/PaperTruncationSign.lean`, `OpenAI086/PaperMainReduction.lean`, `OpenAI086/PaperMainExtensionBridge.lean`, `OpenAI086/PaperSchwartzPV.lean`, `OpenAI086/PaperPVTrilinear.lean`, `OpenAI086/PaperSchwartzSpatialL1.lean`, `OpenAI086/PaperActualSchwartzOperator.lean`, `OpenAI086/PaperL1Duality.lean` | Partial candidate; kernel pending |
+| Lemma 2.1 | 4 | `OpenAI086/LocalForms.lean`, `OpenAI086/ProgressionGeometry.lean` | Partial candidate; kernel pending |
+| Theorem 2.2 | 4 | `OpenAI086/UniformBootstrap.lean`, `OpenAI086/PaperFinalAbsorption.lean` | Partial candidate; kernel pending |
+| Proposition 2.3 | 4 | `OpenAI086/OuterStopping.lean`, `OpenAI086/UniformBootstrap.lean`, `OpenAI086/PaperFinalAbsorption.lean`, `OpenAI086/PaperSideMinimum.lean` | Partial candidate; kernel pending |
+| Lemma 2.4 | 5 | `OpenAI086/OuterStopping.lean`, `OpenAI086/FiniteStoppingSets.lean`, `OpenAI086/FiniteMarginalCancellation.lean`, `OpenAI086/FiniteMultifamilyStops.lean`, `OpenAI086/PaperBoundedTrilinearExtension.lean`, `OpenAI086/PaperTruncationSign.lean`, `OpenAI086/PaperMainReduction.lean`, `OpenAI086/PaperMainExtensionBridge.lean`, `OpenAI086/PaperSchwartzPV.lean`, `OpenAI086/PaperPVTrilinear.lean`, `OpenAI086/PaperSchwartzSpatialL1.lean`, `OpenAI086/PaperActualSchwartzOperator.lean`, `OpenAI086/PaperL1Duality.lean`, `OpenAI086/PaperScaleKernel.lean` | Partial candidate; kernel pending |
+| Lemma 3.1 | 7 | `OpenAI086/Packing.lean`, `OpenAI086/FiniteStoppingSets.lean`, `OpenAI086/FiniteTonelliBudget.lean`, `OpenAI086/FiniteMultifamilyStops.lean`, `OpenAI086/PaperFinalAbsorption.lean`, `OpenAI086/PaperAttemptTreePacking.lean` | Partial candidate; kernel pending |
+| Lemma 3.2 | 8 | `OpenAI086/PrivateCoordinates.lean`, `OpenAI086/PrivateEnergyExact.lean`, `OpenAI086/PathLabelEnergy.lean`, `OpenAI086/FinitePrivateGramUpper.lean` | Partial candidate; kernel pending |
+| Lemma 3.3 | 8 | `OpenAI086/OrderedProductTelescoping.lean`, `OpenAI086/NoncommutingProducts.lean`, `OpenAI086/ArbitraryDepthTelescoping.lean`, `OpenAI086/GeneralNestedProjectionEnergy.lean`, `OpenAI086/NoncommutingContractionPerturbation.lean`, `OpenAI086/RowPrefixCounterexample.lean`, `OpenAI086/NestedProjectionLongRange.lean`, `OpenAI086/FiniteAdaptiveRowBessel.lean`, `OpenAI086/NoncommutingLayerBessel.lean`, `OpenAI086/FiniteAlignedProjectionBlocks.lean`, `OpenAI086/FiniteVariableProjectionBlocks.lean`, `OpenAI086/AdaptiveNoncommutingRows.lean`, `OpenAI086/FiniteProjectionLengthTuples.lean`, `OpenAI086/FiniteDyadicPrefixBlocks.lean`, `OpenAI086/FiniteDyadicOperatorBridge.lean`, `OpenAI086/FiniteLemma33Target.lean`, `OpenAI086/FiniteDyadicWidthGrouping.lean`, `OpenAI086/FiniteDyadicOrderedWidthExpansion.lean`, `OpenAI086/ActualDyadicMaskedLevelSum.lean`, `OpenAI086/FiniteDyadicRowBlockSelection.lean`, `OpenAI086/FiniteDyadicBlockIndexBounds.lean`, `OpenAI086/FiniteDyadicBoundedRowSelection.lean`, `OpenAI086/ActualDyadicSelectedWidthBessel.lean`, `OpenAI086/ActualDyadicOneLayerPrefix.lean`, `OpenAI086/FiniteDyadicWidthTupleEnumeration.lean`, `OpenAI086/ActualFinitePrefixInduction.lean`, `OpenAI086/ActualFiniteProductVariation.lean`, `OpenAI086/GenericDyadicGroups.lean`, `OpenAI086/NormedDyadicPrefix.lean`, `OpenAI086/NormedPrefixProducts.lean`, `OpenAI086/HilbertPrefixEnergy.lean`, `OpenAI086/FiniteHorizonHilbert.lean`, `OpenAI086/PaperHilbertClog.lean`, `OpenAI086/PaperLemma33Statement.lean`, `OpenAI086/PaperLemma33Submodules.lean` | Partial candidate; kernel pending |
+| Lemma 3.4 | 9 | `OpenAI086/FiniteCompression.lean`, `OpenAI086/PathLabelEnergy.lean`, `OpenAI086/OrderedProductTelescoping.lean`, `OpenAI086/CompressionRowError.lean`, `OpenAI086/FiniteRowCauchySchwarz.lean`, `OpenAI086/PaperCompressionMoments.lean`, `OpenAI086/PaperStoppingPartition.lean`, `OpenAI086/PaperL2MomentAssembly.lean`, `OpenAI086/PaperConcreteRestrictions.lean`, `OpenAI086/PaperCompressionMaximal.lean`, `OpenAI086/PaperCompressionVectorRows.lean` | Partial candidate; kernel pending |
+| Lemma 3.5 | 13 | `OpenAI086/DyadicTails.lean`, `OpenAI086/PaperEvaluationDominance.lean`, `OpenAI086/PaperHeightScaleCorrection.lean` | Printed (2) refuted; repaired proof candidate; kernel pending |
+| Definition 4.1 | 15 | `OpenAI086/QuadraticChartsElementary.lean` | Partial candidate; kernel pending |
+| Lemma 4.2 | 15 | `OpenAI086/QuadraticChartsElementary.lean`, `OpenAI086/QuadraticPhase.lean` | Partial candidate; kernel pending |
+| Lemma 4.3 | 16 | `OpenAI086/PaperTargets/Result_4_3.lean`, `OpenAI086/PaperWeylReturns.lean` | Partial candidate; kernel pending |
+| Lemma 4.4 | 18 | `OpenAI086/PaperTargets/Result_4_4.lean`, `OpenAI086/PaperChartPhase.lean` | Partial candidate; kernel pending |
+| Lemma 4.5 | 20 | `OpenAI086/PaperTargets/Result_4_5.lean`, `OpenAI086/PaperProgressionSeparationAlgebra.lean` | Partial candidate; kernel pending |
+| Lemma 4.6 | 21 | `OpenAI086/PaperTargets/Result_4_6.lean`, `OpenAI086/PaperSingleScaleModulation.lean` | Partial candidate; kernel pending |
+| Theorem 4.7 | 22 | `OpenAI086/PaperTargets/Result_4_7.lean`, `OpenAI086/PaperDiscreteInverseDomain.lean`, `OpenAI086/PaperCubeEnergy.lean`, `OpenAI086/PaperCubeInterval.lean`, `OpenAI086/PaperTwoStepLattice.lean`, `OpenAI086/PaperInverseDerivative.lean`, `OpenAI086/PaperInverseExtremal.lean`, `OpenAI086/PaperInverseUniformNormalization.lean` | Uniform normalization and restricted inverse candidates; general quantitative theorem open; kernel pending |
+| Lemma 4.8 | 22 | `OpenAI086/PaperTargets/Result_4_8.lean`, `OpenAI086/PaperCubeChangesOfVariables.lean`, `OpenAI086/PaperCubeEnergy.lean`, `OpenAI086/PaperCubeInterval.lean` | Partial candidate; kernel pending |
+| Lemma 4.9 | 23 | `OpenAI086/PaperTargets/Result_4_9.lean`, `OpenAI086/PaperTwoStepCoordinates.lean`, `OpenAI086/PaperTwoStepLattice.lean` | Partial candidate; kernel pending |
+| Lemma 4.10 | 26 | `OpenAI086/PaperTargets/Result_4_10.lean`, `OpenAI086/PaperInverseSeparation.lean` | Partial candidate; kernel pending |
+| Lemma 4.11 | 27 | `OpenAI086/PaperTargets/Result_4_11.lean`, `OpenAI086/PaperPairL1Form.lean` | Partial candidate; kernel pending |
+| Lemma 4.12 | 27 | `OpenAI086/PaperTargets/Result_4_12.lean`, `OpenAI086/PaperDetectionExtraction.lean` | Partial candidate; kernel pending |
+| Lemma 5.1 | 30 | `OpenAI086/PaperTargets/Result_5_1.lean`, `OpenAI086/PaperScaleRowSummation.lean` | Partial candidate; kernel pending |
+| Corollary 5.2 | 31 | `OpenAI086/PaperTargets/Result_5_2.lean`, `OpenAI086/PaperPredictorTruncation.lean` | Partial candidate; kernel pending |
+| Lemma 5.3 | 32 | `OpenAI086/ErrataChecks.lean`, `OpenAI086/PredictorMoments.lean`, `OpenAI086/FinitePredictorOrthogonality.lean` | Partial candidate; kernel pending |
+| Lemma 5.4 | 33 | `OpenAI086/PaperTargets/Result_5_4.lean`, `OpenAI086/PaperGreedyInsertion.lean` | Partial candidate; kernel pending |
+| Lemma 5.5 | 34 | `OpenAI086/PaperTargets/Result_5_5.lean`, `OpenAI086/FiniteFourSlotIncrementExpansion.lean` | Partial candidate; kernel pending |
+| Proposition 5.6 | 35 | `OpenAI086/PaperTargets/Result_5_6.lean`, `OpenAI086/PaperGreedyInsertion.lean` | Partial candidate; kernel pending |
+| Lemma 5.7 | 37 | `OpenAI086/PaperTargets/Result_5_7.lean`, `OpenAI086/PaperActiveMarginal.lean` | Partial candidate; kernel pending |
+| Proposition 5.8 | 38 | `OpenAI086/PaperTargets/Result_5_8.lean`, `OpenAI086/PaperActiveMinimum.lean` | Partial candidate; kernel pending |
+| Lemma 6.1 | 40 | `OpenAI086/PaperTargets/Result_6_1.lean`, `OpenAI086/PaperTagMixedCurvature.lean` | Partial candidate; kernel pending |
+| Lemma 6.2 | 41 | `OpenAI086/PaperTargets/Result_6_2.lean`, `OpenAI086/FinitePathTelescoping.lean` | Partial candidate; kernel pending |
+| Lemma 6.3 | 42 | `OpenAI086/PaperTargets/Result_6_3.lean`, `OpenAI086/PaperColorEpisodes.lean` | Partial candidate; kernel pending |
+| Lemma 6.4 | 43 | `OpenAI086/PaperTargets/Result_6_4.lean`, `OpenAI086/FiniteCatalogClosure.lean` | Partial candidate; kernel pending |
+| Lemma 6.5 | 45 | `OpenAI086/PaperTargets/Result_6_5.lean`, `OpenAI086/PaperEndpointSeparation.lean`, `OpenAI086/PaperEndpointGrid.lean` | Partial candidate; kernel pending |
+| Lemma 6.6 | 46 | `OpenAI086/PaperTargets/Result_6_6.lean`, `OpenAI086/PaperSameTagMoments.lean` | Partial candidate; kernel pending |
+| Lemma 6.7 | 48 | `OpenAI086/PaperTargets/Result_6_7.lean`, `OpenAI086/FiniteCatalogQuantitative.lean` | Partial candidate; kernel pending |
+| Proposition 6.8 | 49 | `OpenAI086/PaperTargets/Result_6_8.lean`, `OpenAI086/PaperBinaryLocalization.lean` | Partial candidate; kernel pending |
+| Lemma 6.9 | 50 | `OpenAI086/PaperTargets/Result_6_9.lean`, `OpenAI086/PaperBandTransfer.lean` | Partial candidate; kernel pending |
+| Lemma 7.1 | 52 | `OpenAI086/PaperTargets/Result_7_1.lean`, `OpenAI086/PaperMixedNormPower.lean` | Partial candidate; kernel pending |
+| Lemma 7.2 | 53 | `OpenAI086/PaperTargets/Result_7_2.lean`, `OpenAI086/PaperShortBlockResonance.lean` | Partial candidate; kernel pending |
+| Lemma 7.3 | 58 | `OpenAI086/PaperTargets/Result_7_3.lean`, `OpenAI086/PaperCertifiedVariation.lean` | Partial candidate; kernel pending |
+| Lemma 7.4 | 60 | `OpenAI086/PaperTargets/Result_7_4.lean`, `OpenAI086/PaperRollingSideStacks.lean` | Partial candidate; kernel pending |
+| Proposition 7.5 | 62 | `OpenAI086/PaperTargets/Result_7_5.lean`, `OpenAI086/PaperSideMinimum.lean` | Partial candidate; kernel pending |
+| Lemma 8.1 | 65 | `OpenAI086/PaperTargets/Result_8_1.lean`, `OpenAI086/PaperBoundedLift.lean`, `OpenAI086/PaperExplicitLift.lean` | Partial candidate; kernel pending |
+| Lemma 8.2 | 67 | `OpenAI086/PaperTargets/Result_8_2.lean`, `OpenAI086/PaperTinyGapClosure.lean`, `OpenAI086/PaperRationalHeightBounds.lean`, `OpenAI086/PaperRationalCramerBridge.lean`, `OpenAI086/PaperCramerNumerators.lean`, `OpenAI086/PaperRationalMinorSelection.lean`, `OpenAI086/PaperHeightAssembly.lean` | Partial candidate; kernel pending |
+| Lemma 8.3 | 68 | `OpenAI086/PaperTargets/Result_8_3.lean`, `OpenAI086/PaperHeightStabilization.lean`, `OpenAI086/PaperSaturatedLattice.lean`, `OpenAI086/PaperQuotientLift.lean`, `OpenAI086/PaperQuotientDivisibility.lean` | Partial candidate; kernel pending |
+| Lemma 8.4 | 69 | `OpenAI086/PaperTargets/Result_8_4.lean`, `OpenAI086/PaperGoodPredicateCoherence.lean` | Partial candidate; kernel pending |
+| Lemma 8.5 | 69 | `OpenAI086/EntryRankSummation.lean`, `OpenAI086/EntryRankConcrete.lean`, `OpenAI086/ConcreteRankedIncidences.lean` | Partial candidate; kernel pending |
+| Lemma 8.6 | 70 | `OpenAI086/BadDensityChain.lean`, `OpenAI086/ErrataChecks.lean`, `OpenAI086/HeightLagTelescoping.lean`, `OpenAI086/HeightLagChainBridge.lean`, `OpenAI086/InterleavedGapBudget.lean`, `OpenAI086/BadDensityBudgetAssembly.lean`, `OpenAI086/IntegerLogExact.lean`, `OpenAI086/ConcreteIntegerLogBadDensity.lean`, `OpenAI086/ConcreteRankedLogChain.lean` | Partial candidate; kernel pending |
+| Lemma 8.7 | 70 | `OpenAI086/PaperTargets/Result_8_7.lean`, `OpenAI086/PaperSeparatedRows.lean`, `OpenAI086/PaperIntegratedRows.lean`, `OpenAI086/PaperOscillatoryPreGraph.lean`, `OpenAI086/PaperOscillatoryIntegral.lean` | Partial candidate; kernel pending |
+| Lemma 8.8 | 71 | `OpenAI086/PaperTargets/Result_8_8.lean`, `OpenAI086/PaperGroupHistoryBessel.lean` | Partial candidate; kernel pending |
+| Proposition 8.9 | 72 | `OpenAI086/PaperTargets/Result_8_9.lean`, `OpenAI086/PaperSideChainColoring.lean`, `OpenAI086/PaperOscillatoryPreGraph.lean` | Partial candidate; kernel pending |
+| Lemma 8.10 | 74 | `OpenAI086/ComponentIntersections.lean` | Partial candidate; kernel pending |
+| Lemma 8.11 | 75 | `OpenAI086/PaperTargets/Result_8_11.lean`, `OpenAI086/PaperComponentSizeComparison.lean` | Partial candidate; kernel pending |
+| Proposition 8.12 | 76 | `OpenAI086/PaperTargets/Result_8_12.lean`, `OpenAI086/PaperTopCount.lean`, `OpenAI086/PaperFirstTopConstruction.lean` | Partial candidate; kernel pending |
+| Lemma 9.1 | 81 | `OpenAI086/FirstFailure.lean`, `OpenAI086/SparsePairBudget.lean`, `OpenAI086/SparseBlockAccounting.lean`, `OpenAI086/ColoredPathUniqueness.lean`, `OpenAI086/ArbitraryColoredPaths.lean`, `OpenAI086/FirstFailureAnyRole.lean`, `OpenAI086/FiniteFirstSuccessWeights.lean`, `OpenAI086/VariableFirstSuccess.lean`, `OpenAI086/FiniteCommonNeighborEnergy.lean`, `OpenAI086/FiniteFourStepWalkEnergy.lean`, `OpenAI086/FiniteBadPartnerPruning.lean` | Partial candidate; kernel pending |
+| Proposition 9.2 | 87 | `OpenAI086/PaperTargets/Result_9_2.lean`, `OpenAI086/PaperCorePairDetermination.lean` | Partial candidate; kernel pending |
+| Proposition 9.3 | 89 | `OpenAI086/PaperTargets/Result_9_3.lean`, `OpenAI086/PaperCoreAmplitudePowers.lean`, `OpenAI086/PaperSideMinimum.lean` | Partial candidate; kernel pending |

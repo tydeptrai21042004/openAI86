@@ -29,6 +29,7 @@ for cmd in ([sys.executable,'tools/static_audit.py'],
 check=root/'verification'/'MainTheoremAxiomCheck.lean'
 check.parent.mkdir(exist_ok=True)
 check.write_text('import OpenAI086Whole\n'
+                 'example : OpenAI086.Theorem1_1_Goal := OpenAI086.Theorem1_1_Proved\n'
                  '#check OpenAI086.Theorem1_1_Proved\n'
                  '#print axioms OpenAI086.Theorem1_1_Proved\n')
 print('Checking exact target and axiom dependencies...')

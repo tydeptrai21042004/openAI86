@@ -3,6 +3,9 @@
 from axiom_report_parser import parse_axioms, UnrecognizedAxiomReport
 T='OpenAI086.Theorem1_1_Proved'
 examples = [
+    (f"'Bogus.{T}' depends on axioms: [propext]", False),
+    (f"prefix {T} does not depend on any axioms", False),
+    (f"'{T}' depends on axioms: [propext] extra", False),
     (f"'{T}' depends on axioms: [propext, Classical.choice, Quot.sound]", True),
     (f"'{T}' does not depend on any axioms", True),
     (f"'{T}' depends on axioms: [propext, sorryAx]", False),

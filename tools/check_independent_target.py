@@ -17,9 +17,12 @@ for s in ('def Theorem1_1_Goal : Prop :=',
           '∏ i : Fin 3, eLpNorm (f i) 3'):
     assert s in text, f'Required semantic marker missing: {s}'
 # Avoid bringing in any upstream proof file or transparent theorem import.
-lean=list((ROOT/'OpenAI086').rglob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
+from independent_sources import independent_sources, LEGACY_MODULES
+lean=independent_sources(ROOT)
 for source in lean:
     code=source.read_text()
+    for dep in re.findall(r'(?m)^\s*(?:public\s+)?import\s+(\S+)',code):
+        assert dep not in LEGACY_MODULES, f'{source.name}: adapted proof imported: {dep}'
     assert not re.search(r'(?m)^\s*import\s+TrilinearHT\b',code), source.name
     assert not re.search(r'(?m)^\s*import\s+Auto\b',code), source.name
     assert not re.search(r'(?m)^\s*import\s+TrilinearHT\.Auto\b',code),source.name

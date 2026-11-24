@@ -21,7 +21,7 @@ def parse_axioms(stdout: str, theorem: str) -> set[str]:
     ident = re.escape(theorem)
     # Mathlib/Lean report: 'Namespace.name' depends on axioms: [a, b, ...]
     report = re.search(
-        rf"(?m)(?:['`\"])?{ident}(?:['`\"])?\s+depends on axioms:\s*\[([^\]]*)\]",
+        rf"(?m)^\s*(?:['`\"])?{ident}(?:['`\"])?\s+depends on axioms:\s*\[([^\]]*)\]\s*$",
         stdout,
     )
     if report:
@@ -33,7 +33,7 @@ def parse_axioms(stdout: str, theorem: str) -> set[str]:
             )
         return entries
     noaxioms = re.search(
-        rf"(?m)(?:['`\"])?{ident}(?:['`\"])?\s+does not depend on any axioms",
+        rf"(?m)^\s*(?:['`\"])?{ident}(?:['`\"])?\s+does not depend on any axioms\s*$",
         stdout,
     )
     if noaxioms:

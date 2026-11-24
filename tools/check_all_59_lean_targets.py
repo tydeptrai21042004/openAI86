@@ -38,8 +38,8 @@ for it in items:
         if level!='partial_component_exists':problems.append(key+': expected partial-source label')
     else:
         problems.append(key+': unexpected formalization status '+str(it['formalization']))
-if partial!=21:problems.append(f'partial should be 21 but is {partial}')
-if target_only!=38:problems.append(f'target-only should be 38 but is {target_only}')
+if partial!=59:problems.append(f'partial should be 59 but is {partial}')
+if target_only!=0:problems.append(f'target-only should be 0 but is {target_only}')
 for name in ('OpenAI086/PaperTargets/Catalog.lean','OpenAI086/PaperTargets/Models.lean',
              'OpenAI086/PaperTargets.lean','OpenAI086/FiniteDyadicOperatorBridge.lean'):
     if not (root/name).is_file():problems.append('missing infrastructure '+name)
@@ -71,9 +71,39 @@ for number,(module,theorem) in v7.items():
     if not target.is_file() or '#check OpenAI086.'+theorem not in target.read_text():
         problems.append('V7 target lacks proof-component crosscheck: '+number)
 
+# V26 direct component crosswalk; never treat a component as a full result.
+v26 = {'4.6': ('PaperSingleScaleModulation', 'v26_progression_modulation'), '4.10': ('PaperInverseSeparation', 'v26_inverse_separator_contradiction'), '4.11': ('PaperPairL1Form', 'v26_pair_coordinate_L1'), '4.12': ('PaperDetectionExtraction', 'v26_weighted_pair_witness'), '5.4': ('PaperGreedyInsertion', 'v26_fresh_moment_jump'), '5.6': ('PaperGreedyInsertion', 'v26_child_moment_energy'), '5.8': ('PaperActiveMinimum', 'v26_cell_min_expansion'), '6.3': ('PaperColorEpisodes', 'v26_winner_shift_injective'), '7.4': ('PaperRollingSideStacks', 'v26_select_matched_band')}
+for number,(module,theorem) in v26.items():
+    item=next(i for i in items if i['number']==number)
+    source='OpenAI086/'+module+'.lean'
+    if item['formalization']!='partial' or item['kernel_verified'] or source not in item['relevant_modules']:
+        problems.append('V26 mapping missing/incorrect: '+number)
+    if not re.search(r'^theorem\s+'+re.escape(theorem)+r'\b',(root/source).read_text(),re.M):
+        problems.append('V26 declaration missing: '+number)
+
+
+# V27 component crosswalk, no promotion to a full proof.
+v27 = {'4.3': ('PaperWeylReturns', 'v27_return_antisymmetry'), '5.1': ('PaperScaleRowSummation', 'v27_scale_row_sum'), '5.2': ('PaperPredictorTruncation', 'v27_predictor_tail_bound'), '5.7': ('PaperActiveMarginal', 'v27_tiny_frequency_marginal'), '6.1': ('PaperTagMixedCurvature', 'v27_mixed_curvature'), '6.6': ('PaperSameTagMoments', 'v27_same_tag_moment_bound'), '6.8': ('PaperBinaryLocalization', 'v27_localization_error')}
+for number,(module,theorem) in v27.items():
+    item=next(i for i in items if i['number']==number)
+    source='OpenAI086/'+module+'.lean'
+    if item['formalization']!='partial' or item['kernel_verified'] or source not in item['relevant_modules']:
+        problems.append('V27 mapping missing/incorrect: '+number)
+    if not re.search(r'^theorem\s+'+re.escape(theorem)+r'\b',(root/source).read_text(),re.M):
+        problems.append('V27 declaration missing: '+number)
+external=next(i for i in items if i['number']=='4.7')
+if external['formalization']!='partial' or external['kernel_verified'] or external.get('full_quantitative_inverse_open') is not True:
+    problems.append('4.7 must be partial only; full quantitative inverse remains open')
+for module, theorem in [('PaperInverseDerivative','v30_interval_inverse_first_step'),
+                        ('PaperInverseExtremal','v30_extremal_interval_quadratic'),
+                        ('PaperInverseExtremal','v30_extremal_interval_correlation')]:
+    source='OpenAI086/'+module+'.lean'
+    if source not in external['relevant_modules'] or not re.search(r'^theorem\s+'+theorem+r'\b',(root/source).read_text(),re.M):
+        problems.append('4.7 restricted inverse component missing: '+theorem)
+
 # Optional paper byte-for-byte check when the current PDF is present.
-paper=next((q for q in (Path('/mnt/data/paper(4).pdf'),
-    Path('/mnt/data/paper(3).pdf')) if q.is_file()), None)
+paper=next((q for q in (Path('/mnt/data/paper(5).pdf'), Path('/mnt/data/paper(4).pdf'),
+    Path('/mnt/data/paper(3).pdf'), Path('/mnt/data/paper (2).pdf')) if q.is_file()), None)
 if paper is not None:
     h=hashlib.sha256(paper.read_bytes()).hexdigest()
     if h!=index['paper_sha256']:

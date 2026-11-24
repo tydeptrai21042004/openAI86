@@ -9,31 +9,12 @@ still requires `#print axioms` after a successful Lake build.
 from pathlib import Path
 import re, sys, json
 ROOT=Path(__file__).resolve().parents[1]
-FILES=sorted((ROOT/'OpenAI086').rglob('*.lean'))+[ROOT/'OpenAI086.lean',ROOT/'OpenAI086Whole.lean']
+from independent_sources import independent_sources, LEGACY
+FILES=independent_sources(ROOT)
 
 # A lexer sufficient for nested Lean block comments, `--` line comments,
 # and escaped double-quoted strings. Newlines are retained for diagnostics.
-def code_only(src):
-    out=[]; i=0; block=0; string=False; line=False
-    while i<len(src):
-        if src[i]=='\n':
-            line=False; out.append('\n'); i+=1; continue
-        if line:
-            out.append(' ');i+=1;continue
-        if block:
-            if src[i:i+2]=='/-': block+=1;out.extend('  ');i+=2;continue
-            if src[i:i+2]=='-/': block-=1;out.extend('  ');i+=2;continue
-            out.append(' ');i+=1;continue
-        if string:
-            if src[i]=='\\':out.extend('  ');i+=2;continue
-            if src[i]=='"':string=False
-            out.append(' ');i+=1;continue
-        if src[i:i+2]=='/-':block=1;out.extend('  ');i+=2;continue
-        if src[i:i+2]=='--':line=True;out.extend('  ');i+=2;continue
-        if src[i]=='"':string=True;out.append(' ');i+=1;continue
-        out.append(src[i]);i+=1
-    if block or string:raise ValueError('unterminated Lean block comment or string')
-    return ''.join(out)
+from lean_lex import code_only
 
 violations=[]
 pattern=re.compile(r'\b(sorry|admit|axiom|constant|opaque|unsafe|native_decide)\b')
@@ -46,5 +27,6 @@ for path in FILES:
     if re.search(r'(?m)^\s*import\s+TrilinearHT\b',clean):
         violations.append(f'{path.name}: external published proof import')
 print(json.dumps({'status':'source_scan_not_kernel_check','files':len(FILES),
-                  'violations':violations,'safe':not violations},indent=2))
+                  'violations':violations,'safe':not violations,
+                  'preserved_legacy_not_in_independent_scan':[x for x in LEGACY if (ROOT/x).is_file()]},indent=2))
 if violations:sys.exit(1)

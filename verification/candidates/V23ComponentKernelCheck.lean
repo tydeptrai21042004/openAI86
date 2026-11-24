@@ -1,0 +1,33 @@
+import OpenAI086.PaperConcreteRestrictions
+import OpenAI086.PaperHeightAssembly
+import OpenAI086.PaperQuotientDivisibility
+import OpenAI086.PaperEndpointGrid
+import OpenAI086.PaperFirstTopConstruction
+import OpenAI086.PaperCertifiedVariation
+import OpenAI086.PaperCorePairDetermination
+import OpenAI086.PaperCoreAmplitudePowers
+import OpenAI086.PaperOscillatoryIntegral
+import OpenAI086.PaperExplicitLift
+
+#print axioms OpenAI086.v23_restrict_ae
+#print axioms OpenAI086.v23_L2_disjoint_support
+#print axioms OpenAI086.v23_restrict_orthogonal
+#print axioms OpenAI086.v23_rescaled_cramer_l1
+#print axioms OpenAI086.v23_cramer_tiny_gap
+#print axioms OpenAI086.v23_power_quotient_lift
+#print axioms OpenAI086.v23_shift_descends
+#print axioms OpenAI086.v23_power_quotient_lift_gcd
+#print axioms OpenAI086.v23_last_separation
+#print axioms OpenAI086.v23_overlap_grid_constant
+#print axioms OpenAI086.v23_first_top_exists
+#print axioms OpenAI086.v23_first_top_unique
+#print axioms OpenAI086.v23_first_top_whole_cell
+#print axioms OpenAI086.v23_certified_variation_split
+#print axioms OpenAI086.v23_certified_variation_energy
+#print axioms OpenAI086.v23_two_frequency_equations
+#print axioms OpenAI086.v23_amplitude_exponents
+#print axioms OpenAI086.v23_oscillatory_ibp_bound
+#print axioms OpenAI086.v23_small_slope_oscillatory_bound
+#print axioms OpenAI086.v23_private_lift_energy
+#print axioms OpenAI086.v23_cleared_minor_nonsingular
+#print axioms OpenAI086.v23_bounded_height_square_system

@@ -12,7 +12,8 @@ root = Path(__file__).resolve().parents[1]
 source = json.loads((root/'verification/PAPER_RESULTS_INDEX.json').read_text(encoding='utf-8'))
 items = source['results']
 status = json.loads((root/'STATUS.json').read_text(encoding='utf-8'))
-files = sorted((root/'OpenAI086').rglob('*.lean'))
+from independent_sources import core_sources, LEGACY
+files = core_sources(root)
 theorems = sum(bool(re.match(r'^\s*theorem\s+', line)) for path in files for line in path.read_text(encoding='utf-8').splitlines())
 errors=[]
 
@@ -29,6 +30,8 @@ for item in items:
     if item.get('kernel_verified') and item.get('formalization') != 'full_kernel_verified':
         errors.append(f'{key}: inconsistent kernel_verification flag')
     for path in item.get('relevant_modules',[]):
+        if path in LEGACY:
+            errors.append(f'{key}: adapted legacy source cannot count as independent proof: {path}')
         if not (root/path).is_file():
             errors.append(f'{key}: nonexistent referenced Lean file {path}')
     if item.get('formalization') == 'full_kernel_verified':

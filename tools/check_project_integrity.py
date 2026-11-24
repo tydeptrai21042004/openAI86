@@ -5,7 +5,8 @@ import re,sys,json
 root=Path(__file__).resolve().parents[1]
 # Audit only the independent root package; full-theorem has its own Lake package
 # and is checked separately by audit_theorem_integration.py + Lean.
-lean_files=sorted((root/'OpenAI086').rglob('*.lean')) + [root/'OpenAI086.lean', root/'OpenAI086Whole.lean']
+from independent_sources import independent_sources, LEGACY, LEGACY_MODULES
+lean_files=independent_sources(root)
 imports={}; errors=[]
 for path in lean_files:
     mod='.'.join(path.relative_to(root).with_suffix('').parts)
@@ -15,6 +16,9 @@ for path in lean_files:
         if m:
             dep=m.group(1)
             modules.append(dep)
+            if dep in LEGACY_MODULES:
+                errors.append(f'{mod}: independent module imports legacy adapted proof {dep}')
+                continue
             if dep=='Mathlib' or dep.startswith('Mathlib.'):
                 continue
             if not (root / (dep.replace('.','/')+'.lean')).is_file():
@@ -45,6 +49,7 @@ if not re.search(r'\bdef\s+Theorem1_1_Goal\s*:\s*Prop\b', main):
     errors.append('Theorem 1.1 must remain explicitly an unproved proposition')
 result={'status':'static_packaging_audit_not_a_kernel_proof',
         'file_count':len(lean_files),'whole_project_reaches_all_lean_files':not not_reached,
-        'unreachable':not_reached,'errors':errors}
+        'unreachable':not_reached,'errors':errors,
+        'preserved_legacy_excluded':[x for x in LEGACY if (root/x).is_file()]}
 print(json.dumps(result,indent=2))
 if errors:sys.exit(1)

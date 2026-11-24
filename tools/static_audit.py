@@ -4,17 +4,26 @@ from pathlib import Path
 import re, sys, json
 root=Path(__file__).resolve().parents[1]
 # The external-proof integration is a separate project with its own audit.
-files=sorted((root/'OpenAI086').rglob('*.lean')) + [root/'OpenAI086.lean', root/'OpenAI086Whole.lean']
+from independent_sources import independent_sources, LEGACY_MODULES
+from lean_lex import code_only
+files=independent_sources(root)
 fail=[]
 theorems=[]
 for p in files:
-    src=p.read_text(encoding='utf-8')
+    try:
+        src=code_only(p.read_text(encoding='utf-8'))
+    except ValueError as exc:
+        fail.append(f'{p.relative_to(root)}: {exc}')
+        continue
     for idx,line in enumerate(src.splitlines(),1):
         x=line.strip()
         if re.match(r'^(sorry|admit|axiom|constant|opaque|unsafe\s+def)\b',x):
             fail.append(f'{p.relative_to(root)}:{idx}: forbidden declaration/placeholder: {x[:120]}')
-        if x.startswith('import '):
-            module=x[len('import '):].strip()
+        m=re.match(r'^(?:public\s+)?import\s+(\S+)',x)
+        if m:
+            module=m.group(1)
+            if module in LEGACY_MODULES:
+                fail.append(f'{p.relative_to(root)}:{idx}: adapted source imported: {module}')
             if not (module in ('Mathlib', 'OpenAI086') or module.startswith('Mathlib.') or module.startswith('OpenAI086.')):
                 fail.append(f'{p.relative_to(root)}:{idx}: unapproved import: {module}')
         if re.match(r'^theorem\s+',x):

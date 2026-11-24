@@ -1,3 +1,21 @@
+## V27 current status — 24 November 2026
+
+253 reachable Lean files; 654 theorem declarations; 58 partial source entries, 1 open entry with proxy and domain definitions, 0 fully kernel-certified. 11,082 exact model checks passed. Theorem 4.7, uniform L³ estimate and Lean kernel verification remain open. See `V27_PROGRESS.md` and `bash verify_smoke_v27.sh`. Older statuses below are historical.
+
+## V26 current status — 24 November 2026
+
+245 reachable Lean files; 636 theorem declarations; 51 partial source entries, 8 proxy-only, 0 fully kernel-certified. 9,883 exact model checks passed. New direct components for 4.6, 4.10, 4.11, 4.12, 5.4, 5.6, 5.8, 6.3, 7.4. Lean/Lake unavailable; Theorem 1.1 and 4.7 remain open. See `V26_PROGRESS.md` and `bash verify_smoke_v26.sh`. Older statuses below are historical.
+
+## V25 current status — 24 November 2026
+
+237 reachable Lean files; 611 public theorem declarations; 42 partial source entries, 17 proxy-only entries, 0 kernel-certified paper results. New: 9,901 exact model checks; V23–V25 total: 62,743. Paired Schwartz principal-value integral, spatial L1 majorant and concrete trilinear operator are uncompiled source candidates. The uniform L3 estimate and external inverse theorem remain open. See V25_PROGRESS.md and `bash verify_smoke_v25.sh`. Lean/Lake unavailable here; no kernel certification. Historical statuses follow.
+
+## V21 current status — 24 November 2026
+
+203 reachable Lean files; 467 theorem declarations; 30 partial source items, 29 proxy-only items, 0 fully kernel-verified paper results. 37,002 new exact model/parser checks passed. Lean/Lake unavailable. See V21_PROGRESS.md, `bash verify_lemma33_v21.sh` and `bash verify_smoke_v21.sh`.
+
+Historical content follows.
+
 # Build and certification status — continuation
 
 - Source integrity, all imported local modules: **PASS** (38 Lean files).

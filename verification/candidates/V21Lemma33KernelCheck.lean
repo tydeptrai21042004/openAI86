@@ -1,0 +1,4 @@
+import OpenAI086.PaperLemma33Statement
+
+#print axioms OpenAI086.v21_paper_lemma33_prefix
+#print axioms OpenAI086.v21_paper_lemma33_variation

@@ -1,0 +1,59 @@
+import OpenAI086.PaperSingleScaleModulation
+import OpenAI086.PaperInverseSeparation
+import OpenAI086.PaperPairL1Form
+import OpenAI086.PaperDetectionExtraction
+import OpenAI086.PaperGreedyInsertion
+import OpenAI086.PaperActiveMinimum
+import OpenAI086.PaperColorEpisodes
+import OpenAI086.PaperRollingSideStacks
+
+#check OpenAI086.v26_progression_modulation_phase
+#print axioms OpenAI086.v26_progression_modulation_phase
+#check OpenAI086.v26_progression_modulation
+#print axioms OpenAI086.v26_progression_modulation
+#check OpenAI086.v26_multiplier_energy
+#print axioms OpenAI086.v26_multiplier_energy
+#check OpenAI086.v26_inverse_separator_contradiction
+#print axioms OpenAI086.v26_inverse_separator_contradiction
+#check OpenAI086.v26_decomposition_closure_error
+#print axioms OpenAI086.v26_decomposition_closure_error
+#check OpenAI086.v26_pair_coordinate_L1
+#print axioms OpenAI086.v26_pair_coordinate_L1
+#check OpenAI086.v26_weighted_witness
+#print axioms OpenAI086.v26_weighted_witness
+#check OpenAI086.v26_weighted_pair_witness
+#print axioms OpenAI086.v26_weighted_pair_witness
+#check OpenAI086.v26_clipping_tail_pointwise
+#print axioms OpenAI086.v26_clipping_tail_pointwise
+#check OpenAI086.v26_clipping_tail_integral
+#print axioms OpenAI086.v26_clipping_tail_integral
+#check OpenAI086.v26_fresh_moment_jump
+#print axioms OpenAI086.v26_fresh_moment_jump
+#check OpenAI086.v26_insertion_energy_charge
+#print axioms OpenAI086.v26_insertion_energy_charge
+#check OpenAI086.v26_child_moment_energy
+#print axioms OpenAI086.v26_child_moment_energy
+#check OpenAI086.v26_active_union_count
+#print axioms OpenAI086.v26_active_union_count
+#check OpenAI086.v26_min_subadd
+#print axioms OpenAI086.v26_min_subadd
+#check OpenAI086.v26_min_sum
+#print axioms OpenAI086.v26_min_sum
+#check OpenAI086.v26_cell_min_expansion
+#print axioms OpenAI086.v26_cell_min_expansion
+#check OpenAI086.v26_marked_unique
+#print axioms OpenAI086.v26_marked_unique
+#check OpenAI086.v26_fixed_top_winner
+#print axioms OpenAI086.v26_fixed_top_winner
+#check OpenAI086.v26_mark_failure_persists
+#print axioms OpenAI086.v26_mark_failure_persists
+#check OpenAI086.v26_shift_winner_marked
+#print axioms OpenAI086.v26_shift_winner_marked
+#check OpenAI086.v26_winner_shift_injective
+#print axioms OpenAI086.v26_winner_shift_injective
+#check OpenAI086.v26_rolling_stack_increment
+#print axioms OpenAI086.v26_rolling_stack_increment
+#check OpenAI086.v26_side_prefix_telescoping
+#print axioms OpenAI086.v26_side_prefix_telescoping
+#check OpenAI086.v26_select_matched_band
+#print axioms OpenAI086.v26_select_matched_band

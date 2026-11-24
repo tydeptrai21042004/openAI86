@@ -3,7 +3,8 @@
 import json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-files=sorted((root/'OpenAI086').rglob('*.lean'))+[root/'OpenAI086.lean',root/'OpenAI086Whole.lean']
+from independent_sources import independent_sources, LEGACY
+files=independent_sources(root)
 lemmas=[]
 for f in files:
  for n,line in enumerate(f.read_text('utf8').splitlines(),1):
@@ -18,6 +19,7 @@ report={'audit_kind':'STATIC_ONLY_NOT_KERNEL_VERIFICATION',
         'numbered_full_results_kernel_verified':0,
         'main_theorem_kernel_verified':False,
         'external_published_lean_code_imported':False,
+        'preserved_legacy_excluded':[x for x in LEGACY if (root/x).is_file()],
         'lean_kernel_build_executed_by_this_script':False,
         'additional_independent_modules':[
           'ArbitraryDepthTelescoping','OrderedProductTelescoping',
