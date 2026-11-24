@@ -1,0 +1,36 @@
+/-! Optional dependency-backed proof of the unchanged V32 goal.
+The uniform estimate, sign identity and PV convergence are supplied by
+roos-j/lean-trilinearht at the registered commit. This is NOT an independent proof.
+The script prepends the original PaperStatement.lean and imports the pinned project.
+-/
+noncomputable section
+namespace OpenAI086
+open MeasureTheory Filter Topology
+
+theorem Theorem1_1_Proved : Theorem1_1_Goal := by
+  obtain ⟨C, hC⟩ := TrilinearHT.trilinear_ht_bound
+  refine ⟨max C 0, le_max_right C 0, ?_⟩
+  intro f
+  let Tf : ℝ → ℂ := TrilinearHT.T (fun i => f i)
+  refine ⟨fun x => -Tf x, ?_, ?_⟩
+  · intro x
+    have hsign : (fun ε : ℝ => truncHilbert (fun i => f i) x ε) =
+        (fun ε : ℝ => -TrilinearHT.T_trunc (fun i => f i) x ε) := by
+      funext ε
+      have h := Auto.T_trunc_eq_neg (fun i => (f i : ℝ → ℂ)) x ε
+      change TrilinearHT.T_trunc (fun i => f i) x ε =
+        -(truncHilbert (fun i => f i) x ε) at h
+      rw [h, neg_neg]
+    rw [hsign]
+    exact (Auto.tendsto_T_trunc f x).neg
+  · change eLpNorm (-Tf) 1 ≤ ENNReal.ofReal (max C 0) * ∏ i : Fin 3, eLpNorm (f i) 3
+    rw [eLpNorm_neg]
+    exact (hC f).trans (mul_le_mul_right' (ENNReal.ofReal_le_ofReal (le_max_left C 0)) _)
+
+end OpenAI086
+
+example : OpenAI086.Theorem1_1_Goal := OpenAI086.Theorem1_1_Proved
+#print axioms TrilinearHT.trilinear_ht_bound
+#print axioms Auto.T_trunc_eq_neg
+#print axioms Auto.tendsto_T_trunc
+#print axioms OpenAI086.Theorem1_1_Proved
