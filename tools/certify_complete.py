@@ -18,6 +18,9 @@ src=proof.read_text(encoding='utf8')
 if not re.search(r'\btheorem\s+Theorem1_1_Proved\s*:\s*Theorem1_1_Goal\b',src):
     print('OPEN: The required theorem does not have the exact local target type.')
     sys.exit(1)
+if not re.search(r'\btheorem\s+Theorem1_1_Full_Proved\s*:\s*V41FullMainGoal\b',src):
+    print('OPEN: the full Schwartz estimate and unique extension theorem are required.')
+    sys.exit(1)
 if not shutil.which('lake'):
     print('UNVERIFIED: Lake/Lean not installed.')
     sys.exit(2)
@@ -31,7 +34,9 @@ check.parent.mkdir(exist_ok=True)
 check.write_text('import OpenAI086Whole\n'
                  'example : OpenAI086.Theorem1_1_Goal := OpenAI086.Theorem1_1_Proved\n'
                  '#check OpenAI086.Theorem1_1_Proved\n'
-                 '#print axioms OpenAI086.Theorem1_1_Proved\n')
+                 '#print axioms OpenAI086.Theorem1_1_Proved\n'
+                 'example : OpenAI086.V41FullMainGoal := OpenAI086.Theorem1_1_Full_Proved\n'
+                 '#print axioms OpenAI086.Theorem1_1_Full_Proved\n')
 print('Checking exact target and axiom dependencies...')
 result=subprocess.run(['lake','env','lean',str(check)],cwd=root,
                       text=True,capture_output=True)
@@ -44,6 +49,10 @@ if result.returncode:
 try:
     axioms = parse_axioms(result.stdout + result.stderr,
                          'OpenAI086.Theorem1_1_Proved')
+    full_axioms = parse_axioms(result.stdout + result.stderr,
+                               'OpenAI086.Theorem1_1_Full_Proved')
+    if (axioms | full_axioms) - {'propext', 'Classical.choice', 'Quot.sound'}:
+        raise UnrecognizedAxiomReport('Strict foundational dependency policy violated')
 except UnrecognizedAxiomReport as ex:
     print(f'FAIL: {ex}', file=sys.stderr)
     sys.exit(3)

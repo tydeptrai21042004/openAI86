@@ -8,12 +8,17 @@ root=Path(__file__).resolve().parents[1]
 from independent_sources import independent_sources, LEGACY, LEGACY_MODULES
 lean_files=independent_sources(root)
 imports={}; errors=[]
+from lean_lex import code_only
 for path in lean_files:
     mod='.'.join(path.relative_to(root).with_suffix('').parts)
     modules=[]
-    for line in path.read_text(encoding='utf-8').splitlines():
+    header_finished=False
+    for lineno,line in enumerate(code_only(path.read_text(encoding='utf-8')).splitlines(),1):
         m=re.match(r'^\s*(?:public\s+)?import\s+(\S+)',line)
+        if not m and line.strip() and line.strip() not in {'prelude', 'module'}:
+            header_finished=True
         if m:
+            if header_finished: errors.append(f'{mod}:{lineno}: import after declarations')
             dep=m.group(1)
             modules.append(dep)
             if dep in LEGACY_MODULES:
@@ -34,6 +39,17 @@ if 'OpenAI086.MainProof' in imports and 'OpenAI086.MainProof' not in imports.get
     errors.append('MainProof exists but is not imported by OpenAI086.lean')
 if any('TrilinearHT' in d for ds in imports.values() for d in ds):
     errors.append('Non-independent TrilinearHT dependency detected')
+# Detect cycles independently of reachability.
+active=set(); done=set()
+def visit(mod):
+    if mod in active:
+        errors.append(f'Local import cycle involving {mod}');return
+    if mod in done:return
+    active.add(mod)
+    for dep in imports.get(mod,[]):
+        if dep in imports:visit(dep)
+    active.remove(mod);done.add(mod)
+for mod in imports:visit(mod)
 seen=set()
 def reach(mod):
     if mod in seen:return
