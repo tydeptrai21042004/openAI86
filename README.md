@@ -1,3 +1,13 @@
+> **V45 update:** See [V45_PROGRESS.md](V45_PROGRESS.md) for the scalar-input normal equation and continuous cut-refit candidates. Static checks passed; Lean kernel checks blocked (0/58 certified, 0/1 unconditional main theorem).
+
+> **V43 continuation:** see [V43_PROGRESS.md](V43_PROGRESS.md). Run `bash verify_v43.sh` or the GitHub Actions workflow for isolated kernel checks. No manuscript result is certified here; the unconditional main theorem remains open.
+
+# V41 — integrated independent Lean source project (PARTIAL)
+
+Current status: **287 independent files, 822 line-anchored theorem declarations, 59 indexed partial items, 0 fully certified.** Imports and static metadata repaired. Lean/Lake unavailable here; no successful kernel build and no proof of Theorem 1.1. See [V41_PROGRESS.md](V41_PROGRESS.md). Run `bash verify_v41.sh` on the pinned toolchain. Older sections below are historical release notes, not current status.
+
+---
+
 ## V17 continuation — 23 November 2026
 
 New **uncompiled** Lean source targets bounded dyadic `Fin (2^k)` block
@@ -141,3 +151,29 @@ See [V15_PROGRESS.md](V15_PROGRESS.md). New modules connect the `Δ₀=P₀` con
 ### V16 continuation (source candidates, not a kernel certificate)
 
 Run `bash verify_smoke_v16.sh`. New math: exact row-dependent dyadic prefix grouping by common widths, zero-or-aligned-block extraction, and masked noncommuting Bessel row-energy candidate. See `V16_PROGRESS.md` for the exact remaining proof obligations.
+
+## Latest continuation: V46
+
+See [V46_PROGRESS.md](V46_PROGRESS.md). Run `bash verify_v46.sh` for the new candidate checks. The full paper remains uncertified.
+
+## V49 continuation
+
+V49 adds `PaperV49AnchorCoherence.lean` and `PaperV49ErrorRows.lean`.
+The former proves that a current active-anchor cell determines its complete
+selected-anchor history through that depth and its predecessor anchor label.
+The latter formalizes the p.12 finite coefficient-error row estimate from
+explicit row Bessel contraction and the integrated `D^3` column-energy
+budget. These remain uncompiled Lean candidates; static audits and finite
+exact-rational model checks are not kernel certificates. See
+`V49_PROGRESS.md` and `V49_VERIFICATION_LOG.txt`.
+
+
+## Latest continuation: V50
+
+V50 adds `PaperV50StageProjectionBridge.lean`: actual continuous L² stage
+spans from measurable local columns, nestedness from an explicit almost-everywhere
+refinement identity, an application of Lemma 3.3 to those stage projections,
+and coefficient-synthesis identities for consecutive ordered products. The
+remaining geometric refinement and cross-atom support-orthogonality obligations
+are explicit. Run `bash verify_v50.sh`; when Lean/Lake are unavailable, kernel
+verification correctly reports `BLOCKED` rather than success. See `V50_PROGRESS.md`.

@@ -1,13 +1,13 @@
 {
-  "source_paper": "paper(4).pdf, uploaded 2026-11-22; checks compare to this 93-page PDF",
+  "source_paper": "paper(6).pdf, exact SHA-256 match to October 5, 2026 manuscript",
   "formalization_model": "independent_mathlib_only",
   "trilinearht_external_import": false,
   "adapted_Lemma33Reviewed_excluded": true,
   "named_paper_results": 59,
-  "numbered_results_with_partial_components": 21,
+  "numbered_results_with_partial_components": 59,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 179,
-  "theorem_declarations_in_source": 374,
+  "root_lean_file_count": 318,
+  "theorem_declarations_in_source": 959,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -17,21 +17,20 @@
   "symbolic_sanity_check_passed": true,
   "numeric_sanity_checks_passed": true,
   "linux_lake_executable_available_here": false,
-  "completeness_gate_exit_code": 3,
+  "completeness_gate_exit_code": null,
   "new_modules_this_continuation": [
-    "FiniteTonelliBudget",
-    "FiniteMultifamilyStops",
-    "ArbitraryColoredPaths",
-    "CompressionRowError",
-    "FirstFailureAnyRole",
-    "FiniteFirstSuccessWeights"
+    "PaperV48PrivateTransition",
+    "PaperV48RestartCutoff",
+    "PaperV48SpatialAnchors",
+    "PaperV48RestartAssembly",
+    "PaperV48AnchorPartitions"
   ],
-  "notes": "V17: bounded Fin(2^k) dyadic block selectors; explicit single-width row Bessel; one-layer variable-prefix logarithmic estimate and width-tuple enumeration are Lean SOURCE CANDIDATES, not kernel compiled. Full Lemma 3.3 (m>1/complex Hilbert), Lemma 3.4, Theorem 1.1 open.",
+  "notes": "V48: adds coefficient-transition lower bound for actual augmented columns, exact restart half-contraction from explicit variation/energy assumptions, finite history-labelled measurable nested anchor partitions, and 2,012 deterministic exact model checks. The actual generation-by-generation anchor-cell quotient, derivation of variation from concrete projection products, and full Lemma 3.4 remain open. Lean/Lake unavailable; zero paper results promoted.",
   "latest_correction_date": "2026-11-23",
-  "new_exact_arithmetic_cases": 9100,
+  "new_exact_arithmetic_cases": 2012,
   "external_published_verification_script_available": false,
   "external_published_formalization_included": false,
-  "new_deterministic_regression_cases_in_this_continuation": 9100,
+  "new_deterministic_regression_cases_in_this_continuation": 2012,
   "strict_axiom_report_parser_available": true,
   "kernel_build_verified_here": false,
   "new_conditional_theorem_bridge": "OpenAI086.Theorem1_1_from_plus_shift (requires explicit analytic hypotheses)",
@@ -189,8 +188,8 @@
     "kernel_certificate": false
   },
   "v12_build_disposition": "SOURCE ONLY; Lean/Lake not installed here. New theorem declarations are uncompiled proof candidates.",
-  "version": "V17",
-  "last_source_work": "Unconditional width-grouped dyadic-prefix decomposition, row-indexed zero-or-aligned-block selections, masked actual-projection Bessel energy for finite width-tuples; final tuple reindexing and Fin count integration remain open.",
+  "version": "V51",
+  "last_source_work": "V51: source-derived Weyl return algebra and isotropic-span bridge; external LSS theorem interface; exact four-slot staggered product expansion; conditional Proposition 8.9 event-energy assembly. Lemma 4.3 chart/Fourier geometry, Theorem 4.7 external nilmanifold construction, Section 7.2 analytic short-block estimate, Lemma 9.1 separated sparse mass, Proposition 2.3 analytic normalized absorption, and Theorem 1.1 remain open.",
   "new_modules_v13": [
     "ChronologicalFirstEntry",
     "ChronologicalIncidence",
@@ -240,5 +239,68 @@
   "new_exact_rational_checks_v17": 442192,
   "v17_fast_regression_count": 82750,
   "v17_full_regression_count": 442192,
-  "v17_smoke_exit_code": 2
+  "v17_smoke_exit_code": 2,
+  "v41_focused_regression_checks_passed": 27997,
+  "v41_verify_exit_code": 2,
+  "v41_full_historical_suite": "not completed within execution limit",
+  "v45_model_checks_passed": true,
+  "v45_target_verification_exit_code": 2,
+  "v48_kernel_certification": "NOT RUN: Lean/Lake unavailable; verification targets fail closed with exit code 2",
+  "v48_scope": {
+    "lemma_3_2": "Pointwise coefficient-motion to actual augmented-column increment lower bound; existing scalar moment and L2 projection candidates retained.",
+    "lemma_3_4": "Quantitative restart half-contraction assembled conditionally from pointwise increment lower bound, nested-prefix variation, and D^5 representative-energy caps.",
+    "anchor_partitions": "Finite history-labelled stage partitions are measurable and nested. The quotient identifying history labels with exactly the paper active-anchor atoms remains open.",
+    "kernel_status": "No Lean/Lake executable or network toolchain install available; no kernel certificate issued."
+  },
+  "new_modules_this_continuation_v49": [
+    "PaperV49AnchorCoherence",
+    "PaperV49ErrorRows"
+  ],
+  "new_deterministic_regression_cases_v49": {
+    "anchor_history_coherence": 500,
+    "coefficient_error_row_budget": 500
+  },
+  "notes_v49": "V49 proves source-level candidates that an active anchor cell determines its complete earlier selected-anchor history, and formalizes the p.12 finite complex row-error double sum under explicit Bessel and integrated column-energy hypotheses. The exact stage-partition quotient and concrete operator/column-budget derivation remain open. Static/model checks are not Lean kernel certificates; Lean/Lake unavailable; 0/58 paper results certified.",
+  "new_modules_this_continuation_v50": [
+    "PaperV50StageProjectionBridge"
+  ],
+  "new_exact_rational_checks_v50": 500,
+  "v50_scope": {
+    "lemma_3_3": "Actual continuous L2 stage spans built from measurable local columns; one-step AE refinement gives nested subspaces and the full Lemma 3.3 row-prefix and square-variation conclusions. The refinement premise remains to be derived from the paper geometry. The application is to the global stage spans; exact identification with the manuscript direct-sum local projections requires cross-atom support orthogonality.",
+    "lemma_3_4": "Actual stage projections, ordered-product last-layer coefficient representation, and consecutive product increment as synthesis of coefficient differences in the newer inherited L2 column family. The geometric partition/mask refinement, pointwise restart transfer, representative-energy caps, and final compression assembly remain open. The global-span/direct-sum identification also remains open until cross-atom support orthogonality is proved.",
+    "kernel_status": "NOT RUN: Lean/Lake unavailable; no theorem promoted to kernel-certified."
+  },
+  "new_modules_this_continuation_v51": [
+    "PaperV51WeylReturnAlgebra",
+    "PaperV51StaggeredExpansion",
+    "PaperV51Prop89Assembly",
+    "PaperV51LSSExternalInterface"
+  ],
+  "new_exact_regressions_v51": 2500,
+  "v51_kernel_certification": "NOT_RUN_toolchain_unavailable",
+  "v51_scope": [
+    "Lemma 4.3: exact progression-return nullspace, quadratic phase cancellation, and conditional short-return isotropic-span bridge",
+    "Theorem 4.7: explicit external Leng-Sah-Sawhney witness contract; no local proof or axiom introduced",
+    "Section 5: exact four-slot staggered product telescoping identity and norm bound",
+    "Lemma 7.2: exact four-slot frequency nullspace and quadratic randomizer phase invariance",
+    "Proposition 8.9: conditional event-row projection/error/colour-energy assembly"
+  ],
+  "notes_v51": "The four new Lean modules are source candidates only. 2,500 exact rational tests pass but are not kernel certificates. Theorem 4.7 is explicitly an external input in the paper and is represented by a parameterized interface rather than a locally proved theorem or custom axiom. Lean/Lake are unavailable; no numbered paper result is promoted.",
+  "new_modules_this_continuation_v52": [
+    "PaperV52SparseNonfuture",
+    "PaperV52ParameterOrder",
+    "PaperV52IteratedWeylSamples"
+  ],
+  "new_exact_regressions_v52": {
+    "nonfuture_pair": 1200,
+    "parameter_order": 1000,
+    "iterated_weyl_samples": 800
+  },
+  "v52_kernel_certification": "NOT RUN: Lean/Lake unavailable; verifier fails closed",
+  "v52_scope": {
+    "lemma_4_3": "Finite repeated-sample propagation from a 3δ/4 initial Fourier sample to δ/2 lower bounds over M shifts, under a unimodular per-step recurrence and total error budget M e ≤ δ/4. Existing Plancherel ball-packing theorem then yields the short-return norm bound when its remaining hypotheses hold. The chart-specific recurrence is not yet derived.",
+    "lemma_9_1": "Proves the p.84 fixed-pair nonfuture mass estimate sum_b mass_b ≤ sqrt(L α) M² from both per-block caps and the two role budgets, and sums over at most six role pairs. The full geometric difference-cover/slab argument and δ^(1/2080) sparse-mass saving remain open.",
+    "proposition_2_3": "Proves explicit q and alpha parameter choices and the side-cost exponent reduction under the paper’s stated complexity inequalities. The ceiling-to-power bound and analytic inputs remain explicit obligations.",
+    "kernel_status": "No Lean/Lake executable available. Static checks and exact rational model tests are not kernel certificates; no numbered result is promoted."
+  }
 }

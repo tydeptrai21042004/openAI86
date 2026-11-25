@@ -1,3 +1,34 @@
+import OpenAI086.PaperV52SparseNonfuture
+import OpenAI086.PaperV52ParameterOrder
+import OpenAI086.PaperV52IteratedWeylSamples
+import OpenAI086.PaperV51WeylReturnAlgebra
+import OpenAI086.PaperV51StaggeredExpansion
+import OpenAI086.PaperV51Prop89Assembly
+import OpenAI086.PaperV51LSSExternalInterface
+import OpenAI086.PaperV50StageProjectionBridge
+import OpenAI086.PaperV49AnchorCoherence
+import OpenAI086.PaperV49ErrorRows
+import OpenAI086.PaperV48AnchorPartitions
+import OpenAI086.PaperV48RestartAssembly
+import OpenAI086.PaperV48PrivateTransition
+import OpenAI086.PaperV48RestartCutoff
+import OpenAI086.PaperV48SpatialAnchors
+import OpenAI086.PaperV47MeasuredMaximal
+import OpenAI086.PaperV47StoppingBudget
+import OpenAI086.PaperV47AnchorPath
+import OpenAI086.PaperV46StoppingEnergy
+import OpenAI086.PaperV46StoppingConstruction
+import OpenAI086.PaperV46CompressionAssembly
+import OpenAI086.PaperV45ScalarMoment
+import OpenAI086.PaperV45CutRefit
+import OpenAI086.PaperV44L2Projection
+import OpenAI086.PaperV44PrivateRefit
+import OpenAI086.PaperV44RefiningCuts
+import OpenAI086.PaperV43Packing
+import OpenAI086.PaperV43Lemma33
+import OpenAI086.PaperV42PrivateColumns
+import OpenAI086.PaperV42AccuracyTail
+import OpenAI086.PaperV42HeightCounterexample
 import OpenAI086.FiniteLemma33Coarse
 import OpenAI086.NormedAdaptiveBessel
 import OpenAI086.FiniteLemma33Endpoints
@@ -72,24 +103,20 @@ import OpenAI086.ConditionalMainTransfer
 import OpenAI086.CoordinateProjections
 import OpenAI086.SymmetricKernel
 import OpenAI086.UniformBootstrap
-
 import OpenAI086.FiniteTonelliBudget
 import OpenAI086.FiniteMultifamilyStops
 import OpenAI086.ArbitraryColoredPaths
 import OpenAI086.CompressionRowError
 import OpenAI086.FirstFailureAnyRole
 import OpenAI086.FiniteFirstSuccessWeights
-
 import OpenAI086.NoncommutingProducts
 import OpenAI086.NoncommutingProjectionExample
 import OpenAI086.PrefixCombinatorics
-
 import OpenAI086.GeneralNestedProjectionEnergy
 import OpenAI086.NoncommutingContractionPerturbation
 import OpenAI086.FiniteRowCauchySchwarz
 import OpenAI086.VariableFirstSuccess
 import OpenAI086.RowPrefixCounterexample
-
 import OpenAI086.FinitePrivateGramUpper
 import OpenAI086.FiniteAdaptiveRowBessel
 import OpenAI086.NestedProjectionLongRange
@@ -106,7 +133,6 @@ import OpenAI086.PrefixEntryRank
 import OpenAI086.ConcreteBadDensityChain
 import OpenAI086.FiniteVariationCS
 import OpenAI086.IntegerLogBins
-
 import OpenAI086.IntegerLogExact
 import OpenAI086.ConcreteIntegerLogBadDensity
 import OpenAI086.ConcreteRankedIncidences
@@ -117,6 +143,177 @@ import OpenAI086.ChronologicalHarmonic
 import OpenAI086.FiniteChronologicalChain
 import OpenAI086.ConcreteChronologicalLogChain
 import OpenAI086.InitialBadHeightCount
+import OpenAI086.InitialHeightAbsorption
+import OpenAI086.FullChronologicalBadDensity
+import OpenAI086.FullChronologicalBadDensityStrict
+import OpenAI086.FullBadHeightReindex
+import OpenAI086.FiniteLevelEnergyAssembly
+import OpenAI086.FiniteDyadicDistinctLengths
+import OpenAI086.AugmentedNestedProjectionBlocks
+import OpenAI086.FiniteLinearProjectionBlockBridge
+import OpenAI086.ActualDyadicTupleBessel
+import OpenAI086.ActualDyadicLevelSum
+import OpenAI086.FiniteDyadicWidthGrouping
+import OpenAI086.FiniteDyadicOrderedWidthExpansion
+import OpenAI086.ActualDyadicMaskedLevelSum
+import OpenAI086.FiniteDyadicRowBlockSelection
+import OpenAI086.FiniteDyadicBlockIndexBounds
+import OpenAI086.FiniteDyadicBoundedRowSelection
+import OpenAI086.ActualDyadicSelectedWidthBessel
+import OpenAI086.ActualDyadicOneLayerPrefix
+import OpenAI086.FiniteDyadicWidthTupleEnumeration
+import OpenAI086.ActualFinitePrefixInduction
+import OpenAI086.ActualFiniteProductVariation
+import OpenAI086.FiniteHorizonHilbert
+import OpenAI086.GenericDyadicGroups
+import OpenAI086.HilbertPrefixEnergy
+import OpenAI086.NormedDyadicPrefix
+import OpenAI086.NormedPrefixProducts
+import OpenAI086.PaperAccuracySummation
+import OpenAI086.PaperActiveMarginal
+import OpenAI086.PaperActiveMinimum
+import OpenAI086.PaperActualSchwartzOperator
+import OpenAI086.PaperAttemptTreePacking
+import OpenAI086.PaperBandTransfer
+import OpenAI086.PaperBinaryLocalization
+import OpenAI086.PaperBoundedLift
+import OpenAI086.PaperBoundedTrilinearExtension
+import OpenAI086.PaperCertifiedVariation
+import OpenAI086.PaperChartPhase
+import OpenAI086.PaperColorEpisodes
+import OpenAI086.PaperComplexPredictorMoment
+import OpenAI086.PaperComponentSizeComparison
+import OpenAI086.PaperCompressionEnergySplit
+import OpenAI086.PaperCompressionMaximal
+import OpenAI086.PaperCompressionMeasureBridge
+import OpenAI086.PaperCompressionMoments
+import OpenAI086.PaperCompressionRefit
+import OpenAI086.PaperCompressionVectorRows
+import OpenAI086.PaperConcreteRestrictions
+import OpenAI086.PaperCoreAmplitudePowers
+import OpenAI086.PaperCorePairDetermination
+import OpenAI086.PaperCramerNumerators
+import OpenAI086.PaperCubeChangesOfVariables
+import OpenAI086.PaperCubeEnergy
+import OpenAI086.PaperCubeInterval
+import OpenAI086.PaperDetectionExtraction
+import OpenAI086.PaperDiscreteInverseDomain
+import OpenAI086.PaperEndpointGrid
+import OpenAI086.PaperEndpointSeparation
+import OpenAI086.PaperEvaluationDominance
+import OpenAI086.PaperExplicitLift
+import OpenAI086.PaperFinalAbsorption
+import OpenAI086.PaperFirstTopConstruction
+import OpenAI086.PaperGoodPredicateCoherence
+import OpenAI086.PaperGreedyInsertion
+import OpenAI086.PaperGroupHistoryBessel
+import OpenAI086.PaperHeightAssembly
+import OpenAI086.PaperHeightBoundedRelation
+import OpenAI086.PaperHeightFinalWrappers
+import OpenAI086.PaperHeightPacketCover
+import OpenAI086.PaperHeightScalarAssembly
+import OpenAI086.PaperHeightScaleCorrection
+import OpenAI086.PaperHeightSeparatedChain
+import OpenAI086.PaperHeightStabilization
+import OpenAI086.PaperHeightTailAssembly
+import OpenAI086.PaperHeightVectorAssembly
+import OpenAI086.PaperHilbertClog
+import OpenAI086.PaperIntegratedRows
+import OpenAI086.PaperInverseDerivative
+import OpenAI086.PaperInverseExtremal
+import OpenAI086.PaperInverseSeparation
+import OpenAI086.PaperInverseUniformNormalization
+import OpenAI086.PaperL1Duality
+import OpenAI086.PaperL2MomentAssembly
+import OpenAI086.PaperLemma33Statement
+import OpenAI086.PaperLemma33Submodules
+import OpenAI086.PaperMainExtensionBridge
+import OpenAI086.PaperMainReduction
+import OpenAI086.PaperMixedNormPower
+import OpenAI086.PaperOscillatoryIntegral
+import OpenAI086.PaperOscillatoryPreGraph
+import OpenAI086.PaperPVTrilinear
+import OpenAI086.PaperPairL1Form
+import OpenAI086.PaperPredictorTruncation
+import OpenAI086.PaperProgressionSeparationAlgebra
+import OpenAI086.PaperQuotientDivisibility
+import OpenAI086.PaperQuotientLift
+import OpenAI086.PaperRationalCramerBridge
+import OpenAI086.PaperRationalHeightBounds
+import OpenAI086.PaperRationalMinorSelection
+import OpenAI086.PaperRollingSideStacks
+import OpenAI086.PaperSameTagMoments
+import OpenAI086.PaperSaturatedLattice
+import OpenAI086.PaperScaleKernel
+import OpenAI086.PaperScaleRowSummation
+import OpenAI086.PaperSchwartzPV
+import OpenAI086.PaperSchwartzSpatialL1
+import OpenAI086.PaperSeparatedRows
+import OpenAI086.PaperShortBlockResonance
+import OpenAI086.PaperSideChainColoring
+import OpenAI086.PaperSideMinimum
+import OpenAI086.PaperSingleScaleModulation
+import OpenAI086.PaperSparseColoredWalks
+import OpenAI086.PaperSparseDensityPower
+import OpenAI086.PaperSparseNeighborhood
+import OpenAI086.PaperStoppingPartition
+import OpenAI086.PaperTagMixedCurvature
+import OpenAI086.PaperTargets.Catalog
+import OpenAI086.PaperTargets.Models
+import OpenAI086.PaperTargets.Result_4_10
+import OpenAI086.PaperTargets.Result_4_11
+import OpenAI086.PaperTargets.Result_4_12
+import OpenAI086.PaperTargets.Result_4_3
+import OpenAI086.PaperTargets.Result_4_4
+import OpenAI086.PaperTargets.Result_4_5
+import OpenAI086.PaperTargets.Result_4_6
+import OpenAI086.PaperTargets.Result_4_7
+import OpenAI086.PaperTargets.Result_4_8
+import OpenAI086.PaperTargets.Result_4_9
+import OpenAI086.PaperTargets.Result_5_1
+import OpenAI086.PaperTargets.Result_5_2
+import OpenAI086.PaperTargets.Result_5_4
+import OpenAI086.PaperTargets.Result_5_5
+import OpenAI086.PaperTargets.Result_5_6
+import OpenAI086.PaperTargets.Result_5_7
+import OpenAI086.PaperTargets.Result_5_8
+import OpenAI086.PaperTargets.Result_6_1
+import OpenAI086.PaperTargets.Result_6_2
+import OpenAI086.PaperTargets.Result_6_3
+import OpenAI086.PaperTargets.Result_6_4
+import OpenAI086.PaperTargets.Result_6_5
+import OpenAI086.PaperTargets.Result_6_6
+import OpenAI086.PaperTargets.Result_6_7
+import OpenAI086.PaperTargets.Result_6_8
+import OpenAI086.PaperTargets.Result_6_9
+import OpenAI086.PaperTargets.Result_7_1
+import OpenAI086.PaperTargets.Result_7_2
+import OpenAI086.PaperTargets.Result_7_3
+import OpenAI086.PaperTargets.Result_7_4
+import OpenAI086.PaperTargets.Result_7_5
+import OpenAI086.PaperTargets.Result_8_1
+import OpenAI086.PaperTargets.Result_8_11
+import OpenAI086.PaperTargets.Result_8_12
+import OpenAI086.PaperTargets.Result_8_2
+import OpenAI086.PaperTargets.Result_8_3
+import OpenAI086.PaperTargets.Result_8_4
+import OpenAI086.PaperTargets.Result_8_7
+import OpenAI086.PaperTargets.Result_8_8
+import OpenAI086.PaperTargets.Result_8_9
+import OpenAI086.PaperTargets.Result_9_2
+import OpenAI086.PaperTargets.Result_9_3
+import OpenAI086.PaperThreeSidePower
+import OpenAI086.PaperTinyGapClosure
+import OpenAI086.PaperTopCount
+import OpenAI086.PaperTruncationSign
+import OpenAI086.PaperTwoStepCoordinates
+import OpenAI086.PaperTwoStepLattice
+import OpenAI086.PaperV41LocalTargets
+import OpenAI086.PaperV41MainGoal
+import OpenAI086.PaperV41Section3
+import OpenAI086.PaperWeylBallPacking
+import OpenAI086.PaperWeylReturns
+import OpenAI086.PaperWeylSubspace
 
 /-!
 Independent OpenAI #086 audit and partial formalization.
@@ -127,12 +324,6 @@ Every `theorem` above contains a proof term to be checked by Lean.
 
 -- V14: exact initial-height absorption, complete full-window finite chain,
 -- and a level-by-level squared-energy assembly for Lemma 3.3.
-import OpenAI086.InitialHeightAbsorption
-import OpenAI086.FullChronologicalBadDensity
-import OpenAI086.FullChronologicalBadDensityStrict
-import OpenAI086.FullBadHeightReindex
-import OpenAI086.FiniteLevelEnergyAssembly
-import OpenAI086.FiniteDyadicDistinctLengths
 
 #check OpenAI086.quadratic_resonance
 #check OpenAI086.matched_quadratic_phase
@@ -426,21 +617,67 @@ import OpenAI086.FiniteDyadicDistinctLengths
 #print axioms OpenAI086.concrete_chronological_integer_log_chain
 
 -- V15: exact initial-projection convention in dyadic Bessel blocks.
-import OpenAI086.AugmentedNestedProjectionBlocks
-import OpenAI086.FiniteLinearProjectionBlockBridge
-import OpenAI086.ActualDyadicTupleBessel
-import OpenAI086.ActualDyadicLevelSum
 
 -- V16: unconditional common-width grouping of row-dependent prefixes.
 -- Kernel status must be established by `lake build`, not by this source file.
-import OpenAI086.FiniteDyadicWidthGrouping
-import OpenAI086.FiniteDyadicOrderedWidthExpansion
-import OpenAI086.ActualDyadicMaskedLevelSum
-import OpenAI086.FiniteDyadicRowBlockSelection
 
 -- V17: bounded prefix block indices and exact one-layer Bessel assembly.
-import OpenAI086.FiniteDyadicBlockIndexBounds
-import OpenAI086.FiniteDyadicBoundedRowSelection
-import OpenAI086.ActualDyadicSelectedWidthBessel
-import OpenAI086.ActualDyadicOneLayerPrefix
-import OpenAI086.FiniteDyadicWidthTupleEnumeration
+
+-- V50: actual local-column stage spans, nested orthogonal projections,
+-- Lemma 3.3 application, and exact coefficient-increment synthesis.
+#check OpenAI086.v50_anchor_stage_span_step
+#check OpenAI086.v50_anchor_stage_span_mono
+#check OpenAI086.v50_anchor_stage_family_nested
+#check OpenAI086.v50_anchor_stage_lemma33
+#check OpenAI086.v50_synthesis_increment
+#check OpenAI086.v50_projection_increment_as_synthesis
+#print axioms OpenAI086.v50_anchor_stage_lemma33
+#print axioms OpenAI086.v50_projection_increment_as_synthesis
+
+-- V50: actual continuous L² stage spans, inherited refinement, Lemma 3.3,
+-- and coefficient-increment representation of consecutive ordered products.
+#check OpenAI086.v50_anchor_stage_projection_moment
+#check OpenAI086.v50_anchor_stage_projection_representation
+#check OpenAI086.v50_anchor_stage_span_step
+#check OpenAI086.v50_anchor_stage_span_mono
+#check OpenAI086.v50_anchor_stage_family_nested
+#check OpenAI086.v50_anchor_stage_lemma33
+#check OpenAI086.v50_anchor_ordered_product_mem_last_layer
+#check OpenAI086.v50_anchor_ordered_product_coefficients
+#check OpenAI086.v50_anchor_ordered_product_increment_coefficients
+#print axioms OpenAI086.v50_anchor_stage_lemma33
+#print axioms OpenAI086.v50_anchor_ordered_product_increment_coefficients
+
+-- V49: active-anchor cell coherence and the exact p.12 coefficient-error row budget.
+#check OpenAI086.v49_anchor_depth_history_coherent
+#check OpenAI086.v49_anchor_cell_history_coherent
+#check OpenAI086.v49_previous_anchor_label_coherent
+#check OpenAI086.v49_active_anchor_label_determines_predecessor
+#check OpenAI086.v49_anchor_error_rows
+#check OpenAI086.v49_anchor_error_rows_of_pathwise_budget
+#check OpenAI086.v49_segment_anchor_error_assembly
+#print axioms OpenAI086.v49_anchor_depth_history_coherent
+#print axioms OpenAI086.v49_anchor_error_rows
+
+
+-- V51: exact progression-frequency nullspace and Weyl isotropy bridge.
+#check OpenAI086.v51_progression_frequency_kernel_coordinates
+#check OpenAI086.v51_progression_randomizer_phase_zero
+#check OpenAI086.v51_progression_randomizer_exp_one
+#check OpenAI086.v51_short_return_span_isotropic
+#print axioms OpenAI086.v51_short_return_span_isotropic
+
+-- V51: exact four-slot staggered-accuracy product expansion.
+#check OpenAI086.v51_four_slot_product_telescoping
+#check OpenAI086.v51_four_slot_product_difference_bound
+#print axioms OpenAI086.v51_four_slot_product_telescoping
+
+-- V51: conditional event-energy assembly for Proposition 8.9.
+#check OpenAI086.v51_prop89_event_energy_assembly
+#print axioms OpenAI086.v51_prop89_event_energy_assembly
+
+-- V51: Theorem 4.7 is an explicit external Leng--Sah--Sawhney input,
+-- not a theorem claimed to be proved by this project.
+#check OpenAI086.V51LSSWitness
+#check OpenAI086.V51LSSExternalInput
+#check OpenAI086.v51_apply_lss_external_input

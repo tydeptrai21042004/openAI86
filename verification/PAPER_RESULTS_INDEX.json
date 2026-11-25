@@ -1,8 +1,8 @@
 {
-  "paper_file": "paper(5).pdf (same indexed SHA-256 as original)",
+  "paper_file": "paper(6).pdf",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
-  "notes": "V40: dense-graph neighborhood and distinct colored-walk count candidates, plus conditional sparse-density to powered-scale summation. All 59 remain partial and uncompiled.",
+  "notes": "V48: conditional restart half-contraction and finite history-labelled measurable nested partition candidates added. All 59 items remain partial until source fidelity and kernel certification.",
   "results": [
     {
       "kind": "Theorem",
@@ -22,12 +22,14 @@
         "OpenAI086/PaperPVTrilinear.lean",
         "OpenAI086/PaperSchwartzSpatialL1.lean",
         "OpenAI086/PaperActualSchwartzOperator.lean",
-        "OpenAI086/PaperL1Duality.lean"
+        "OpenAI086/PaperL1Duality.lean",
+        "OpenAI086/PaperV41MainGoal.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_1_1",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Prove the uniform bound for the concrete Schwartz PV output using only three L³ norms; check the pointwise PV/L¹ realization and the density extension in Lean."
+      "remaining_obligation_v28": "Prove the uniform bound for the concrete Schwartz PV output using only three L³ norms; check the pointwise PV/L¹ realization and the density extension in Lean.",
+      "v48_note": "No new unconditional main-theorem proof. Existing target remains partial and unproved."
     },
     {
       "kind": "Lemma",
@@ -37,7 +39,8 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/LocalForms.lean",
-        "OpenAI086/ProgressionGeometry.lean"
+        "OpenAI086/ProgressionGeometry.lean",
+        "OpenAI086/PaperV41LocalTargets.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_1",
@@ -72,13 +75,17 @@
         "OpenAI086/UniformBootstrap.lean",
         "OpenAI086/PaperFinalAbsorption.lean",
         "OpenAI086/PaperSideMinimum.lean",
-        "OpenAI086/PaperAccuracySummation.lean"
+        "OpenAI086/PaperAccuracySummation.lean",
+        "OpenAI086/PaperV42AccuracyTail.lean",
+        "OpenAI086/PaperV52ParameterOrder.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_3",
       "lean_target_level": "partial_component_exists",
       "remaining_obligation_v28": "Complete normalized local absorption with the original rooted-tree hypotheses and all Section 3–10 costs.",
-      "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate."
+      "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate.",
+      "v48_note": "No new normalized absorption proof. Section 3.4 restart result remains conditional and Sections 4–9 remain incomplete.",
+      "v52_scope": "Formalizes the p.92 numerical choices of q and alpha, and the P^(-1/2)G0(K+2)^beta side-cost reduction. Analytic complexity bounds and the full retained-cell estimate remain open."
     },
     {
       "kind": "Lemma",
@@ -119,12 +126,15 @@
         "OpenAI086/FiniteTonelliBudget.lean",
         "OpenAI086/FiniteMultifamilyStops.lean",
         "OpenAI086/PaperFinalAbsorption.lean",
-        "OpenAI086/PaperAttemptTreePacking.lean"
+        "OpenAI086/PaperAttemptTreePacking.lean",
+        "OpenAI086/PaperV43Packing.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_1",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Check actual root-generation packing and sums against paper statement, including the length-weighted conclusion."
+      "remaining_obligation_v28": "Check actual root-generation packing and sums against paper statement, including the length-weighted conclusion.",
+      "v43_candidate": "OpenAI086.v43_lemma31",
+      "v43_kernel_status": "NOT RUN"
     },
     {
       "kind": "Lemma",
@@ -137,13 +147,22 @@
         "OpenAI086/PrivateEnergyExact.lean",
         "OpenAI086/PathLabelEnergy.lean",
         "OpenAI086/FinitePrivateGramUpper.lean",
-        "OpenAI086/PaperCompressionRefit.lean"
+        "OpenAI086/PaperCompressionRefit.lean",
+        "OpenAI086/PaperV42PrivateColumns.lean",
+        "OpenAI086/PaperV44L2Projection.lean",
+        "OpenAI086/PaperV44PrivateRefit.lean",
+        "OpenAI086/PaperV45ScalarMoment.lean",
+        "OpenAI086/PaperV48PrivateTransition.lean",
+        "OpenAI086/PaperV48RestartAssembly.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_2",
       "lean_target_level": "partial_component_exists",
       "remaining_obligation_v28": "Actual augmented L² Gram operators, invertibility, kernel representation and sup norm estimate, normalized cell measure.",
-      "v38_scope": "Normalized probability-space D^5 refit estimate under pointwise coefficient and energy hypotheses; existence, actual augmented columns, and moment identity bridges remain."
+      "v38_scope": "Normalized probability-space D^5 refit estimate under pointwise coefficient and energy hypotheses; existence, actual augmented columns, and moment identity bridges remain.",
+      "v44_scope": "Actual finite augmented-column span in Bochner L2, projection construction, coefficient uniqueness, integrated normal equations and candidate D^5 a.e. estimate. Remaining: kernel build, derive MemLp and L1 integrability from original hypotheses, scalar-input private moment extraction, normalized interval interface and fidelity audit.",
+      "v45_scope": "Actual scalar-input moment epsilon*c derived from L2 normal equation; MemLp hypotheses, interval normalization and kernel/fidelity review remain.",
+      "v48_scope": "Pointwise coefficient movement now implies the actual Euclidean augmented-column increment lower bound. The scalar moment identity and actual L² projection remain uncompiled candidates; automatic MemLp, normalized-interval hypotheses, and integration into the full compression product remain open."
     },
     {
       "kind": "Lemma",
@@ -186,14 +205,19 @@
         "OpenAI086/FiniteHorizonHilbert.lean",
         "OpenAI086/PaperHilbertClog.lean",
         "OpenAI086/PaperLemma33Statement.lean",
-        "OpenAI086/PaperLemma33Submodules.lean"
+        "OpenAI086/PaperLemma33Submodules.lean",
+        "OpenAI086/PaperV43Lemma33.lean",
+        "OpenAI086/PaperV50StageProjectionBridge.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_3",
       "lean_target_level": "partial_component_exists",
       "v18_scope_note": "Arbitrary-m finite-real scalar/vector prefix and square variation candidates; general Hilbert space and kernel verification remain open.",
       "v20_scope_note": "RCLike realification and exact Nat.clog envelope, prefix and square variation including empty product; kernel pending.",
-      "remaining_obligation_v28": "Build all dependencies and validate both exact prefix and variation statements for nested orthogonal projections; inspect axioms and empty product case."
+      "remaining_obligation_v28": "Build all dependencies and validate both exact prefix and variation statements for nested orthogonal projections; inspect axioms and empty product case.",
+      "v43_candidate": "OpenAI086.v43_lemma33",
+      "v43_kernel_status": "NOT RUN",
+      "v50_scope": "Applies the existing full Hilbert-space Lemma 3.3 to actual continuous L² spans of local columns, with orthogonal projections constructed from finite column families. The one-step AE refinement identity is explicit and remains to be derived from the exact anchor/terminal-cut masks; kernel build pending."
     },
     {
       "kind": "Lemma",
@@ -215,7 +239,26 @@
         "OpenAI086/PaperCompressionVectorRows.lean",
         "OpenAI086/PaperCompressionRefit.lean",
         "OpenAI086/PaperCompressionEnergySplit.lean",
-        "OpenAI086/PaperCompressionMeasureBridge.lean"
+        "OpenAI086/PaperCompressionMeasureBridge.lean",
+        "OpenAI086/PaperV42PrivateColumns.lean",
+        "OpenAI086/PaperV44L2Projection.lean",
+        "OpenAI086/PaperV44PrivateRefit.lean",
+        "OpenAI086/PaperV44RefiningCuts.lean",
+        "OpenAI086/PaperV45CutRefit.lean",
+        "OpenAI086/PaperV46StoppingEnergy.lean",
+        "OpenAI086/PaperV46StoppingConstruction.lean",
+        "OpenAI086/PaperV46CompressionAssembly.lean",
+        "OpenAI086/PaperV47MeasuredMaximal.lean",
+        "OpenAI086/PaperV47StoppingBudget.lean",
+        "OpenAI086/PaperV47AnchorPath.lean",
+        "OpenAI086/PaperV48PrivateTransition.lean",
+        "OpenAI086/PaperV48RestartCutoff.lean",
+        "OpenAI086/PaperV48SpatialAnchors.lean",
+        "OpenAI086/PaperV48RestartAssembly.lean",
+        "OpenAI086/PaperV48AnchorPartitions.lean",
+        "OpenAI086/PaperV49AnchorCoherence.lean",
+        "OpenAI086/PaperV49ErrorRows.lean",
+        "OpenAI086/PaperV50StageProjectionBridge.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_4",
@@ -224,7 +267,14 @@
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
       "remaining_obligation_v28": "Actual dyadic inherited L² projections, stopping partitions, moment preservation, dyadic maximal L² bound, anchor attempt restarts and final polylog budget, complements and averaged operators.",
       "v37_scope": "Finite weighted refining-partition maximal inequality, complex vector row error, integrated column energy, and attempt budget assembly; actual continuous projection stopping construction still open.",
-      "v38_scope": "Integrated low/high representative energy, doubling path lemmas, normalized Jensen, and restart lower bound from actual increments; concrete stopping and local projections open."
+      "v38_scope": "Integrated low/high representative energy, doubling path lemmas, normalized Jensen, and restart lower bound from actual increments; concrete stopping and local projections open.",
+      "v44_scope": "Pointwise cut indicator decomposition, actual L2 span refinement and nested projection identity. Stopping-tree construction, moment representative, maximal energy, restart assembly and final compression bound still open.",
+      "v45_scope": "Actual disjoint cut refit, moment preservation against inherited coarse columns and energy equality. Quantitative stopping/maximal/anchor assembly remains.",
+      "v46_scope": "Constructed stopping paths on refining labels, doubling square and low/high logarithmic estimates, and conditional final row energy assembly. Actual measure-maximal transfer, anchor tree construction, integration of path lists and complete compression remain open.",
+      "v47_scope": "Measured terminal partition maximal bound, coarse normalized integrals, stopping cost identity and integrated path-energy estimate, and coefficient-motion anchor path construction; actual spatial anchor partition and L² variation and complete compression still open.",
+      "v48_scope": "A conditional restart theorem now derives both child-root length and representative-energy half-contraction from the private-coordinate increment lower bound, Lemma 3.3 variation budget, and D^5 representative caps. Finite history-labelled stage partitions are measurable and nested. Still open: identify these history partitions with the exact active-anchor/terminal-cut partitions in the paper without over-refinement; construct spatial generation partitions; derive the pointwise transition and variation bounds for the actual projection products; prove simultaneous restart budgets from the concrete tree; complete representative-energy, row-error, complement, averaging, and final polylogarithmic assembly. All candidates remain uncompiled. The history-labelled partition range is now explicitly finite; its label fibres are measurable and consecutive stages refine.",
+      "v49_scope": "Active-anchor coherence: same current anchor cell forces equality of all earlier coefficient paths, selected-anchor depth histories, and prior anchor-cell labels. The p.12 finite complex coefficient-error row estimate is proved from explicit row Bessel contraction and integrated D^3 column-energy hypotheses, with no label-count loss. Still open: exact stage-partition quotient and measurable local projection families; identify concrete projection-product increments; derive Lemma 3.3 variation and D^5 representative caps; derive the actual pathwise column budget and row Bessel bound; complete size-segment/attempt/complement/averaging assembly. All V49 declarations are uncompiled candidates, not kernel certificates.",
+      "v50_scope": "Constructs actual measurable L² stage columns and orthogonal projections; proves nested stage spans from an explicit one-step AE inherited-column refinement identity; applies Lemma 3.3 and obtains coefficient representations for ordered products and their consecutive increment synthesis in the newer stage family. Still open: derive the refinement identity from the exact paper partitions/masks, identify coefficient fields with c(u), transfer L² increment to pointwise restart lower bound, derive representative-energy caps, and finish all compression summations. Uncompiled source candidate only."
     },
     {
       "kind": "Lemma",
@@ -242,7 +292,9 @@
         "OpenAI086/PaperHeightScalarAssembly.lean",
         "OpenAI086/PaperHeightTailAssembly.lean",
         "OpenAI086/PaperHeightVectorAssembly.lean",
-        "OpenAI086/PaperHeightFinalWrappers.lean"
+        "OpenAI086/PaperHeightFinalWrappers.lean",
+        "OpenAI086/PaperV41Section3.lean",
+        "OpenAI086/PaperV42HeightCounterexample.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_5",
@@ -294,7 +346,9 @@
         "OpenAI086/PaperTargets/Result_4_3.lean",
         "OpenAI086/PaperWeylReturns.lean",
         "OpenAI086/PaperWeylBallPacking.lean",
-        "OpenAI086/PaperWeylSubspace.lean"
+        "OpenAI086/PaperWeylSubspace.lean",
+        "OpenAI086/PaperV51WeylReturnAlgebra.lean",
+        "OpenAI086/PaperV52IteratedWeylSamples.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_3",
@@ -304,7 +358,8 @@
       "v27_component": "v27_return_antisymmetry",
       "v27_scope": "return antisymmetry, integral skew obstruction, and energy packing; actual Fourier returns and successive minima remain open",
       "remaining_obligation_v28": "Fourier return translation error, Lipschitz/Plancherel packing, lattice minima/transference, rational isotropic subspace and effective quadratic bound.",
-      "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate."
+      "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate.",
+      "v52_scope": "Repeated approximate unimodular Fourier-sample propagation, connected to the existing disjoint-ball Plancherel return obstruction. Chart-specific recurrence/error derivation remains open."
     },
     {
       "kind": "Lemma",
@@ -374,7 +429,8 @@
         "OpenAI086/PaperTwoStepLattice.lean",
         "OpenAI086/PaperInverseDerivative.lean",
         "OpenAI086/PaperInverseExtremal.lean",
-        "OpenAI086/PaperInverseUniformNormalization.lean"
+        "OpenAI086/PaperInverseUniformNormalization.lean",
+        "OpenAI086/PaperV51LSSExternalInterface.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_7",
@@ -570,7 +626,8 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_5_5.lean",
-        "OpenAI086/FiniteFourSlotIncrementExpansion.lean"
+        "OpenAI086/FiniteFourSlotIncrementExpansion.lean",
+        "OpenAI086/PaperV51StaggeredExpansion.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_5_5",
@@ -829,7 +886,9 @@
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_7_2.lean",
-        "OpenAI086/PaperShortBlockResonance.lean"
+        "OpenAI086/PaperShortBlockResonance.lean",
+        "OpenAI086/PaperV51WeylReturnAlgebra.lean",
+        "OpenAI086/PaperV51StaggeredExpansion.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_2",
@@ -1064,7 +1123,8 @@
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_8_9.lean",
         "OpenAI086/PaperSideChainColoring.lean",
-        "OpenAI086/PaperOscillatoryPreGraph.lean"
+        "OpenAI086/PaperOscillatoryPreGraph.lean",
+        "OpenAI086/PaperV51Prop89Assembly.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_9",
@@ -1143,13 +1203,15 @@
         "OpenAI086/FiniteFourStepWalkEnergy.lean",
         "OpenAI086/FiniteBadPartnerPruning.lean",
         "OpenAI086/PaperSparseNeighborhood.lean",
-        "OpenAI086/PaperSparseColoredWalks.lean"
+        "OpenAI086/PaperSparseColoredWalks.lean",
+        "OpenAI086/PaperV52SparseNonfuture.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_9_1",
       "lean_target_level": "partial_component_exists",
       "remaining_obligation_v28": "Full sparse mass theorem: pair budgets, proper color paths, slab cover, annular transfer and positive density-power saving. Finite incidence sublemmas alone do not establish it.",
-      "remaining_obligation_v40": "Kernel-check new actual dense graph/colored paths; geometric difference covers, greedy scale blocks, slab covering and full density saving remain."
+      "remaining_obligation_v40": "Kernel-check new actual dense graph/colored paths; geometric difference covers, greedy scale blocks, slab covering and full density saving remain.",
+      "v52_scope": "Derives the p.84 nonfuture-pair block-mass estimate by finite Cauchy–Schwarz, including the six-role-pair factor. The greedy blocks, difference covers, slab geometry, and delta^(1/2080) saving remain open."
     },
     {
       "kind": "Proposition",

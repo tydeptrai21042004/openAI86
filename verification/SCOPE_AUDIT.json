@@ -1,12 +1,16 @@
 {
   "audit_kind": "STATIC_ONLY_NOT_KERNEL_VERIFICATION",
-  "lean_files": 140,
-  "theorem_declarations_in_sources": 261,
+  "lean_files": 287,
+  "theorem_declarations_in_sources": 822,
   "numbered_paper_results": 59,
-  "numbered_results_with_partial_components": 21,
+  "numbered_results_with_partial_components": 59,
   "numbered_full_results_kernel_verified": 0,
   "main_theorem_kernel_verified": false,
   "external_published_lean_code_imported": false,
+  "preserved_legacy_excluded": [
+    "OpenAI086/Lemma33Reviewed.lean",
+    "OpenAI086/Lemma33Check.lean"
+  ],
   "lean_kernel_build_executed_by_this_script": false,
   "additional_independent_modules": [
     "ArbitraryDepthTelescoping",

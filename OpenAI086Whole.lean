@@ -160,3 +160,25 @@ It explicitly does NOT assert that Theorem 1.1 is proved.
 #check OpenAI086.actual_dyadic_width_card_le
 #check OpenAI086.actual_dyadic_one_layer_explicit_log_bound
 #print axioms OpenAI086.actual_dyadic_one_layer_explicit_log_bound
+-- V48: coefficient-motion/private-coordinate bridge and restart cutoff.
+#check OpenAI086.v48_private_transition_lower
+#check OpenAI086.v48_private_column_transition_lower
+#check OpenAI086.v48_restart_factor_lt_half
+#check OpenAI086.v48_restart_factor_from_variation
+#check OpenAI086.v48_anchor_state_constant_on_terminal_cell
+#check OpenAI086.v48_anchor_label_fiber_measurable
+#print axioms OpenAI086.v48_private_transition_lower
+#print axioms OpenAI086.v48_restart_factor_lt_half
+
+
+-- V48: private-coordinate increment and quantitative attempt contraction.
+#check OpenAI086.v48_private_increment_large
+#check OpenAI086.v48_restart_attempt_contract
+#check OpenAI086.v48_private_restart_attempt_contract
+#check OpenAI086.v48_stage_label_constant_on_terminal_cell
+#check OpenAI086.v48_stage_label_fiber_measurable
+#check OpenAI086.v48_stage_active_cell
+#print axioms OpenAI086.v48_private_increment_large
+#print axioms OpenAI086.v48_restart_attempt_contract
+#check OpenAI086.v48_spatial_partition_range_finite
+#print axioms OpenAI086.v48_spatial_partition_range_finite

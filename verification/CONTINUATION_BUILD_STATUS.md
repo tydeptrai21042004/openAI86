@@ -29,3 +29,7 @@ Historical content follows.
 
 On a Linux machine with Lean installed: `lake exe cache get && bash verify_all.sh`.
 The proof remains incomplete even if the available intermediate source builds.
+
+## V48 continuation
+
+V48 adds the pointwise private-column transition lower bound, a conditional simultaneous half-contraction theorem for restart measure and representative energy, and finite measurable nested history-labelled anchor partitions. It records 2,012 exact finite-model regressions. Static import/registry/source-safety checks pass for 308 reachable modules and 924 theorem declarations. Lean/Lake are unavailable; target checks are blocked and no manuscript result is promoted to kernel-certified. See `V48_PROGRESS.md` and `V48_VERIFICATION_LOG.txt`.
