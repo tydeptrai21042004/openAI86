@@ -1,3 +1,5 @@
+> **V53 status:** source-level continuation only; whole Lean kernel build remains unverified. See [V53_PROGRESS.md](V53_PROGRESS.md) and run `bash verify_v53.sh`. Theorem 1.1 is still open.
+
 > **V45 update:** See [V45_PROGRESS.md](V45_PROGRESS.md) for the scalar-input normal equation and continuous cut-refit candidates. Static checks passed; Lean kernel checks blocked (0/58 certified, 0/1 unconditional main theorem).
 
 > **V43 continuation:** see [V43_PROGRESS.md](V43_PROGRESS.md). Run `bash verify_v43.sh` or the GitHub Actions workflow for isolated kernel checks. No manuscript result is certified here; the unconditional main theorem remains open.
@@ -177,3 +179,12 @@ and coefficient-synthesis identities for consecutive ordered products. The
 remaining geometric refinement and cross-atom support-orthogonality obligations
 are explicit. Run `bash verify_v50.sh`; when Lean/Lake are unavailable, kernel
 verification correctly reports `BLOCKED` rather than success. See `V50_PROGRESS.md`.
+
+
+## Latest continuation: V54
+
+See [V54_PROGRESS.md](V54_PROGRESS.md) for the new source-level candidates and remaining obligations. Run `bash verify_v54.sh`. Five modules advance actual stage refits, greedy sparse blocks, the finite resonant fourth moment, chart phase algebra and retained-cell parameter assembly. No full paper result has been certified; the Lean/Lake phase remains blocked in the authoring environment.
+
+## Latest continuation: V56
+
+See [V56_PROGRESS.md](V56_PROGRESS.md) and [whole-paper fidelity mapping](verification/V56_PAPER_FIDELITY.md). Run `bash verify_v56.sh`. The V55 reference bridge is documented in [V55_REFERENCE_INTEGRATION.md](V55_REFERENCE_INTEGRATION.md). Source-level candidates remain unverified by the Lean kernel.

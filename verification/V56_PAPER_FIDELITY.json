@@ -1,0 +1,944 @@
+{
+  "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
+  "reference_commit": "7b4209609e6a7fb9d9935973ee8541495f943660",
+  "purpose": "Source crosswalk, not proof certificates or exact-statement equivalence. Declaration anchors are source names (may be in nested namespaces).",
+  "numbered_results": [
+    {
+      "number": "1.1",
+      "kind": "Theorem",
+      "pdf_page": 2,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "declaration_anchors": {
+        "tht_main": {
+          "file": "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean",
+          "line": 6946
+        }
+      },
+      "remaining_fidelity_obligation": "V55 sign/PV bridge to the locked theorem; kernel not replayed.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "2.1",
+      "kind": "Lemma",
+      "pdf_page": 4,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec03LocalFormsFiniteConstants.lean"
+      ],
+      "declaration_anchors": {
+        "localProgression_absoluteNormBound": {
+          "file": "TrilinearHT/Auto/Sec03LocalFormsFiniteConstants.lean",
+          "line": 798
+        }
+      },
+      "remaining_fidelity_obligation": "Check exponent polytope, normalized norms, and vector-valued version.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "2.2",
+      "kind": "Theorem",
+      "pdf_page": 4,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "declaration_anchors": {
+        "uniform_of_activeFinal": {
+          "file": "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean",
+          "line": 4848
+        }
+      },
+      "remaining_fidelity_obligation": "Reference uniform bound uses its local kernel class; equivalence of C_N not proved.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "2.3",
+      "kind": "Proposition",
+      "pdf_page": 4,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "declaration_anchors": {
+        "normalizedAbsorption_of_activeFinal": {
+          "file": "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean",
+          "line": 4540
+        }
+      },
+      "remaining_fidelity_obligation": "Match normalization, quantifiers in q,c,N and restart decomposition.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "2.4",
+      "kind": "Lemma",
+      "pdf_page": 5,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "declaration_anchors": {
+        "uniform_of_normalized": {
+          "file": "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean",
+          "line": 4296
+        },
+        "tht_main_of_uniform": {
+          "file": "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean",
+          "line": 4209
+        }
+      },
+      "remaining_fidelity_obligation": "Match lattice, Gevrey kernel construction and limiting argument.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "3.1",
+      "kind": "Lemma",
+      "pdf_page": 7,
+      "reference_files": [
+        "TrilinearHT/Auto/Prerequisites/DyadicStopping.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Local v43_lemma31 is a direct finite packing candidate; kernel check required.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "3.2",
+      "kind": "Lemma",
+      "pdf_page": 8,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec04ColumnProjections.lean"
+      ],
+      "declaration_anchors": {
+        "columnCombination_bounds": {
+          "file": "TrilinearHT/Auto/Sec04ColumnProjections.lean",
+          "line": 650
+        },
+        "cellColumnProjection_ae_bound": {
+          "file": "TrilinearHT/Auto/Sec04ColumnProjections.lean",
+          "line": 1046
+        },
+        "cellColumnProjection_predictor_moment": {
+          "file": "TrilinearHT/Auto/Sec04ColumnProjections.lean",
+          "line": 1150
+        }
+      },
+      "remaining_fidelity_obligation": "V56 joint normalized-cell candidate; audit reindexing selected labels and actual normalized interval.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "3.3",
+      "kind": "Lemma",
+      "pdf_page": 8,
+      "reference_files": [
+        "TrilinearHT/Auto/Prerequisites/RademacherMenshov.lean"
+      ],
+      "declaration_anchors": {
+        "nestedProjectionProduct_prefix_rows": {
+          "file": "TrilinearHT/Auto/Prerequisites/RademacherMenshov.lean",
+          "line": 426
+        },
+        "nestedProjectionProduct_successive_jumps": {
+          "file": "TrilinearHT/Auto/Prerequisites/RademacherMenshov.lean",
+          "line": 581
+        }
+      },
+      "remaining_fidelity_obligation": "Local v43_lemma33 candidate includes heterogeneous row codomains; reference uses common codomain for prefix theorem.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "3.4",
+      "kind": "Lemma",
+      "pdf_page": 9,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec04ColumnProjections.lean"
+      ],
+      "declaration_anchors": {
+        "columnSpatialCompression": {
+          "file": "TrilinearHT/Auto/Sec04ColumnProjections.lean",
+          "line": 3673
+        },
+        "columnSpatialCompression_complements": {
+          "file": "TrilinearHT/Auto/Sec04ColumnProjections.lean",
+          "line": 3832
+        }
+      },
+      "remaining_fidelity_obligation": "Reference explicit bound has larger dependence on m, uses pointwise path-count and common codomain; do not assert exact printed bound or integral variant.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "3.5",
+      "kind": "Lemma",
+      "pdf_page": 13,
+      "reference_files": [
+        "TrilinearHT/Auto/Prerequisites/RationalLinearAlgebra.lean"
+      ],
+      "declaration_anchors": {
+        "rational_logarithmic_cover": {
+          "file": "TrilinearHT/Auto/Prerequisites/RationalLinearAlgebra.lean",
+          "line": 1608
+        },
+        "rational_dyadic_scale_count": {
+          "file": "TrilinearHT/Auto/Prerequisites/RationalLinearAlgebra.lean",
+          "line": 1862
+        },
+        "rational_frequency_tiny_sum": {
+          "file": "TrilinearHT/Auto/Prerequisites/RationalLinearAlgebra.lean",
+          "line": 2174
+        }
+      },
+      "remaining_fidelity_obligation": "Printed part (2) refuted. Corrected scalar/Euclidean/supremum candidates; V56 covers packet application to Lemma 8.2.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.1",
+      "kind": "Definition",
+      "pdf_page": 15,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec05QuadraticCharts.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Definition: chart representation agrees in outline; derivative and bounded-atom conventions need comparison.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.2",
+      "kind": "Lemma",
+      "pdf_page": 15,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec05QuadraticCharts.lean"
+      ],
+      "declaration_anchors": {
+        "productQuadraticChart_bounded": {
+          "file": "TrilinearHT/Auto/Sec05QuadraticCharts.lean",
+          "line": 773
+        },
+        "translateQuadraticChart_bounded": {
+          "file": "TrilinearHT/Auto/Sec05QuadraticCharts.lean",
+          "line": 1024
+        }
+      },
+      "remaining_fidelity_obligation": "Match arbitrary affine rescaling and quantitative derivative budgets.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.3",
+      "kind": "Lemma",
+      "pdf_page": 16,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec09_1ReturnWeylSplitting.lean"
+      ],
+      "declaration_anchors": {
+        "weylSplitting": {
+          "file": "TrilinearHT/Auto/Sec09_1ReturnWeylSplitting.lean",
+          "line": 2689
+        }
+      },
+      "remaining_fidelity_obligation": "Lattice transference and error treatment adapted; exact constants/complexity need translation.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.4",
+      "kind": "Lemma",
+      "pdf_page": 18,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean"
+      ],
+      "declaration_anchors": {
+        "chart_split_fourier_explicit": {
+          "file": "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean",
+          "line": 1781
+        },
+        "chart_split_fourier_dim_zero": {
+          "file": "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean",
+          "line": 1966
+        }
+      },
+      "remaining_fidelity_obligation": "Match exact expansion, dimension zero and uniform tails.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.5",
+      "kind": "Lemma",
+      "pdf_page": 20,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean"
+      ],
+      "declaration_anchors": {
+        "progressionSeparation": {
+          "file": "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean",
+          "line": 7140
+        }
+      },
+      "remaining_fidelity_obligation": "Match coefficient sums, tail bounds, and chart complexities.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.6",
+      "kind": "Lemma",
+      "pdf_page": 21,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean"
+      ],
+      "declaration_anchors": {
+        "sep_one_atom_expansion": {
+          "file": "TrilinearHT/Auto/Sec09_2ChartFourierSeparation.lean",
+          "line": 3533
+        }
+      },
+      "remaining_fidelity_obligation": "Compare conditional one-scale separation statements and smooth bump costs.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.7",
+      "kind": "Theorem",
+      "pdf_page": 22,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec07FiniteInverse.lean"
+      ],
+      "declaration_anchors": {
+        "finite_inverse": {
+          "file": "TrilinearHT/Auto/Sec07FiniteInverse.lean",
+          "line": 5180
+        }
+      },
+      "remaining_fidelity_obligation": "ALTERNATIVE ONLY: finite cyclic chart theorem does not prove the general LSS nilmanifold theorem.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.8",
+      "kind": "Lemma",
+      "pdf_page": 22,
+      "reference_files": [
+        "TrilinearHT/Auto/Prerequisites/GowersCauchySchwarz.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check circle normalization, mixed cubes and seminorm.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.9",
+      "kind": "Lemma",
+      "pdf_page": 23,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec08ContinuousDecomposition.lean"
+      ],
+      "declaration_anchors": {
+        "continuous_inverse": {
+          "file": "TrilinearHT/Auto/Sec08ContinuousDecomposition.lean",
+          "line": 2247
+        }
+      },
+      "remaining_fidelity_obligation": "Alternative finite inverse input; check exact continuous normalization and bounds.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.10",
+      "kind": "Lemma",
+      "pdf_page": 26,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec08ContinuousDecomposition.lean"
+      ],
+      "declaration_anchors": {
+        "continuous_decomposition_interval": {
+          "file": "TrilinearHT/Auto/Sec08ContinuousDecomposition.lean",
+          "line": 2276
+        },
+        "continuous_decomposition": {
+          "file": "TrilinearHT/Auto/Sec08ContinuousDecomposition.lean",
+          "line": 2365
+        }
+      },
+      "remaining_fidelity_obligation": "Match three-way decomposition, uniform and L1 norms and complexity.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.11",
+      "kind": "Lemma",
+      "pdf_page": 27,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec10Detection.lean"
+      ],
+      "declaration_anchors": {
+        "vonNeumann_local_bounded": {
+          "file": "TrilinearHT/Auto/Sec10Detection.lean",
+          "line": 1312
+        }
+      },
+      "remaining_fidelity_obligation": "Match one L2 input and constants for arbitrary slot.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "4.12",
+      "kind": "Lemma",
+      "pdf_page": 27,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec10Detection.lean"
+      ],
+      "declaration_anchors": {
+        "detection_atom_pair": {
+          "file": "TrilinearHT/Auto/Sec10Detection.lean",
+          "line": 3458
+        }
+      },
+      "remaining_fidelity_obligation": "Match q, residual size, correlation, and quantitative witness.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.1",
+      "kind": "Lemma",
+      "pdf_page": 30,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_1aPredictors.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check separated-term scale sum and admissible sequences.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.2",
+      "kind": "Corollary",
+      "pdf_page": 31,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_1aPredictors.lean"
+      ],
+      "declaration_anchors": {
+        "finitePredictorList": {
+          "file": "TrilinearHT/Auto/Sec11_1aPredictors.lean",
+          "line": 8270
+        }
+      },
+      "remaining_fidelity_obligation": "Check absolute scale errors and predictor labels.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.3",
+      "kind": "Lemma",
+      "pdf_page": 32,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_1bDelayedMoments.lean"
+      ],
+      "declaration_anchors": {
+        "delayedPredictorReplacement": {
+          "file": "TrilinearHT/Auto/Sec11_1bDelayedMoments.lean",
+          "line": 2946
+        }
+      },
+      "remaining_fidelity_obligation": "Audit private-coordinate predictor term and delayed-depth loss.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.4",
+      "kind": "Lemma",
+      "pdf_page": 33,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_2aAdaptiveFitsStagger.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match normalized subtree, energy fit and restart budgets.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.5",
+      "kind": "Lemma",
+      "pdf_page": 34,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_2aAdaptiveFitsStagger.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Verify exact two-earliest-increments expansion and all positions.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.6",
+      "kind": "Proposition",
+      "pdf_page": 35,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_2bFiniteBaseDataPairs.lean",
+        "TrilinearHT/Auto/Sec11_2cFiniteBaseDataAssembly.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match high truncation, delayed fits and stopping partitions.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.7",
+      "kind": "Lemma",
+      "pdf_page": 37,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_2bFiniteBaseDataPairs.lean"
+      ],
+      "declaration_anchors": {
+        "tripleNorm_count": {
+          "file": "TrilinearHT/Auto/Sec11_2bFiniteBaseDataPairs.lean",
+          "line": 5491
+        }
+      },
+      "remaining_fidelity_obligation": "Check fixed triple scale range and exception threshold.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "5.8",
+      "kind": "Proposition",
+      "pdf_page": 38,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec11_2cFiniteBaseDataAssembly.lean"
+      ],
+      "declaration_anchors": {
+        "activeCellReduction": {
+          "file": "TrilinearHT/Auto/Sec11_2cFiniteBaseDataAssembly.lean",
+          "line": 7008
+        }
+      },
+      "remaining_fidelity_obligation": "Match minimum before powered estimates and base errors.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.1",
+      "kind": "Lemma",
+      "pdf_page": 40,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_1TagsAmbientGraph.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match tag separation and chosen parameters.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.2",
+      "kind": "Lemma",
+      "pdf_page": 41,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_1TagsAmbientGraph.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match endpoint coordinates and short paths.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.3",
+      "kind": "Lemma",
+      "pdf_page": 42,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_2DecreasingColorsHistoricalMasks.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check decreasing colors and exceptional-root bound.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.4",
+      "kind": "Lemma",
+      "pdf_page": 43,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_2DecreasingColorsHistoricalMasks.lean"
+      ],
+      "declaration_anchors": {
+        "historicalMaskSeparation": {
+          "file": "TrilinearHT/Auto/Sec12_2DecreasingColorsHistoricalMasks.lean",
+          "line": 3206
+        }
+      },
+      "remaining_fidelity_obligation": "Match every pad and historical inclusion condition.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.5",
+      "kind": "Lemma",
+      "pdf_page": 45,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_2DecreasingColorsHistoricalMasks.lean",
+        "TrilinearHT/Auto/Sec12_3FiniteSameTagCatalogs.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check Bessel separation of actual endpoint spaces.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.6",
+      "kind": "Lemma",
+      "pdf_page": 46,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_3FiniteSameTagCatalogs.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Compare same-tag tests and finite template complexity.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.7",
+      "kind": "Lemma",
+      "pdf_page": 48,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_3FiniteSameTagCatalogs.lean",
+        "TrilinearHT/Auto/Sec12_3bCatalogsMainColumns.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match catalog closure and path label budget.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.8",
+      "kind": "Proposition",
+      "pdf_page": 49,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_4BinaryLocalizationVariation.lean"
+      ],
+      "declaration_anchors": {
+        "attempt_localization": {
+          "file": "TrilinearHT/Auto/Sec12_4BinaryLocalizationVariation.lean",
+          "line": 3002
+        }
+      },
+      "remaining_fidelity_obligation": "Match binary search leaves and absolute error.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "6.9",
+      "kind": "Lemma",
+      "pdf_page": 50,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec14_1TransferPairedDefects.lean",
+        "TrilinearHT/Auto/Sec12_4BinaryLocalizationVariation.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check coupled filters, independent side choices and near bands.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "7.1",
+      "kind": "Lemma",
+      "pdf_page": 52,
+      "reference_files": [
+        "TrilinearHT/Auto/Prerequisites/FeffermanStein.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Mixed-norm maximal argument changed; exact A_r statement still required.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "7.2",
+      "kind": "Lemma",
+      "pdf_page": 53,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec14_2aShortBlockSampling.lean",
+        "TrilinearHT/Auto/Sec14_2bShortBlockSummation.lean"
+      ],
+      "declaration_anchors": {
+        "short_block_comparison": {
+          "file": "TrilinearHT/Auto/Sec14_2bShortBlockSummation.lean",
+          "line": 5074
+        }
+      },
+      "remaining_fidelity_obligation": "Compare randomized torus estimate, clipping and exponent tending to zero.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "7.3",
+      "kind": "Lemma",
+      "pdf_page": 58,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec12_4BinaryLocalizationVariation.lean",
+        "TrilinearHT/Auto/Sec14_3PowerCostsFrozenComplements.lean"
+      ],
+      "declaration_anchors": {
+        "basic_variation_G0": {
+          "file": "TrilinearHT/Auto/Sec12_4BinaryLocalizationVariation.lean",
+          "line": 7940
+        }
+      },
+      "remaining_fidelity_obligation": "Match certified endpoints, overlap and variations.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "7.4",
+      "kind": "Lemma",
+      "pdf_page": 60,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec14_4FixedStacksTwoVaryingSides.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match fixed side stacks and time-dependent states.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "7.5",
+      "kind": "Proposition",
+      "pdf_page": 62,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec14_5bExportedSideEstimate.lean"
+      ],
+      "declaration_anchors": {
+        "side_estimate": {
+          "file": "TrilinearHT/Auto/Sec14_5bExportedSideEstimate.lean",
+          "line": 6627
+        }
+      },
+      "remaining_fidelity_obligation": "Match conditional square-energy assumptions, q,p and hull minima.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.1",
+      "kind": "Lemma",
+      "pdf_page": 65,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_1OneExpansionAtFirstMatch.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Match single first-match expansion and bounded lift.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.2",
+      "kind": "Lemma",
+      "pdf_page": 67,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean"
+      ],
+      "declaration_anchors": {
+        "exceptional_blocks_count": {
+          "file": "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean",
+          "line": 52
+        },
+        "rational_span_expand_bounded": {
+          "file": "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean",
+          "line": 885
+        }
+      },
+      "remaining_fidelity_obligation": "V56 proves first assertion candidate (5d); tiny-span Cramer coefficient bound remains.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.3",
+      "kind": "Lemma",
+      "pdf_page": 68,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean"
+      ],
+      "declaration_anchors": {
+        "height_stabilization": {
+          "file": "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean",
+          "line": 523
+        }
+      },
+      "remaining_fidelity_obligation": "Match stabilization budgets and nonexceptional modes.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.4",
+      "kind": "Lemma",
+      "pdf_page": 69,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_2TwoGraphsHeightStabilization.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check PRE/CURRENT good predicate coherence.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.5",
+      "kind": "Lemma",
+      "pdf_page": 69,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean"
+      ],
+      "declaration_anchors": {
+        "sum_frac_le_harmonic": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 227
+        },
+        "sum_frac_le_log": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 334
+        }
+      },
+      "remaining_fidelity_obligation": "V56 attributed standalone proof candidate for H_M and log bound.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.6",
+      "kind": "Lemma",
+      "pdf_page": 70,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean"
+      ],
+      "declaration_anchors": {
+        "chain_bad_count": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 796
+        }
+      },
+      "remaining_fidelity_obligation": "Audit endpoint inclusions in bad-density chains.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.7",
+      "kind": "Lemma",
+      "pdf_page": 70,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean"
+      ],
+      "declaration_anchors": {
+        "separated_projection_rows": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 184
+        }
+      },
+      "remaining_fidelity_obligation": "Match actual mode families and cross terms.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.8",
+      "kind": "Lemma",
+      "pdf_page": 71,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean"
+      ],
+      "declaration_anchors": {
+        "lift_composition_global": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 3214
+        }
+      },
+      "remaining_fidelity_obligation": "Match lift, histories and heterogeneous codomains.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.9",
+      "kind": "Proposition",
+      "pdf_page": 72,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean"
+      ],
+      "declaration_anchors": {
+        "linear_energy": {
+          "file": "TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean",
+          "line": 4316
+        }
+      },
+      "remaining_fidelity_obligation": "Match exact subtotals including private coordinates and leakage.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.10",
+      "kind": "Lemma",
+      "pdf_page": 74,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_5RepresentativesComponentSizesFirstTops.lean"
+      ],
+      "declaration_anchors": {},
+      "remaining_fidelity_obligation": "Check inheritance of representatives across blocks.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.11",
+      "kind": "Lemma",
+      "pdf_page": 75,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_5RepresentativesComponentSizesFirstTops.lean"
+      ],
+      "declaration_anchors": {
+        "size_comparison": {
+          "file": "TrilinearHT/Auto/Sec13_5RepresentativesComponentSizesFirstTops.lean",
+          "line": 1588
+        }
+      },
+      "remaining_fidelity_obligation": "Check component size, incidence and normalization.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "8.12",
+      "kind": "Proposition",
+      "pdf_page": 76,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec13_5RepresentativesComponentSizesFirstTops.lean"
+      ],
+      "declaration_anchors": {
+        "first_top_count": {
+          "file": "TrilinearHT/Auto/Sec13_5RepresentativesComponentSizesFirstTops.lean",
+          "line": 3226
+        }
+      },
+      "remaining_fidelity_obligation": "Match removal of first stops and uniform top count.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "9.1",
+      "kind": "Lemma",
+      "pdf_page": 81,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec15_3FiniteSparseCountLemma.lean"
+      ],
+      "declaration_anchors": {
+        "sparse_count_explicit": {
+          "file": "TrilinearHT/Auto/Sec15_3FiniteSparseCountLemma.lean",
+          "line": 3459
+        }
+      },
+      "remaining_fidelity_obligation": "Match all hypotheses, pure shift gap, real-grid approximation, constants and exponent.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "9.2",
+      "kind": "Proposition",
+      "pdf_page": 87,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec15_4VerificationCountingHypotheses.lean",
+        "TrilinearHT/Auto/Sec15_5OneDistributionCalculationFinalSums.lean"
+      ],
+      "declaration_anchors": {
+        "four_core_sparse_explicit": {
+          "file": "TrilinearHT/Auto/Sec15_4VerificationCountingHypotheses.lean",
+          "line": 2452
+        },
+        "three_core_sparse_explicit": {
+          "file": "TrilinearHT/Auto/Sec15_4VerificationCountingHypotheses.lean",
+          "line": 2489
+        },
+        "powered_count": {
+          "file": "TrilinearHT/Auto/Sec15_5OneDistributionCalculationFinalSums.lean",
+          "line": 254
+        }
+      },
+      "remaining_fidelity_obligation": "Match four- and three-core hypotheses and same amplitude grouping.",
+      "exact_statement_certified": false
+    },
+    {
+      "number": "9.3",
+      "kind": "Proposition",
+      "pdf_page": 89,
+      "reference_files": [
+        "TrilinearHT/Auto/Sec15_5OneDistributionCalculationFinalSums.lean"
+      ],
+      "declaration_anchors": {
+        "core_final_patterns": {
+          "file": "TrilinearHT/Auto/Sec15_5OneDistributionCalculationFinalSums.lean",
+          "line": 4063
+        }
+      },
+      "remaining_fidelity_obligation": "Match original cell minimum, all errors and uniform epsilon independent of q.",
+      "exact_statement_certified": false
+    }
+  ],
+  "unnumbered_completion_sections": [
+    {
+      "section": "10.1",
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_1OneAttemptRestarts.lean",
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "remaining_fidelity_obligation": "Actual attempt partition, exceptions and packing."
+    },
+    {
+      "section": "10.2–10.3",
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_2QuantitativeInequality.lean",
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "remaining_fidelity_obligation": "Derive retainedMin_holds using original parameter order and complexity budgets."
+    },
+    {
+      "section": "10.4",
+      "reference_files": [
+        "TrilinearHT/Auto/Sec16_3SummingUpdateLevels.lean"
+      ],
+      "remaining_fidelity_obligation": "Full base expansion and activeFinal_holds, then exact original Proposition 2.3."
+    }
+  ]
+}

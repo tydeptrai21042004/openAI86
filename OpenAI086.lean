@@ -1,3 +1,13 @@
+import OpenAI086.PaperV56Lemma32
+import OpenAI086.PaperV56ExceptionalBlocks
+import OpenAI086.PaperV54StageRefit
+import OpenAI086.PaperV54GreedyBlocks
+import OpenAI086.PaperV54FourthMoment
+import OpenAI086.PaperV54ChartPhase
+import OpenAI086.PaperV54RetainedAbsorption
+import OpenAI086.PaperV53ParameterCompletion
+import OpenAI086.PaperV53SparseExponent
+import OpenAI086.PaperV53WeylIntegral
 import OpenAI086.PaperV52SparseNonfuture
 import OpenAI086.PaperV52ParameterOrder
 import OpenAI086.PaperV52IteratedWeylSamples

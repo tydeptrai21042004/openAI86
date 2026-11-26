@@ -1,13 +1,13 @@
 {
-  "source_paper": "paper(6).pdf, exact SHA-256 match to October 5, 2026 manuscript",
+  "source_paper": "paper(7).pdf, SHA-256 matched",
   "formalization_model": "independent_mathlib_only",
   "trilinearht_external_import": false,
   "adapted_Lemma33Reviewed_excluded": true,
   "named_paper_results": 59,
   "numbered_results_with_partial_components": 59,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 318,
-  "theorem_declarations_in_source": 959,
+  "root_lean_file_count": 328,
+  "theorem_declarations_in_source": 988,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -81,7 +81,7 @@
     "Lemma 3.3: non-adjacent nested projection increments orthogonal; window energy identity",
     "Lemma 9.1: exact common-neighbor double-count and twofold four-step walk energy",
     "Lemma 3.3: arbitrary noncommuting layered Bessel lemma; all block words summed without depth-dependent loss",
-    "Lemma 9.1: weighted four-step walk density lower bound (unseparated), by two Cauchy–Schwarz steps"
+    "Lemma 9.1: weighted four-step walk density lower bound (unseparated), by two Cauchy\u2013Schwarz steps"
   ],
   "new_modules_this_continuation_v4": [
     "FiniteAlignedProjectionBlocks",
@@ -132,7 +132,7 @@
     "FinitePredictorOrthogonality"
   ],
   "new_partial_results_v9": [
-    "Lemma 8.6: exact finite height-lag boundary telescoping identity and Δ·L bound",
+    "Lemma 8.6: exact finite height-lag boundary telescoping identity and \u0394\u00b7L bound",
     "Lemma 8.6: chain-length bridge deriving per-position incidence budget from telescoping (height and cross-position exceptional terms still conditional)",
     "Lemma 5.3: finite weighted-cell augmented predictor orthogonality with private-input average retained",
     "Lemma 3.3: typed finite-real row goal now requires B linear, closing an invalid old target definition"
@@ -298,9 +298,40 @@
   },
   "v52_kernel_certification": "NOT RUN: Lean/Lake unavailable; verifier fails closed",
   "v52_scope": {
-    "lemma_4_3": "Finite repeated-sample propagation from a 3δ/4 initial Fourier sample to δ/2 lower bounds over M shifts, under a unimodular per-step recurrence and total error budget M e ≤ δ/4. Existing Plancherel ball-packing theorem then yields the short-return norm bound when its remaining hypotheses hold. The chart-specific recurrence is not yet derived.",
-    "lemma_9_1": "Proves the p.84 fixed-pair nonfuture mass estimate sum_b mass_b ≤ sqrt(L α) M² from both per-block caps and the two role budgets, and sums over at most six role pairs. The full geometric difference-cover/slab argument and δ^(1/2080) sparse-mass saving remain open.",
-    "proposition_2_3": "Proves explicit q and alpha parameter choices and the side-cost exponent reduction under the paper’s stated complexity inequalities. The ceiling-to-power bound and analytic inputs remain explicit obligations.",
+    "lemma_4_3": "Finite repeated-sample propagation from a 3\u03b4/4 initial Fourier sample to \u03b4/2 lower bounds over M shifts, under a unimodular per-step recurrence and total error budget M e \u2264 \u03b4/4. Existing Plancherel ball-packing theorem then yields the short-return norm bound when its remaining hypotheses hold. The chart-specific recurrence is not yet derived.",
+    "lemma_9_1": "Proves the p.84 fixed-pair nonfuture mass estimate sum_b mass_b \u2264 sqrt(L \u03b1) M\u00b2 from both per-block caps and the two role budgets, and sums over at most six role pairs. The full geometric difference-cover/slab argument and \u03b4^(1/2080) sparse-mass saving remain open.",
+    "proposition_2_3": "Proves explicit q and alpha parameter choices and the side-cost exponent reduction under the paper\u2019s stated complexity inequalities. The ceiling-to-power bound and analytic inputs remain explicit obligations.",
     "kernel_status": "No Lean/Lake executable available. Static checks and exact rational model tests are not kernel certificates; no numbered result is promoted."
-  }
+  },
+  "latest_version": "V56",
+  "new_modules_this_continuation_v53": [
+    "PaperV53ParameterCompletion",
+    "PaperV53SparseExponent",
+    "PaperV53WeylIntegral"
+  ],
+  "new_exact_regressions_v53": 1600,
+  "v53_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "notes_v53": "Eleven source-level proof candidates, two existing source repairs, exact PDF check, strict axiom audit. All paper results remain partial.",
+  "new_modules_this_continuation_v54": [
+    "PaperV54StageRefit",
+    "PaperV54GreedyBlocks",
+    "PaperV54FourthMoment",
+    "PaperV54ChartPhase",
+    "PaperV54RetainedAbsorption"
+  ],
+  "new_exact_regressions_v54": 2800,
+  "v54_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "notes_v54": "13 source-level candidates; no paper result promoted.",
+  "notes_v56": "Five independent source candidates: joint Lemma 3.2 and exceptional-block count (Lemma 8.2 first assertion); attributed standalone Lemma 8.5 outside independent tree. Zero new kernel certificates.",
+  "new_modules_this_continuation_v56": [
+    "PaperV56Lemma32",
+    "PaperV56ExceptionalBlocks"
+  ],
+  "new_exact_regressions_v56": 1300,
+  "v56_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "v56_reference_crosswalk_entries": 59,
+  "v56_reference_declaration_anchors": 54,
+  "v56_adapted_standalone_file": "source_fidelity/v56/EntryRank.lean",
+  "v56_adapted_standalone_theorem_declarations": 4,
+  "v56_paper_sha_match": true
 }

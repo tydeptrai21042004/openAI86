@@ -2,7 +2,7 @@
 """Audit Lean TARGET COVERAGE (not theorem correctness or kernel verification)."""
 from pathlib import Path
 from collections import Counter
-import hashlib,json,re,sys
+import hashlib,json,re,sys,os
 
 root=Path(__file__).resolve().parents[1]
 index=json.loads((root/'verification/PAPER_RESULTS_INDEX.json').read_text())
@@ -102,7 +102,7 @@ for module, theorem in [('PaperInverseDerivative','v30_interval_inverse_first_st
         problems.append('4.7 restricted inverse component missing: '+theorem)
 
 # Optional paper byte-for-byte check when the current PDF is present.
-paper=next((q for q in (root/'paper(6).pdf', Path('/mnt/data/paper(6).pdf'), Path('/mnt/data/paper(5).pdf'), Path('/mnt/data/paper(4).pdf'),
+paper=next((q for q in (Path(os.environ['OPENAI086_PAPER']) if os.environ.get('OPENAI086_PAPER') else root/'paper(7).pdf', root/'paper(7).pdf', Path('/mnt/data/paper(7).pdf'), root/'paper(6).pdf', Path('/mnt/data/paper(6).pdf'), Path('/mnt/data/paper(5).pdf'), Path('/mnt/data/paper(4).pdf'),
     Path('/mnt/data/paper(3).pdf'), Path('/mnt/data/paper (2).pdf')) if q.is_file()), None)
 if paper is not None:
     h=hashlib.sha256(paper.read_bytes()).hexdigest()

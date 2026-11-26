@@ -29,13 +29,15 @@ theorem v52_choose_parameter_order
   have halphapos : 0 < α := by dsimp [α]; positivity
   have halphasmall : α*C4 < ε/4 := by
     dsimp [α]
+    rw [div_mul_eq_mul_div]
     apply (div_lt_iff₀ (by positivity : 0 < 4*(C4+1))).2
-    nlinarith [hε]
+    nlinarith
   refine ⟨2+d, α, ?_, ?_, halphapos, ?_, ?_⟩
   · linarith
   · linarith
   · have hbound : C19*C5*d < 1/16 := by
       dsimp [d]
+      rw [← mul_div_assoc, mul_one]
       apply (div_lt_iff₀ (by positivity : 0 < 16*(C19*C5+1))).2
       nlinarith
     dsimp

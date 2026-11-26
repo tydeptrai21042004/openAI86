@@ -116,7 +116,7 @@ theorem v52_six_nonfuture_pair_mass
       Finset.sum_le_sum (fun p _ => hsingle p)
     _ = (Fintype.card Pair : ℝ)*(Real.sqrt (L*α)*M^2) := by simp
     _ ≤ 6*Real.sqrt (L*α)*M^2 := by
-      apply mul_le_mul_of_nonneg_right hcard
-      positivity
+      rw [mul_assoc]
+      exact mul_le_mul_of_nonneg_right hcard (by positivity)
 
 end OpenAI086

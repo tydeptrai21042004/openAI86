@@ -10,3 +10,7 @@ Mathematical ideas are from the user's October 5, 2026 93-page source paper.
 Independence of Lean source does not mean the main paper has been proved.
 The work is currently an independent partial formalization and is not
 kernel-checked in this runtime.
+
+## V56 separate source-fidelity track
+
+`source_fidelity/v56/EntryRank.lean` contains an explicitly attributed adaptation from Joris Roos's `lean-trilinearht` commit `7b4209609e6a7fb9d9935973ee8541495f943660`, Apache-2.0, original file `TrilinearHT/Auto/Sec13_3BesselRowsLinearSideEnergy.lean`. The standalone file is not imported by `OpenAI086.lean`. `OpenAI086/PaperV56Lemma32.lean` and `OpenAI086/PaperV56ExceptionalBlocks.lean` extend the local candidate library. The reference crosswalk is a source-navigation aid, not proof certification.

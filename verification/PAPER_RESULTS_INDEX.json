@@ -1,8 +1,8 @@
 {
-  "paper_file": "paper(6).pdf",
+  "paper_file": "paper(7).pdf",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
-  "notes": "V48: conditional restart half-contraction and finite history-labelled measurable nested partition candidates added. All 59 items remain partial until source fidelity and kernel certification.",
+  "notes": "V56: full local Lemma 3.2 source candidate and first assertion of Lemma 8.2. Separate adapted Lemma 8.5 and source-fidelity crosswalk. No kernel status promoted.",
   "results": [
     {
       "kind": "Theorem",
@@ -77,7 +77,9 @@
         "OpenAI086/PaperSideMinimum.lean",
         "OpenAI086/PaperAccuracySummation.lean",
         "OpenAI086/PaperV42AccuracyTail.lean",
-        "OpenAI086/PaperV52ParameterOrder.lean"
+        "OpenAI086/PaperV52ParameterOrder.lean",
+        "OpenAI086/PaperV53ParameterCompletion.lean",
+        "OpenAI086/PaperV54RetainedAbsorption.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_3",
@@ -85,7 +87,8 @@
       "remaining_obligation_v28": "Complete normalized local absorption with the original rooted-tree hypotheses and all Section 3–10 costs.",
       "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate.",
       "v48_note": "No new normalized absorption proof. Section 3.4 restart result remains conditional and Sections 4–9 remain incomplete.",
-      "v52_scope": "Formalizes the p.92 numerical choices of q and alpha, and the P^(-1/2)G0(K+2)^beta side-cost reduction. Analytic complexity bounds and the full retained-cell estimate remain open."
+      "v52_scope": "Formalizes the p.92 numerical choices of q and alpha, and the P^(-1/2)G0(K+2)^beta side-cost reduction. Analytic complexity bounds and the full retained-cell estimate remain open.",
+      "v53_note": "Exact ceiling and polynomial side cost; analytic complexity and normalized absorption remain open."
     },
     {
       "kind": "Lemma",
@@ -153,7 +156,9 @@
         "OpenAI086/PaperV44PrivateRefit.lean",
         "OpenAI086/PaperV45ScalarMoment.lean",
         "OpenAI086/PaperV48PrivateTransition.lean",
-        "OpenAI086/PaperV48RestartAssembly.lean"
+        "OpenAI086/PaperV48RestartAssembly.lean",
+        "OpenAI086/PaperV54StageRefit.lean",
+        "OpenAI086/PaperV56Lemma32.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_2",
@@ -162,7 +167,8 @@
       "v38_scope": "Normalized probability-space D^5 refit estimate under pointwise coefficient and energy hypotheses; existence, actual augmented columns, and moment identity bridges remain.",
       "v44_scope": "Actual finite augmented-column span in Bochner L2, projection construction, coefficient uniqueness, integrated normal equations and candidate D^5 a.e. estimate. Remaining: kernel build, derive MemLp and L1 integrability from original hypotheses, scalar-input private moment extraction, normalized interval interface and fidelity audit.",
       "v45_scope": "Actual scalar-input moment epsilon*c derived from L2 normal equation; MemLp hypotheses, interval normalization and kernel/fidelity review remain.",
-      "v48_scope": "Pointwise coefficient movement now implies the actual Euclidean augmented-column increment lower bound. The scalar moment identity and actual L² projection remain uncompiled candidates; automatic MemLp, normalized-interval hypotheses, and integration into the full compression product remain open."
+      "v48_scope": "Pointwise coefficient movement now implies the actual Euclidean augmented-column increment lower bound. The scalar moment identity and actual L² projection remain uncompiled candidates; automatic MemLp, normalized-interval hypotheses, and integration into the full compression product remain open.",
+      "v56_note": "Joint statement on normalized probability measure with actual L² refit, derives column MemLp and input integrability. Needs kernel and normalized interval/label-space fidelity audit."
     },
     {
       "kind": "Lemma",
@@ -207,7 +213,8 @@
         "OpenAI086/PaperLemma33Statement.lean",
         "OpenAI086/PaperLemma33Submodules.lean",
         "OpenAI086/PaperV43Lemma33.lean",
-        "OpenAI086/PaperV50StageProjectionBridge.lean"
+        "OpenAI086/PaperV50StageProjectionBridge.lean",
+        "OpenAI086/PaperV54StageRefit.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_3",
@@ -258,7 +265,8 @@
         "OpenAI086/PaperV48AnchorPartitions.lean",
         "OpenAI086/PaperV49AnchorCoherence.lean",
         "OpenAI086/PaperV49ErrorRows.lean",
-        "OpenAI086/PaperV50StageProjectionBridge.lean"
+        "OpenAI086/PaperV50StageProjectionBridge.lean",
+        "OpenAI086/PaperV54StageRefit.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_4",
@@ -348,7 +356,9 @@
         "OpenAI086/PaperWeylBallPacking.lean",
         "OpenAI086/PaperWeylSubspace.lean",
         "OpenAI086/PaperV51WeylReturnAlgebra.lean",
-        "OpenAI086/PaperV52IteratedWeylSamples.lean"
+        "OpenAI086/PaperV52IteratedWeylSamples.lean",
+        "OpenAI086/PaperV53WeylIntegral.lean",
+        "OpenAI086/PaperV54ChartPhase.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_4_3",
@@ -359,7 +369,8 @@
       "v27_scope": "return antisymmetry, integral skew obstruction, and energy packing; actual Fourier returns and successive minima remain open",
       "remaining_obligation_v28": "Fourier return translation error, Lipschitz/Plancherel packing, lattice minima/transference, rational isotropic subspace and effective quadratic bound.",
       "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate.",
-      "v52_scope": "Repeated approximate unimodular Fourier-sample propagation, connected to the existing disjoint-ball Plancherel return obstruction. Chart-specific recurrence/error derivation remains open."
+      "v52_scope": "Repeated approximate unimodular Fourier-sample propagation, connected to the existing disjoint-ball Plancherel return obstruction. Chart-specific recurrence/error derivation remains open.",
+      "v53_note": "Integrated recurrence under pointwise identity and L1 error; actual chart identity and Fourier shift remain open."
     },
     {
       "kind": "Lemma",
@@ -888,7 +899,8 @@
         "OpenAI086/PaperTargets/Result_7_2.lean",
         "OpenAI086/PaperShortBlockResonance.lean",
         "OpenAI086/PaperV51WeylReturnAlgebra.lean",
-        "OpenAI086/PaperV51StaggeredExpansion.lean"
+        "OpenAI086/PaperV51StaggeredExpansion.lean",
+        "OpenAI086/PaperV54FourthMoment.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_7_2",
@@ -986,7 +998,8 @@
         "OpenAI086/PaperRationalCramerBridge.lean",
         "OpenAI086/PaperCramerNumerators.lean",
         "OpenAI086/PaperRationalMinorSelection.lean",
-        "OpenAI086/PaperHeightAssembly.lean"
+        "OpenAI086/PaperHeightAssembly.lean",
+        "OpenAI086/PaperV56ExceptionalBlocks.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_2",
@@ -995,7 +1008,8 @@
       "lean_target_is_paper_statement": false,
       "v20_scope_note": "Integral denominator and determinant bounds, conditional Cramer tiny closure and six-start exclusion; rational minor selection, denominator clearing and full packet cardinal assembly open.",
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
-      "remaining_obligation_v28": "Rational-height assembly from selected basis, packet counting of exceptional blocks and complete tiny-space conclusion."
+      "remaining_obligation_v28": "Rational-height assembly from selected basis, packet counting of exceptional blocks and complete tiny-space conclusion.",
+      "v56_note": "Rational-height packet cover yields at most 5d exceptional blocks. Cramer bound for tiny span and exact integration into PRE/CURRENT construction remain open."
     },
     {
       "kind": "Lemma",
@@ -1051,7 +1065,8 @@
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_5",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Check entry rank constructed from arbitrary nested sets and logarithmic harmonic bound against exact statement."
+      "remaining_obligation_v28": "Check entry rank constructed from arbitrary nested sets and logarithmic harmonic bound against exact statement.",
+      "v56_note": "Standalone attributed adapted proof candidate source_fidelity/v56/EntryRank.lean; outside independent tree; needs kernel replay."
     },
     {
       "kind": "Lemma",
@@ -1204,14 +1219,17 @@
         "OpenAI086/FiniteBadPartnerPruning.lean",
         "OpenAI086/PaperSparseNeighborhood.lean",
         "OpenAI086/PaperSparseColoredWalks.lean",
-        "OpenAI086/PaperV52SparseNonfuture.lean"
+        "OpenAI086/PaperV52SparseNonfuture.lean",
+        "OpenAI086/PaperV53SparseExponent.lean",
+        "OpenAI086/PaperV54GreedyBlocks.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_9_1",
       "lean_target_level": "partial_component_exists",
       "remaining_obligation_v28": "Full sparse mass theorem: pair budgets, proper color paths, slab cover, annular transfer and positive density-power saving. Finite incidence sublemmas alone do not establish it.",
       "remaining_obligation_v40": "Kernel-check new actual dense graph/colored paths; geometric difference covers, greedy scale blocks, slab covering and full density saving remain.",
-      "v52_scope": "Derives the p.84 nonfuture-pair block-mass estimate by finite Cauchy–Schwarz, including the six-role-pair factor. The greedy blocks, difference covers, slab geometry, and delta^(1/2080) saving remain open."
+      "v52_scope": "Derives the p.84 nonfuture-pair block-mass estimate by finite Cauchy–Schwarz, including the six-role-pair factor. The greedy blocks, difference covers, slab geometry, and delta^(1/2080) saving remain open.",
+      "v53_note": "Auxiliary exponent calculation and large-density case; geometric inequality remains open."
     },
     {
       "kind": "Proposition",
