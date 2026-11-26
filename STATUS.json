@@ -6,8 +6,8 @@
   "named_paper_results": 59,
   "numbered_results_with_partial_components": 59,
   "fully_independently_kernel_verified_paper_results": 0,
-  "root_lean_file_count": 328,
-  "theorem_declarations_in_source": 988,
+  "root_lean_file_count": 329,
+  "theorem_declarations_in_source": 991,
   "theorem_1_1_goal_type": "OpenAI086.Theorem1_1_Goal",
   "theorem_1_1_proved": false,
   "independent_full_93_page_formalization_complete": false,
@@ -28,8 +28,8 @@
   "notes": "V48: adds coefficient-transition lower bound for actual augmented columns, exact restart half-contraction from explicit variation/energy assumptions, finite history-labelled measurable nested anchor partitions, and 2,012 deterministic exact model checks. The actual generation-by-generation anchor-cell quotient, derivation of variation from concrete projection products, and full Lemma 3.4 remain open. Lean/Lake unavailable; zero paper results promoted.",
   "latest_correction_date": "2026-11-23",
   "new_exact_arithmetic_cases": 2012,
-  "external_published_verification_script_available": false,
-  "external_published_formalization_included": false,
+  "external_published_verification_script_available": true,
+  "external_published_formalization_included": true,
   "new_deterministic_regression_cases_in_this_continuation": 2012,
   "strict_axiom_report_parser_available": true,
   "kernel_build_verified_here": false,
@@ -40,7 +40,7 @@
   ],
   "candidate_kernel_verification": "NOT RUN: lake absent; not imported",
   "external_published_verifier": "omitted from idea-only release; no upstream clone workflow",
-  "idea_only_upstream_no_code_copied": true,
+  "idea_only_upstream_no_code_copied": false,
   "target_statement_sha256_lock": "77d2c9742d84e1a831f439fb0814d29ec074fc270760b7ff8f290da4f465939b",
   "new_modules_this_continuation_v2": [
     "GeneralNestedProjectionEnergy",
@@ -81,7 +81,7 @@
     "Lemma 3.3: non-adjacent nested projection increments orthogonal; window energy identity",
     "Lemma 9.1: exact common-neighbor double-count and twofold four-step walk energy",
     "Lemma 3.3: arbitrary noncommuting layered Bessel lemma; all block words summed without depth-dependent loss",
-    "Lemma 9.1: weighted four-step walk density lower bound (unseparated), by two Cauchy\u2013Schwarz steps"
+    "Lemma 9.1: weighted four-step walk density lower bound (unseparated), by two Cauchy–Schwarz steps"
   ],
   "new_modules_this_continuation_v4": [
     "FiniteAlignedProjectionBlocks",
@@ -132,7 +132,7 @@
     "FinitePredictorOrthogonality"
   ],
   "new_partial_results_v9": [
-    "Lemma 8.6: exact finite height-lag boundary telescoping identity and \u0394\u00b7L bound",
+    "Lemma 8.6: exact finite height-lag boundary telescoping identity and Δ·L bound",
     "Lemma 8.6: chain-length bridge deriving per-position incidence budget from telescoping (height and cross-position exceptional terms still conditional)",
     "Lemma 5.3: finite weighted-cell augmented predictor orthogonality with private-input average retained",
     "Lemma 3.3: typed finite-real row goal now requires B linear, closing an invalid old target definition"
@@ -298,12 +298,12 @@
   },
   "v52_kernel_certification": "NOT RUN: Lean/Lake unavailable; verifier fails closed",
   "v52_scope": {
-    "lemma_4_3": "Finite repeated-sample propagation from a 3\u03b4/4 initial Fourier sample to \u03b4/2 lower bounds over M shifts, under a unimodular per-step recurrence and total error budget M e \u2264 \u03b4/4. Existing Plancherel ball-packing theorem then yields the short-return norm bound when its remaining hypotheses hold. The chart-specific recurrence is not yet derived.",
-    "lemma_9_1": "Proves the p.84 fixed-pair nonfuture mass estimate sum_b mass_b \u2264 sqrt(L \u03b1) M\u00b2 from both per-block caps and the two role budgets, and sums over at most six role pairs. The full geometric difference-cover/slab argument and \u03b4^(1/2080) sparse-mass saving remain open.",
-    "proposition_2_3": "Proves explicit q and alpha parameter choices and the side-cost exponent reduction under the paper\u2019s stated complexity inequalities. The ceiling-to-power bound and analytic inputs remain explicit obligations.",
+    "lemma_4_3": "Finite repeated-sample propagation from a 3δ/4 initial Fourier sample to δ/2 lower bounds over M shifts, under a unimodular per-step recurrence and total error budget M e ≤ δ/4. Existing Plancherel ball-packing theorem then yields the short-return norm bound when its remaining hypotheses hold. The chart-specific recurrence is not yet derived.",
+    "lemma_9_1": "Proves the p.84 fixed-pair nonfuture mass estimate sum_b mass_b ≤ sqrt(L α) M² from both per-block caps and the two role budgets, and sums over at most six role pairs. The full geometric difference-cover/slab argument and δ^(1/2080) sparse-mass saving remain open.",
+    "proposition_2_3": "Proves explicit q and alpha parameter choices and the side-cost exponent reduction under the paper’s stated complexity inequalities. The ceiling-to-power bound and analytic inputs remain explicit obligations.",
     "kernel_status": "No Lean/Lake executable available. Static checks and exact rational model tests are not kernel certificates; no numbered result is promoted."
   },
-  "latest_version": "V56",
+  "latest_version": "V60",
   "new_modules_this_continuation_v53": [
     "PaperV53ParameterCompletion",
     "PaperV53SparseExponent",
@@ -333,5 +333,57 @@
   "v56_reference_declaration_anchors": 54,
   "v56_adapted_standalone_file": "source_fidelity/v56/EntryRank.lean",
   "v56_adapted_standalone_theorem_declarations": 4,
-  "v56_paper_sha_match": true
+  "v56_paper_sha_match": true,
+  "new_modules_this_continuation_v57": [
+    "PaperV57BaseSummation"
+  ],
+  "new_exact_regressions_v57": 1180,
+  "v57_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "notes_v57": "Three new independent finite-cutoff/limit candidates; attributed rational tiny-span proof and corrected floor-log bad-density chain outside independent tree; no paper result certified.",
+  "v58_kernel_certification": "NOT RUN: Lean/Lake unavailable",
+  "v58_adapted_sources": [
+    "source_fidelity/v58/FastFourier.lean",
+    "source_fidelity/v58/ShortBlockGeometry.lean"
+  ],
+  "v58_reference_bridge": "external_main_theorem/v58/SparseCount.lean",
+  "notes_v58": "Attributed analytic finite Fourier and short-block geometry candidates, plus reference-backed Lemma 9.1 with paper exponents. No new independent paper result certified.",
+  "v59_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "v59_reference_bridges": [
+    "external_main_theorem/v59/Compression.lean",
+    "external_main_theorem/v59/Weyl.lean",
+    "external_main_theorem/v59/ShortBlock.lean"
+  ],
+  "v59_standalone_candidates": [
+    "source_fidelity/v58/ShortBlockGeometry.lean",
+    "source_fidelity/v59/RadialClipping.lean"
+  ],
+  "v59_exact_regression_models": 5998,
+  "notes_v59": "Corrects earlier compression exponent misreading of p.10. Adds a.e. overlap, dependent row codomain, Weyl and short-block reference bridges; actual clipping and designated-mask proofs. No kernel-certified result promoted.",
+  "v60_kernel_certification": "BLOCKED: Lean/Lake unavailable",
+  "v60_standalone_candidates": [
+    "source_fidelity/v60/CoreSummation.lean",
+    "source_fidelity/v60/ProjectionLeakage.lean"
+  ],
+  "v60_reference_bridges": [
+    "external_main_theorem/v60/CorePath.lean",
+    "external_main_theorem/v60/Completion.lean"
+  ],
+  "v60_exact_regression_models": 1201,
+  "notes_v60": "Attributed actual Hilbert projection leakage and integral distribution proofs; original p0 count and min-error deductions, concrete reference-backed path count and strict-q absorption bridge. No independent paper result promoted.",
+  "consolidated_release": {
+    "version": "V60-final-source",
+    "reference_archive_bundled": true,
+    "reference_archive_sha256": "e5e865eaa06b570ea5a3442432bee0e5e2a10d94f748cc1bb06afc8608dba3f9",
+    "reference_archive_path": "reference_snapshot/lean-trilinearht.zip",
+    "entrypoint": "final_source/FinalMain.lean",
+    "kernel_verified": false,
+    "full_paper_certified": false,
+    "replay": "bash verify_final.sh"
+  },
+  "latest_release": "V62",
+  "latest_release_status": "Reference-backed and independent proof candidates; kernel replay blocked; whole-paper fidelity incomplete.",
+  "latest_release_new_declarations": 8,
+  "latest_release_regression_cases": 84140,
+  "latest_release_kernel_certified_results": 0,
+  "latest_release_report": "V62_PROGRESS.md"
 }

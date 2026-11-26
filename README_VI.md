@@ -1,3 +1,5 @@
+> V61 continuation: see [V61_PROGRESS.md](V61_PROGRESS.md) and `verify_v61.sh`. New proof candidates have not been kernel-checked; the historical independent inventory remains unchanged.
+
 ## Bản V17 — 23/11/2026
 
 Bổ sung mã Lean ứng viên: chứng minh giới hạn chỉ số khối dyadic

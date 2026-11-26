@@ -1,0 +1,49 @@
+{
+  "status": "SOURCE PREPARED NOT VERIFIED",
+  "reference_commit": "7b4209609e6a7fb9d9935973ee8541495f943660",
+  "reference_archive_sha256": "e5e865eaa06b570ea5a3442432bee0e5e2a10d94f748cc1bb06afc8608dba3f9",
+  "toolchain": "leanprover/lean4:v4.36.0-rc1",
+  "mathlib_commit": "fbc1661a327737928fe9d69b74f7deaa09eecfbc",
+  "scope": "all",
+  "independent_main_proved": false,
+  "full_paper_certified": false,
+  "strict_axioms": false,
+  "checks": {
+    "check_project_integrity": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "check_project_integrity.log"
+    },
+    "check_registry_integrity": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "check_registry_integrity.log"
+    },
+    "check_independent_target": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "check_independent_target.log"
+    },
+    "check_all_59_lean_targets": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "check_all_59_lean_targets.log"
+    },
+    "lean_source_safety": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "lean_source_safety.log"
+    },
+    "test_v60_models": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "test_v60_models.log"
+    },
+    "test_v61_models": {
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "test_v61_models.log"
+    }
+  },
+  "prepared_source_files": 20
+}

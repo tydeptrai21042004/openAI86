@@ -1,3 +1,15 @@
+> V61 continuation: see [V61_PROGRESS.md](V61_PROGRESS.md) and `verify_v61.sh`. New proof candidates have not been kernel-checked; the historical independent inventory remains unchanged.
+
+# OpenAI086 — V60 consolidated Lean source
+
+**Status: source release, not a completed or kernel-certified whole-paper proof.**
+
+Start with [FINAL_SOURCE.md](FINAL_SOURCE.md). This release combines the latest independent partial formalization, the attributed standalone candidates, the V55–V60 reference-backed bridges, the original 93-page paper and the pinned reference archive. The final two theorem declarations are in `final_source/FinalMain.lean` (reference-backed, not independent). Run `bash verify_final.sh --main-only` for the main targets, or `bash verify_final.sh` for the broader replay. Older README sections below are historical.
+
+> **V59 (historical):** [V59_PROGRESS.md](V59_PROGRESS.md). Corrected Lemma 3.4 exponent audit, reference-backed compression/Weyl/short-block candidates, radial clipping and rectangle separation. No kernel certification here. Run `bash verify_v59.sh`.
+
+> **V58:** see [V58_PROGRESS.md](V58_PROGRESS.md). Source candidates for Lemma 7.2 and reference-backed Lemma 9.1; kernel certification not run. Independent main theorem remains open. Run `bash verify_v58.sh`.
+
 > **V53 status:** source-level continuation only; whole Lean kernel build remains unverified. See [V53_PROGRESS.md](V53_PROGRESS.md) and run `bash verify_v53.sh`. Theorem 1.1 is still open.
 
 > **V45 update:** See [V45_PROGRESS.md](V45_PROGRESS.md) for the scalar-input normal equation and continuous cut-refit candidates. Static checks passed; Lean kernel checks blocked (0/58 certified, 0/1 unconditional main theorem).
@@ -184,7 +196,3 @@ verification correctly reports `BLOCKED` rather than success. See `V50_PROGRESS.
 ## Latest continuation: V54
 
 See [V54_PROGRESS.md](V54_PROGRESS.md) for the new source-level candidates and remaining obligations. Run `bash verify_v54.sh`. Five modules advance actual stage refits, greedy sparse blocks, the finite resonant fourth moment, chart phase algebra and retained-cell parameter assembly. No full paper result has been certified; the Lean/Lake phase remains blocked in the authoring environment.
-
-## Latest continuation: V56
-
-See [V56_PROGRESS.md](V56_PROGRESS.md) and [whole-paper fidelity mapping](verification/V56_PAPER_FIDELITY.md). Run `bash verify_v56.sh`. The V55 reference bridge is documented in [V55_REFERENCE_INTEGRATION.md](V55_REFERENCE_INTEGRATION.md). Source-level candidates remain unverified by the Lean kernel.

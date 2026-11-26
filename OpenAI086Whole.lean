@@ -182,3 +182,10 @@ It explicitly does NOT assert that Theorem 1.1 is proved.
 #print axioms OpenAI086.v48_restart_attempt_contract
 #check OpenAI086.v48_spatial_partition_range_finite
 #print axioms OpenAI086.v48_spatial_partition_range_finite
+
+-- V57: Section 10.4 finite-cutoff and limiting arithmetic.
+#check OpenAI086.v57_tuple_cutoff_bound
+#check OpenAI086.v57_choose_uniform_tuple_cutoff
+#check OpenAI086.v57_cutoff_limit_bound
+#print axioms OpenAI086.v57_choose_uniform_tuple_cutoff
+#print axioms OpenAI086.v57_cutoff_limit_bound

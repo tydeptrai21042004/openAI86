@@ -2,13 +2,13 @@
   "paper_file": "paper(7).pdf",
   "paper_sha256": "24b584066ae76b2f28dc03d32a2b0a2cdc3b4f92e0e82f4a3d133f28ccc5a936",
   "paper_pages": 93,
-  "notes": "V56: full local Lemma 3.2 source candidate and first assertion of Lemma 8.2. Separate adapted Lemma 8.5 and source-fidelity crosswalk. No kernel status promoted.",
+  "notes": "V57: tiny-span closure and corrected bad-density chain candidates in attributed source; Section 10.4 finite cutoff assembly. No kernel status promoted.",
   "results": [
     {
       "kind": "Theorem",
       "number": "1.1",
       "pdf_page": 2,
-      "paper_statement_opening": "Theorem 1.1. There is a finite constant C such that ∥T(f1, f2, f3)∥L1(R) ≤C",
+      "paper_statement_opening": "Theorem 1.1. There is a finite constant C such that \u2225T(f1, f2, f3)\u2225L1(R) \u2264C",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperStatement.lean",
@@ -28,14 +28,14 @@
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_1_1",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Prove the uniform bound for the concrete Schwartz PV output using only three L³ norms; check the pointwise PV/L¹ realization and the density extension in Lean.",
+      "remaining_obligation_v28": "Prove the uniform bound for the concrete Schwartz PV output using only three L\u00b3 norms; check the pointwise PV/L\u00b9 realization and the density extension in Lean.",
       "v48_note": "No new unconditional main-theorem proof. Existing target remains partial and unproved."
     },
     {
       "kind": "Lemma",
       "number": "2.1",
       "pdf_page": 4,
-      "paper_statement_opening": "Lemma 2.1 (Local absolute estimate). If pj ≥1 and P3 j=0 p−1",
+      "paper_statement_opening": "Lemma 2.1 (Local absolute estimate). If pj \u22651 and P3 j=0 p\u22121",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/LocalForms.lean",
@@ -51,7 +51,7 @@
       "kind": "Theorem",
       "number": "2.2",
       "pdf_page": 4,
-      "paper_statement_opening": "Theorem 2.2 (Uniform local estimate). For some q ∈(2, 3), the constants CN(q) are bounded independently of N.",
+      "paper_statement_opening": "Theorem 2.2 (Uniform local estimate). For some q \u2208(2, 3), the constants CN(q) are bounded independently of N.",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/UniformBootstrap.lean",
@@ -68,7 +68,7 @@
       "kind": "Proposition",
       "number": "2.3",
       "pdf_page": 4,
-      "paper_statement_opening": "Proposition 2.3 (Normalized absorption estimate). For a suitable fixed q ∈(2, 3) and every sufficiently small fixed c > 0, there is an A < ∞, independent of N, with the following property.",
+      "paper_statement_opening": "Proposition 2.3 (Normalized absorption estimate). For a suitable fixed q \u2208(2, 3) and every sufficiently small fixed c > 0, there is an A < \u221e, independent of N, with the following property.",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/OuterStopping.lean",
@@ -79,16 +79,18 @@
         "OpenAI086/PaperV42AccuracyTail.lean",
         "OpenAI086/PaperV52ParameterOrder.lean",
         "OpenAI086/PaperV53ParameterCompletion.lean",
-        "OpenAI086/PaperV54RetainedAbsorption.lean"
+        "OpenAI086/PaperV54RetainedAbsorption.lean",
+        "OpenAI086/PaperV57BaseSummation.lean"
       ],
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_3",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Complete normalized local absorption with the original rooted-tree hypotheses and all Section 3–10 costs.",
+      "remaining_obligation_v28": "Complete normalized local absorption with the original rooted-tree hypotheses and all Section 3\u201310 costs.",
       "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate.",
-      "v48_note": "No new normalized absorption proof. Section 3.4 restart result remains conditional and Sections 4–9 remain incomplete.",
+      "v48_note": "No new normalized absorption proof. Section 3.4 restart result remains conditional and Sections 4\u20139 remain incomplete.",
       "v52_scope": "Formalizes the p.92 numerical choices of q and alpha, and the P^(-1/2)G0(K+2)^beta side-cost reduction. Analytic complexity bounds and the full retained-cell estimate remain open.",
-      "v53_note": "Exact ceiling and polynomial side cost; analytic complexity and normalized absorption remain open."
+      "v53_note": "Exact ceiling and polynomial side cost; analytic complexity and normalized absorption remain open.",
+      "v57_note": "Finite tuple cutoff and limit estimate added; actual per-tuple analytic estimates and expansion convergence remain open."
     },
     {
       "kind": "Lemma",
@@ -115,7 +117,7 @@
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_2_4",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Construct the four directional Gevrey derivatives, prove all marginal cancellations, shifted dyadic cover, reconstruction limit and maximal-function estimates; connect compact testing to actual L¹ output. V28 supplies the finite-window scalar reconstruction and compact-test duality candidates."
+      "remaining_obligation_v28": "Construct the four directional Gevrey derivatives, prove all marginal cancellations, shifted dyadic cover, reconstruction limit and maximal-function estimates; connect compact testing to actual L\u00b9 output. V28 supplies the finite-window scalar reconstruction and compact-test duality candidates."
     },
     {
       "kind": "Lemma",
@@ -163,18 +165,18 @@
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_3_2",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Actual augmented L² Gram operators, invertibility, kernel representation and sup norm estimate, normalized cell measure.",
+      "remaining_obligation_v28": "Actual augmented L\u00b2 Gram operators, invertibility, kernel representation and sup norm estimate, normalized cell measure.",
       "v38_scope": "Normalized probability-space D^5 refit estimate under pointwise coefficient and energy hypotheses; existence, actual augmented columns, and moment identity bridges remain.",
       "v44_scope": "Actual finite augmented-column span in Bochner L2, projection construction, coefficient uniqueness, integrated normal equations and candidate D^5 a.e. estimate. Remaining: kernel build, derive MemLp and L1 integrability from original hypotheses, scalar-input private moment extraction, normalized interval interface and fidelity audit.",
       "v45_scope": "Actual scalar-input moment epsilon*c derived from L2 normal equation; MemLp hypotheses, interval normalization and kernel/fidelity review remain.",
-      "v48_scope": "Pointwise coefficient movement now implies the actual Euclidean augmented-column increment lower bound. The scalar moment identity and actual L² projection remain uncompiled candidates; automatic MemLp, normalized-interval hypotheses, and integration into the full compression product remain open.",
-      "v56_note": "Joint statement on normalized probability measure with actual L² refit, derives column MemLp and input integrability. Needs kernel and normalized interval/label-space fidelity audit."
+      "v48_scope": "Pointwise coefficient movement now implies the actual Euclidean augmented-column increment lower bound. The scalar moment identity and actual L\u00b2 projection remain uncompiled candidates; automatic MemLp, normalized-interval hypotheses, and integration into the full compression product remain open.",
+      "v56_note": "Joint statement on normalized probability measure with actual L\u00b2 refit, derives column MemLp and input integrability. Needs kernel and normalized interval/label-space fidelity audit."
     },
     {
       "kind": "Lemma",
       "number": "3.3",
       "pdf_page": 8,
-      "paper_statement_opening": "Lemma 3.3 (Products of nested prefixes). Let X be a Hilbert space, and for 1 ≤i ≤m let P i",
+      "paper_statement_opening": "Lemma 3.3 (Products of nested prefixes). Let X be a Hilbert space, and for 1 \u2264i \u2264m let P i",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/OrderedProductTelescoping.lean",
@@ -224,13 +226,13 @@
       "remaining_obligation_v28": "Build all dependencies and validate both exact prefix and variation statements for nested orthogonal projections; inspect axioms and empty product case.",
       "v43_candidate": "OpenAI086.v43_lemma33",
       "v43_kernel_status": "NOT RUN",
-      "v50_scope": "Applies the existing full Hilbert-space Lemma 3.3 to actual continuous L² spans of local columns, with orthogonal projections constructed from finite column families. The one-step AE refinement identity is explicit and remains to be derived from the exact anchor/terminal-cut masks; kernel build pending."
+      "v50_scope": "Applies the existing full Hilbert-space Lemma 3.3 to actual continuous L\u00b2 spans of local columns, with orthogonal projections constructed from finite column families. The one-step AE refinement identity is explicit and remains to be derived from the exact anchor/terminal-cut masks; kernel build pending."
     },
     {
       "kind": "Lemma",
       "number": "3.4",
       "pdf_page": 9,
-      "paper_statement_opening": "Lemma 3.4 (Compression). Use the column system and budget D ≥2 above on a finite dyadic tree with root J. Let P 1, . . . , P m be inherited mask families, with their local orthogonal projections.",
+      "paper_statement_opening": "Lemma 3.4 (Compression). Use the column system and budget D \u22652 above on a finite dyadic tree with root J. Let P 1, . . . , P m be inherited mask families, with their local orthogonal projections.",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/FiniteCompression.lean",
@@ -273,22 +275,22 @@
       "lean_target_level": "partial_component_exists",
       "v20_scope_note": "Moment patching, projection energy, quadratic absorption and restart length/energy budget candidates; cut-cell geometry and analytic estimates open.",
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
-      "remaining_obligation_v28": "Actual dyadic inherited L² projections, stopping partitions, moment preservation, dyadic maximal L² bound, anchor attempt restarts and final polylog budget, complements and averaged operators.",
+      "remaining_obligation_v28": "Actual dyadic inherited L\u00b2 projections, stopping partitions, moment preservation, dyadic maximal L\u00b2 bound, anchor attempt restarts and final polylog budget, complements and averaged operators.",
       "v37_scope": "Finite weighted refining-partition maximal inequality, complex vector row error, integrated column energy, and attempt budget assembly; actual continuous projection stopping construction still open.",
       "v38_scope": "Integrated low/high representative energy, doubling path lemmas, normalized Jensen, and restart lower bound from actual increments; concrete stopping and local projections open.",
       "v44_scope": "Pointwise cut indicator decomposition, actual L2 span refinement and nested projection identity. Stopping-tree construction, moment representative, maximal energy, restart assembly and final compression bound still open.",
       "v45_scope": "Actual disjoint cut refit, moment preservation against inherited coarse columns and energy equality. Quantitative stopping/maximal/anchor assembly remains.",
       "v46_scope": "Constructed stopping paths on refining labels, doubling square and low/high logarithmic estimates, and conditional final row energy assembly. Actual measure-maximal transfer, anchor tree construction, integration of path lists and complete compression remain open.",
-      "v47_scope": "Measured terminal partition maximal bound, coarse normalized integrals, stopping cost identity and integrated path-energy estimate, and coefficient-motion anchor path construction; actual spatial anchor partition and L² variation and complete compression still open.",
+      "v47_scope": "Measured terminal partition maximal bound, coarse normalized integrals, stopping cost identity and integrated path-energy estimate, and coefficient-motion anchor path construction; actual spatial anchor partition and L\u00b2 variation and complete compression still open.",
       "v48_scope": "A conditional restart theorem now derives both child-root length and representative-energy half-contraction from the private-coordinate increment lower bound, Lemma 3.3 variation budget, and D^5 representative caps. Finite history-labelled stage partitions are measurable and nested. Still open: identify these history partitions with the exact active-anchor/terminal-cut partitions in the paper without over-refinement; construct spatial generation partitions; derive the pointwise transition and variation bounds for the actual projection products; prove simultaneous restart budgets from the concrete tree; complete representative-energy, row-error, complement, averaging, and final polylogarithmic assembly. All candidates remain uncompiled. The history-labelled partition range is now explicitly finite; its label fibres are measurable and consecutive stages refine.",
       "v49_scope": "Active-anchor coherence: same current anchor cell forces equality of all earlier coefficient paths, selected-anchor depth histories, and prior anchor-cell labels. The p.12 finite complex coefficient-error row estimate is proved from explicit row Bessel contraction and integrated D^3 column-energy hypotheses, with no label-count loss. Still open: exact stage-partition quotient and measurable local projection families; identify concrete projection-product increments; derive Lemma 3.3 variation and D^5 representative caps; derive the actual pathwise column budget and row Bessel bound; complete size-segment/attempt/complement/averaging assembly. All V49 declarations are uncompiled candidates, not kernel certificates.",
-      "v50_scope": "Constructs actual measurable L² stage columns and orthogonal projections; proves nested stage spans from an explicit one-step AE inherited-column refinement identity; applies Lemma 3.3 and obtains coefficient representations for ordered products and their consecutive increment synthesis in the newer stage family. Still open: derive the refinement identity from the exact paper partitions/masks, identify coefficient fields with c(u), transfer L² increment to pointwise restart lower bound, derive representative-energy caps, and finish all compression summations. Uncompiled source candidate only."
+      "v50_scope": "Constructs actual measurable L\u00b2 stage columns and orthogonal projections; proves nested stage spans from an explicit one-step AE inherited-column refinement identity; applies Lemma 3.3 and obtains coefficient representations for ordered products and their consecutive increment synthesis in the newer stage family. Still open: derive the refinement identity from the exact paper partitions/masks, identify coefficient fields with c(u), transfer L\u00b2 increment to pointwise restart lower bound, derive representative-energy caps, and finish all compression summations. Uncompiled source candidate only."
     },
     {
       "kind": "Lemma",
       "number": "3.5",
       "pdf_page": 13,
-      "paper_statement_opening": "Lemma 3.5 (Height bins). Let d ≥1, B ≥2, and ξ ∈Rd. Let E =",
+      "paper_statement_opening": "Lemma 3.5 (Height bins). Let d \u22651, B \u22652, and \u03be \u2208Rd. Let E =",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/DyadicTails.lean",
@@ -319,7 +321,7 @@
       "kind": "Definition",
       "number": "4.1",
       "pdf_page": 15,
-      "paper_statement_opening": "Definition 4.1 (Quadratic chart atom). A quadratic chart atom is a function φ(y) = e(λy2 + βy)",
+      "paper_statement_opening": "Definition 4.1 (Quadratic chart atom). A quadratic chart atom is a function \u03c6(y) = e(\u03bby2 + \u03b2y)",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/QuadraticChartsElementary.lean"
@@ -348,7 +350,7 @@
       "kind": "Lemma",
       "number": "4.3",
       "pdf_page": 16,
-      "paper_statement_opening": "Lemma 4.3 (Scale-wise Weyl alternative). Let ϑ be supported in a fixed box in Rk, with supremum norm and Lipschitz norm at most H. Suppose 0 < δ < 1/2 and",
+      "paper_statement_opening": "Lemma 4.3 (Scale-wise Weyl alternative). Let \u03d1 be supported in a fixed box in Rk, with supremum norm and Lipschitz norm at most H. Suppose 0 < \u03b4 < 1/2 and",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_3.lean",
@@ -393,7 +395,7 @@
       "kind": "Lemma",
       "number": "4.5",
       "pdf_page": 20,
-      "paper_statement_opening": "Lemma 4.5 (Progression separation). Let φi, φk be bounded atoms of complexity at most H in two distinct slots i, k, and let a, b denote the remaining slots. Their product has an exact absolutely",
+      "paper_statement_opening": "Lemma 4.5 (Progression separation). Let \u03c6i, \u03c6k be bounded atoms of complexity at most H in two distinct slots i, k, and let a, b denote the remaining slots. Their product has an exact absolutely",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_5.lean",
@@ -411,7 +413,7 @@
       "kind": "Lemma",
       "number": "4.6",
       "pdf_page": 21,
-      "paper_statement_opening": "Lemma 4.6 (Single-scale separation). Fix a term in (4), without its coefficient, of complexity at most H. Let ζ be a fixed nonnegative smooth function, equal to one on the range of t/r allowed by",
+      "paper_statement_opening": "Lemma 4.6 (Single-scale separation). Fix a term in (4), without its coefficient, of complexity at most H. Let \u03b6 be a fixed nonnegative smooth function, equal to one on the range of t/r allowed by",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_6.lean",
@@ -430,7 +432,7 @@
       "kind": "Theorem",
       "number": "4.7",
       "pdf_page": 22,
-      "paper_statement_opening": "Theorem 4.7 (Leng–Sah–Sawhney). For a 1-bounded function f : [L] →C with ∥f∥U3[L] ≥δ, there are a degree-two filtered nilmanifold G/Γ, a polynomial sequence g : Z →G adapted to its",
+      "paper_statement_opening": "Theorem 4.7 (Leng\u2013Sah\u2013Sawhney). For a 1-bounded function f : [L] \u2192C with \u2225f\u2225U3[L] \u2265\u03b4, there are a degree-two filtered nilmanifold G/\u0393, a polynomial sequence g : Z \u2192G adapted to its",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_7.lean",
@@ -448,10 +450,10 @@
       "lean_target_level": "partial_component_exists",
       "lean_goal_decl": "OpenAI086.PaperTargets.result_4_7_model_goal",
       "lean_target_is_paper_statement": false,
-      "v27_scope": "Discrete U³ interval cube normalization definitions only; no inverse theorem proved; open.",
-      "remaining_obligation_v28": "Degree-two filtered nilmanifold, rational Malcev basis and lattice, polynomial orbit, Lipschitz complexity and the actual quantitative inverse theorem of Leng–Sah–Sawhney. V28 supplies finite cube-energy and positive normalization candidates only.",
+      "v27_scope": "Discrete U\u00b3 interval cube normalization definitions only; no inverse theorem proved; open.",
+      "remaining_obligation_v28": "Degree-two filtered nilmanifold, rational Malcev basis and lattice, polynomial orbit, Lipschitz complexity and the actual quantitative inverse theorem of Leng\u2013Sah\u2013Sawhney. V28 supplies finite cube-energy and positive normalization candidates only.",
       "full_quantitative_inverse_open": true,
-      "v30_scope": "Uncompiled restricted inverse witness at normalized U³=1 for L≥3, and derivative mean extraction for general δ. General quantitative nilsequence witness remains unproved.",
+      "v30_scope": "Uncompiled restricted inverse witness at normalized U\u00b3=1 for L\u22653, and derivative mean extraction for general \u03b4. General quantitative nilsequence witness remains unproved.",
       "v30_entrypoints": [
         "OpenAI086.v30_interval_inverse_first_step",
         "OpenAI086.v30_extremal_interval_quadratic",
@@ -463,7 +465,7 @@
       "kind": "Lemma",
       "number": "4.8",
       "pdf_page": 22,
-      "paper_statement_opening": "Lemma 4.8 (Elementary cube bounds). The quantity ∥· ∥U is a seminorm. The mixed cube form with possibly different functions gω at its eight vertices satisfies",
+      "paper_statement_opening": "Lemma 4.8 (Elementary cube bounds). The quantity \u2225\u00b7 \u2225U is a seminorm. The mixed cube form with possibly different functions g\u03c9 at its eight vertices satisfies",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_8.lean",
@@ -477,13 +479,13 @@
       "lean_goal_decl": "OpenAI086.PaperTargets.result_4_8_model_goal",
       "lean_target_is_paper_statement": false,
       "v18_scope_note": "Both four-vertex changes of variables have explicit additive inverses; Haar preservation and cube estimates remain open.",
-      "remaining_obligation_v28": "Haar-measure automorphisms on the continuous circle, cube Cauchy–Schwarz, seminorm triangle inequality and L² continuity. V28 supplies discrete cube nonnegativity infrastructure, not the continuous result."
+      "remaining_obligation_v28": "Haar-measure automorphisms on the continuous circle, cube Cauchy\u2013Schwarz, seminorm triangle inequality and L\u00b2 continuity. V28 supplies discrete cube nonnegativity infrastructure, not the continuous result."
     },
     {
       "kind": "Lemma",
       "number": "4.9",
       "pdf_page": 23,
-      "paper_statement_opening": "Lemma 4.9 (Continuous bounded inverse). For 0 < δ < 1/2, let g be supported on an interval I, with ∥g∥∞≤1 and ∥g∥U(I) ≥δ. There is a bounded atom φ of complexity at most",
+      "paper_statement_opening": "Lemma 4.9 (Continuous bounded inverse). For 0 < \u03b4 < 1/2, let g be supported on an interval I, with \u2225g\u2225\u221e\u22641 and \u2225g\u2225U(I) \u2265\u03b4. There is a bounded atom \u03c6 of complexity at most",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_9.lean",
@@ -495,13 +497,13 @@
       "lean_target_level": "partial_component_exists",
       "lean_goal_decl": "OpenAI086.PaperTargets.result_4_9_model_goal",
       "lean_target_is_paper_statement": false,
-      "remaining_obligation_v28": "Discrete-to-continuous cube convergence, quantitative inverse input, nilsequence-to-chart reduction, Fejér approximation and sampled atom transfer."
+      "remaining_obligation_v28": "Discrete-to-continuous cube convergence, quantitative inverse input, nilsequence-to-chart reduction, Fej\u00e9r approximation and sampled atom transfer."
     },
     {
       "kind": "Lemma",
       "number": "4.10",
       "pdf_page": 26,
-      "paper_statement_opening": "Lemma 4.10 (Structured, uniform, and L1 decomposition). For 0 < τ < 1/2 and a function f on I with ∥f∥∞≤1, there is a finite decomposition",
+      "paper_statement_opening": "Lemma 4.10 (Structured, uniform, and L1 decomposition). For 0 < \u03c4 < 1/2 and a function f on I with \u2225f\u2225\u221e\u22641, there is a finite decomposition",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_10.lean",
@@ -513,8 +515,8 @@
       "lean_goal_decl": "OpenAI086.PaperTargets.result_4_10_model_goal",
       "lean_target_is_paper_statement": false,
       "v26_component": "v26_inverse_separator_contradiction",
-      "v26_scope": "separator contradiction and closure-error transfer; Hahn–Banach and inverse input pending",
-      "remaining_obligation_v28": "Hahn–Banach separation of the actual convex balanced sets, dual norm tests and L² closure approximation using continuous inverse."
+      "v26_scope": "separator contradiction and closure-error transfer; Hahn\u2013Banach and inverse input pending",
+      "remaining_obligation_v28": "Hahn\u2013Banach separation of the actual convex balanced sets, dual norm tests and L\u00b2 closure approximation using continuous inverse."
     },
     {
       "kind": "Lemma",
@@ -533,13 +535,13 @@
       "lean_target_is_paper_statement": false,
       "v26_component": "v26_pair_coordinate_L1",
       "v26_scope": "actual iterated integral product majorant; progression Jacobian and U3 estimate pending",
-      "remaining_obligation_v28": "Three Haar disintegrations and cube Cauchy–Schwarz, character invariance, L² approximation and kernel Fourier coefficient sum."
+      "remaining_obligation_v28": "Three Haar disintegrations and cube Cauchy\u2013Schwarz, character invariance, L\u00b2 approximation and kernel Fourier coefficient sum."
     },
     {
       "kind": "Lemma",
       "number": "4.12",
       "pdf_page": 27,
-      "paper_statement_opening": "Lemma 4.12 (Local detection). Fix q > 2 and C1 ≥1. Suppose that R, h, u, v occupy the four slots in any order and satisfy",
+      "paper_statement_opening": "Lemma 4.12 (Local detection). Fix q > 2 and C1 \u22651. Suppose that R, h, u, v occupy the four slots in any order and satisfy",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_4_12.lean",
@@ -558,7 +560,7 @@
       "kind": "Lemma",
       "number": "5.1",
       "pdf_page": 30,
-      "paper_statement_opening": "Lemma 5.1 (A scale sum for one separated term). Suppose the inputs in positions a, b are admissible sequences associated with Fa, Fb, with parameters Dh, L. For m ≥0, let Im consist of",
+      "paper_statement_opening": "Lemma 5.1 (A scale sum for one separated term). Suppose the inputs in positions a, b are admissible sequences associated with Fa, Fb, with parameters Dh, L. For m \u22650, let Im consist of",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_5_1.lean",
@@ -577,7 +579,7 @@
       "kind": "Corollary",
       "number": "5.2",
       "pdf_page": 31,
-      "paper_statement_opening": "Corollary 5.2 (A finite predictor list). Fix the two low atoms on J, with complexity at most Hlow. For every B ≥1, their product in the form can be replaced, with absolute length-weighted scale-sum",
+      "paper_statement_opening": "Corollary 5.2 (A finite predictor list). Fix the two low atoms on J, with complexity at most Hlow. For every B \u22651, their product in the form can be replaced, with absolute length-weighted scale-sum",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_5_2.lean",
@@ -596,7 +598,7 @@
       "kind": "Lemma",
       "number": "5.3",
       "pdf_page": 32,
-      "paper_statement_opening": "Lemma 5.3 (Delayed predictor replacement). Consider one fixed term of (6), born on J. Suppose the nested predictor family in position a contains Φp on every use interval and on all its descendants.",
+      "paper_statement_opening": "Lemma 5.3 (Delayed predictor replacement). Consider one fixed term of (6), born on J. Suppose the nested predictor family in position a contains \u03a6p on every use interval and on all its descendants.",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/ErrataChecks.lean",
@@ -614,7 +616,7 @@
       "kind": "Lemma",
       "number": "5.4",
       "pdf_page": 33,
-      "paper_statement_opening": "Lemma 5.4 (Inherited adaptive approximation). Suppose ∥fj∥q,I ≤1 throughout a finite normalized subtree. For every sufficiently large k, one can construct, on segments whose roots have bounded",
+      "paper_statement_opening": "Lemma 5.4 (Inherited adaptive approximation). Suppose \u2225fj\u2225q,I \u22641 throughout a finite normalized subtree. For every sufficiently large k, one can construct, on segments whose roots have bounded",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_5_4.lean",
@@ -652,7 +654,7 @@
       "kind": "Proposition",
       "number": "5.6",
       "pdf_page": 35,
-      "paper_statement_opening": "Proposition 5.6 (Truncating the two high positions). For the tuple above, put k = kt. There are an integer K0 ≤kO(1), further bounded-packing segments, and nested projection families P new",
+      "paper_statement_opening": "Proposition 5.6 (Truncating the two high positions). For the tuple above, put k = kt. There are an integer K0 \u2264kO(1), further bounded-packing segments, and nested projection families P new",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_5_6.lean",
@@ -709,7 +711,7 @@
       "kind": "Lemma",
       "number": "6.1",
       "pdf_page": 40,
-      "paper_statement_opening": "Lemma 6.1 (Separation of different tags). Fix an upper bound exp(kO(1)) for the complexities of the single columns under consideration. Given τ2 > 0 with log(1/τ2) ≤kO(1), one can choose",
+      "paper_statement_opening": "Lemma 6.1 (Separation of different tags). Fix an upper bound exp(kO(1)) for the complexities of the single columns under consideration. Given \u03c42 > 0 with log(1/\u03c42) \u2264kO(1), one can choose",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_6_1.lean",
@@ -728,7 +730,7 @@
       "kind": "Lemma",
       "number": "6.2",
       "pdf_page": 41,
-      "paper_statement_opening": "Lemma 6.2 (Endpoint bounds along a short path). Suppose two tags can be joined, at one scale, by a path of length L ≤poly(P, k). Their difference data satisfy (2) in their own endpoint coordinates,",
+      "paper_statement_opening": "Lemma 6.2 (Endpoint bounds along a short path). Suppose two tags can be joined, at one scale, by a path of length L \u2264poly(P, k). Their difference data satisfy (2) in their own endpoint coordinates,",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_6_2.lean",
@@ -822,7 +824,7 @@
       "kind": "Lemma",
       "number": "6.7",
       "pdf_page": 48,
-      "paper_statement_opening": "Lemma 6.7 (Catalog closure and its budget). The main closure and then the helper closure can be performed at every active cell with path counts satisfying log nmax ≤kO(1). The exponent is fixed",
+      "paper_statement_opening": "Lemma 6.7 (Catalog closure and its budget). The main closure and then the helper closure can be performed at every active cell with path counts satisfying log nmax \u2264kO(1). The exponent is fixed",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_6_7.lean",
@@ -840,7 +842,7 @@
       "kind": "Proposition",
       "number": "6.8",
       "pdf_page": 49,
-      "paper_statement_opening": "Proposition 6.8 (Localization into current groups). For an active pattern in (11), there are poly(k) fixed search leaves such that, up to total absolute length-weighted error at most Ce−k|R|,",
+      "paper_statement_opening": "Proposition 6.8 (Localization into current groups). For an active pattern in (11), there are poly(k) fixed search leaves such that, up to total absolute length-weighted error at most Ce\u2212k|R|,",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_6_8.lean",
@@ -876,7 +878,7 @@
       "kind": "Lemma",
       "number": "7.1",
       "pdf_page": 52,
-      "paper_statement_opening": "Lemma 7.1. Let (X, µ) and (W, ν) be finite measure spaces. If 1 < r, s, t < ∞and v ∈Ar(R), then",
+      "paper_statement_opening": "Lemma 7.1. Let (X, \u00b5) and (W, \u03bd) be finite measure spaces. If 1 < r, s, t < \u221eand v \u2208Ar(R), then",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_7_1.lean",
@@ -931,7 +933,7 @@
       "kind": "Lemma",
       "number": "7.4",
       "pdf_page": 60,
-      "paper_statement_opening": "Lemma 7.4 (Side stacks). Fix a near offset q −p in Equation (15), a transfer step, and a search path. The two time-dependent side inputs can be written, at their uses, as a sum of at most",
+      "paper_statement_opening": "Lemma 7.4 (Side stacks). Fix a near offset q \u2212p in Equation (15), a transfer step, and a search path. The two time-dependent side inputs can be written, at their uses, as a sum of at most",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_7_4.lean",
@@ -950,7 +952,7 @@
       "kind": "Proposition",
       "number": "7.5",
       "pdf_page": 62,
-      "paper_statement_opening": "Proposition 7.5 (Side estimate). Assume the base and localization hypotheses above, the helper conclusions of Lemma 6.9, and the linear-side square bound (17). Fix p ∈(2/3, 1). After common",
+      "paper_statement_opening": "Proposition 7.5 (Side estimate). Assume the base and localization hypotheses above, the helper conclusions of Lemma 6.9, and the linear-side square bound (17). Fix p \u2208(2/3, 1). After common",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_7_5.lean",
@@ -983,7 +985,7 @@
       "lean_target_is_paper_statement": false,
       "v22_scope": "source proof candidate only; full paper theorem not certified",
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
-      "remaining_obligation_v28": "First-match chart expansion, common labels, coefficient/height bounds and measurable bounded lift on actual L² space."
+      "remaining_obligation_v28": "First-match chart expansion, common labels, coefficient/height bounds and measurable bounded lift on actual L\u00b2 space."
     },
     {
       "kind": "Lemma",
@@ -1009,13 +1011,15 @@
       "v20_scope_note": "Integral denominator and determinant bounds, conditional Cramer tiny closure and six-start exclusion; rational minor selection, denominator clearing and full packet cardinal assembly open.",
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
       "remaining_obligation_v28": "Rational-height assembly from selected basis, packet counting of exceptional blocks and complete tiny-space conclusion.",
-      "v56_note": "Rational-height packet cover yields at most 5d exceptional blocks. Cramer bound for tiny span and exact integration into PRE/CURRENT construction remain open."
+      "v56_note": "Rational-height packet cover yields at most 5d exceptional blocks. Cramer bound for tiny span and exact integration into PRE/CURRENT construction remain open.",
+      "v57_note": "V56 exceptional-block count plus attributed V57 actual tinySpan closure with rank-d Cramer budget; parameter reserve derived for ordered scales. Kernel and definition equivalence pending.",
+      "v57_adapted_source": "source_fidelity/v57/TinySpan.lean"
     },
     {
       "kind": "Lemma",
       "number": "8.3",
       "pdf_page": 68,
-      "paper_statement_opening": "Lemma 8.3 (Height stabilization). For a nonexceptional primary, all but CdmaxRht ∗heights have",
+      "paper_statement_opening": "Lemma 8.3 (Height stabilization). For a nonexceptional primary, all but CdmaxRht \u2217heights have",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_8_3.lean",
@@ -1037,7 +1041,7 @@
       "kind": "Lemma",
       "number": "8.4",
       "pdf_page": 69,
-      "paper_statement_opening": "Lemma 8.4 (Coherence of good predicates). Good modes in one CURRENT component at height h have the same PRE component at height h −∆. The core/side decision is constant on each",
+      "paper_statement_opening": "Lemma 8.4 (Coherence of good predicates). Good modes in one CURRENT component at height h have the same PRE component at height h \u2212\u2206. The core/side decision is constant on each",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_8_4.lean",
@@ -1055,7 +1059,7 @@
       "kind": "Lemma",
       "number": "8.5",
       "pdf_page": 69,
-      "paper_statement_opening": "Lemma 8.5 (Entry-rank summation). Let S1 ⊆· · · ⊆ST be nonempty finite sets with |ST | ≤M. Suppose Xt ⊆St, and each element belongs to at most A of the sets Xt. Then",
+      "paper_statement_opening": "Lemma 8.5 (Entry-rank summation). Let S1 \u2286\u00b7 \u00b7 \u00b7 \u2286ST be nonempty finite sets with |ST | \u2264M. Suppose Xt \u2286St, and each element belongs to at most A of the sets Xt. Then",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/EntryRankSummation.lean",
@@ -1072,7 +1076,7 @@
       "kind": "Lemma",
       "number": "8.6",
       "pdf_page": 70,
-      "paper_statement_opening": "Lemma 8.6 (Bad-density chains). Fix 0 < δ, β < 1, integers J ≥∆≥1, and M ≥1. For 1 ≤i ≤N, 0 ≤h ≤J, let Pi,h and Ci,h be nonempty sets of primary labels, each increasing in h,",
+      "paper_statement_opening": "Lemma 8.6 (Bad-density chains). Fix 0 < \u03b4, \u03b2 < 1, integers J \u2265\u2206\u22651, and M \u22651. For 1 \u2264i \u2264N, 0 \u2264h \u2264J, let Pi,h and Ci,h be nonempty sets of primary labels, each increasing in h,",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/BadDensityChain.lean",
@@ -1088,7 +1092,9 @@
       "kernel_verified": false,
       "lean_catalog_entry": "OpenAI086.PaperTargets.result_8_6",
       "lean_target_level": "partial_component_exists",
-      "remaining_obligation_v28": "Complete bad-density counting with terminal P_N subset C_N explicitly justified by actual graph construction; temporal and height incidence estimates."
+      "remaining_obligation_v28": "Complete bad-density counting with terminal P_N subset C_N explicitly justified by actual graph construction; temporal and height incidence estimates.",
+      "v57_note": "Attributed floor-log harmonic chain candidate, explicit terminal inclusion. Needs kernel check and proof of endpoint in actual application.",
+      "v57_adapted_source": "source_fidelity/v56/EntryRank.lean"
     },
     {
       "kind": "Lemma",
@@ -1108,7 +1114,7 @@
       "lean_target_level": "partial_component_exists",
       "lean_goal_decl": "OpenAI086.PaperTargets.result_8_7_model_goal",
       "lean_target_is_paper_statement": false,
-      "v20_scope_note": "Pathwise Cauchy–Schwarz and synthesis budget; oscillatory bounds and integrated Bessel conclusion open.",
+      "v20_scope_note": "Pathwise Cauchy\u2013Schwarz and synthesis budget; oscillatory bounds and integrated Bessel conclusion open.",
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
       "remaining_obligation_v28": "Actual affine quadratic oscillatory integral, cutoff Fourier tails, cross-pair estimates, projection synthesis and Bessel via duality."
     },
@@ -1152,7 +1158,7 @@
       "kind": "Lemma",
       "number": "8.10",
       "pdf_page": 74,
-      "paper_statement_opening": "Lemma 8.10 (Hereditary representatives). Fix the height, role, group, and type. We can choose a representative mode a ∈Eh−∆for every successful component so that it is inherited whenever an",
+      "paper_statement_opening": "Lemma 8.10 (Hereditary representatives). Fix the height, role, group, and type. We can choose a representative mode a \u2208Eh\u2212\u2206for every successful component so that it is inherited whenever an",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/ComponentIntersections.lean"
@@ -1166,7 +1172,7 @@
       "kind": "Lemma",
       "number": "8.11",
       "pdf_page": 75,
-      "paper_statement_opening": "Lemma 8.11 (Component-size comparison). At every actual cell, σ2",
+      "paper_statement_opening": "Lemma 8.11 (Component-size comparison). At every actual cell, \u03c32",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_8_11.lean",
@@ -1228,14 +1234,14 @@
       "lean_target_level": "partial_component_exists",
       "remaining_obligation_v28": "Full sparse mass theorem: pair budgets, proper color paths, slab cover, annular transfer and positive density-power saving. Finite incidence sublemmas alone do not establish it.",
       "remaining_obligation_v40": "Kernel-check new actual dense graph/colored paths; geometric difference covers, greedy scale blocks, slab covering and full density saving remain.",
-      "v52_scope": "Derives the p.84 nonfuture-pair block-mass estimate by finite Cauchy–Schwarz, including the six-role-pair factor. The greedy blocks, difference covers, slab geometry, and delta^(1/2080) saving remain open.",
+      "v52_scope": "Derives the p.84 nonfuture-pair block-mass estimate by finite Cauchy\u2013Schwarz, including the six-role-pair factor. The greedy blocks, difference covers, slab geometry, and delta^(1/2080) saving remain open.",
       "v53_note": "Auxiliary exponent calculation and large-density case; geometric inequality remains open."
     },
     {
       "kind": "Proposition",
       "number": "9.2",
       "pdf_page": 87,
-      "paper_statement_opening": "Proposition 9.2 (Counts for the tested core tuples). There is an absolute p0 ∈(0, 1) such that, for the preceding data and some L0 ≤P C(1 + log(ν/µ))C, one has",
+      "paper_statement_opening": "Proposition 9.2 (Counts for the tested core tuples). There is an absolute p0 \u2208(0, 1) such that, for the preceding data and some L0 \u2264P C(1 + log(\u03bd/\u00b5))C, one has",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_9_2.lean",
@@ -1255,7 +1261,7 @@
       "kind": "Proposition",
       "number": "9.3",
       "pdf_page": 89,
-      "paper_statement_opening": "Proposition 9.3 (Powered estimate for the core terms). There are absolute ε > 0 and C4 < ∞, with 1 −ε > 2/3, such that the terms containing at least three core roles in the localized expansion",
+      "paper_statement_opening": "Proposition 9.3 (Powered estimate for the core terms). There are absolute \u03b5 > 0 and C4 < \u221e, with 1 \u2212\u03b5 > 2/3, such that the terms containing at least three core roles in the localized expansion",
       "formalization": "partial",
       "relevant_modules": [
         "OpenAI086/PaperTargets/Result_9_3.lean",
@@ -1269,7 +1275,7 @@
       "lean_goal_decl": "OpenAI086.PaperTargets.result_9_3_model_goal",
       "lean_target_is_paper_statement": false,
       "v23_scope": "New source-related proof candidate; kernel and full manuscript statement pending.",
-      "remaining_obligation_v28": "Group Hölder, dyadic amplitude and frequency summation, original cell minimum and integrated path bound with absolute exponents.",
+      "remaining_obligation_v28": "Group H\u00f6lder, dyadic amplitude and frequency summation, original cell minimum and integrated path bound with absolute exponents.",
       "v39_scope": "Uncompiled component candidates; no complete paper result or kernel certificate."
     }
   ]
